@@ -1,0 +1,22 @@
+uuid: 6000fc29-5240-4f28-844a-f3d08f33a9ef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oe_theme
+_core:
+  default_config_hash: PnhvOOg3dp0eO7NMXGJQijwuDBdEqDF2hag3eVvSMzk
+id: oe_theme_tabs
+theme: oe_theme
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
