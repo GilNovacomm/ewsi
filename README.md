@@ -120,7 +120,7 @@ docker-compose exec web ./vendor/bin/behat
 
 To check the status of the continuous integration of your project, go to [Drone](https://drone.fpfis.eu/).
 
-A pipeline - created and maintained by DevOps - is applied by default.
+A pipeline - created and maintained by DevOps and QA - is applied by default.
 It manages the code review of the code, it runs all tests on the repository and
 builds the site artifact for the deployment.
 
