@@ -1,0 +1,18 @@
+uuid: 5672475e-1cce-46bf-844d-220486fd951f
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.manual
+id: link_list.manual.administrative_title
+field_name: administrative_title
+entity_type: link_list
+bundle: manual
+label: 'Administrative title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

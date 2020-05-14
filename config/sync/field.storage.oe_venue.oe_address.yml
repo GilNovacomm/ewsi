@@ -1,0 +1,21 @@
+uuid: 6e8ddb9c-700e-4d0c-b5a7-f7c932b24579
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - oe_content_entity_venue
+_core:
+  default_config_hash: YYPA7X__Xrip3xzQr2-aABjU0skJXkRvNwVM905a6pA
+id: oe_venue.oe_address
+field_name: oe_address
+entity_type: oe_venue
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

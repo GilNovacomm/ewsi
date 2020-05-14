@@ -1,0 +1,23 @@
+uuid: 493b9721-40d6-4604-994e-34f499e5346d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_report_text
+    - node.type.oe_event
+  module:
+    - text
+_core:
+  default_config_hash: OnoSFdBepTFukttyEY7fHTKCjo6VTGwfADH1eNGua0A
+id: node.oe_event.oe_event_report_text
+field_name: oe_event_report_text
+entity_type: node
+bundle: oe_event
+label: 'Report text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

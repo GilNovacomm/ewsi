@@ -1,0 +1,27 @@
+uuid: 53b3f2ce-8c29-4084-afb6-1b07c083d0f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_map.field_oe_media
+    - paragraphs.paragraphs_type.oe_map
+_core:
+  default_config_hash: 3wAOzdz5dFSYNTRmREevVLme9efSNybMkpOBDNslTXU
+id: paragraph.oe_map.default
+targetEntityType: paragraph
+bundle: oe_map
+mode: default
+content:
+  field_oe_media:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

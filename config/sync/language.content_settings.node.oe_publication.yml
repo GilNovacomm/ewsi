@@ -1,0 +1,20 @@
+uuid: f5c2201c-302f-481b-8e20-e625fa2d3954
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_publication
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: vwu86tvU28mnsGrvsOV42nvPZmutdZlQEuD0E9rYh5E
+id: node.oe_publication
+target_entity_type_id: node
+target_bundle: oe_publication
+default_langcode: en
+language_alterable: true

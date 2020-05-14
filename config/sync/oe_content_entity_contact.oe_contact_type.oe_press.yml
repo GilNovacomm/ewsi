@@ -1,0 +1,9 @@
+uuid: c8e2240b-3da0-4132-a6ce-89a298c2e482
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 41VyHryY8p_BX_skBZREUMFlvUtYfYHd9Y61i5k6wF4
+id: oe_press
+label: Press
+description: 'Provides the press contact type bundle.'

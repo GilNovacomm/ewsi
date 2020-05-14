@@ -1,0 +1,22 @@
+uuid: ca9bd669-5132-498d-aa33-cd357c411070
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_chart
+id: paragraph.oe_chart.status
+field_name: status
+entity_type: paragraph
+bundle: oe_chart
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 661406ca-01d6-47e2-bdd3-191670430ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_registration_dates
+    - node.type.oe_event
+  module:
+    - datetime_range
+_core:
+  default_config_hash: TA-e835MbADLkeLBUnzzxOOBbVp3u-3qSMv3qJ-ldJM
+id: node.oe_event.oe_event_registration_dates
+field_name: oe_event_registration_dates
+entity_type: node
+bundle: oe_event
+label: 'Registration date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

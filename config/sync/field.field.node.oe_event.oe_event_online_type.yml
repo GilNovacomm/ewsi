@@ -1,0 +1,23 @@
+uuid: d95309b5-fb4c-4e21-bdb1-36b4a98c6edd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_online_type
+    - node.type.oe_event
+  module:
+    - options
+_core:
+  default_config_hash: 5LehIDeLwXgcXdupfmsOklSNGtf3DCDKXC_LCQVA5nI
+id: node.oe_event.oe_event_online_type
+field_name: oe_event_online_type
+entity_type: node
+bundle: oe_event
+label: 'Online type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

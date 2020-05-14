@@ -1,0 +1,18 @@
+uuid: 09416c10-6cbf-4153-b2e1-dd79a33e1b3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_webtools_media
+_core:
+  default_config_hash: HhhpoJfGk32UTVH4DtD0cv7DaCeE8W9bFzf3zgija3U
+id: webtools_chart
+label: 'Webtools chart'
+description: 'Media type for webtools chart'
+source: webtools
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  widget_type: chart
+  source_field: oe_media_webtools
+field_map: {  }

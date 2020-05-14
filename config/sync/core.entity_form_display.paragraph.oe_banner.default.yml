@@ -1,0 +1,62 @@
+uuid: 9cc2490e-3b0d-4463-afea-7a64d65d8008
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_banner.field_oe_banner_full_width
+    - field.field.paragraph.oe_banner.field_oe_banner_type
+    - field.field.paragraph.oe_banner.field_oe_link
+    - field.field.paragraph.oe_banner.field_oe_media
+    - field.field.paragraph.oe_banner.field_oe_text
+    - field.field.paragraph.oe_banner.field_oe_title
+    - paragraphs.paragraphs_type.oe_banner
+  module:
+    - link
+_core:
+  default_config_hash: T-gHuQ1kGeGEJ1CFTGDXxvoJwmGwmUJC22JiZLOe8IE
+id: paragraph.oe_banner.default
+targetEntityType: paragraph
+bundle: oe_banner
+mode: default
+content:
+  field_oe_banner_full_width:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_oe_banner_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oe_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_oe_text:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_oe_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_oe_media: true
+  status: true

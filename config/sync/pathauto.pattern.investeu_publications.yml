@@ -1,0 +1,22 @@
+uuid: d38294cc-6b8b-4080-bdcc-689019e18181
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_publications
+label: 'InvestEU Publications'
+type: 'canonical_entities:node'
+pattern: 'publication/[node:source:title]'
+selection_criteria:
+  5ebedb9d-4ee7-4604-b482-6a813526f132:
+    id: node_type
+    bundles:
+      oe_publication: oe_publication
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5ebedb9d-4ee7-4604-b482-6a813526f132
+selection_logic: and
+weight: -5
+relationships: {  }

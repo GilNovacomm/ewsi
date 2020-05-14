@@ -1,0 +1,22 @@
+uuid: bf2eccad-6dd5-4eab-b63f-48548bc42a6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_policies
+label: 'InvestEU Policies'
+type: 'canonical_entities:node'
+pattern: 'policy/[node:source:title]'
+selection_criteria:
+  8211e957-85cc-4ec0-835f-d637c19a9cad:
+    id: node_type
+    bundles:
+      oe_policy: oe_policy
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8211e957-85cc-4ec0-835f-d637c19a9cad
+selection_logic: and
+weight: -5
+relationships: {  }

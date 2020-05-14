@@ -1,0 +1,20 @@
+uuid: 023fd270-cdb6-430c-8ac7-c4111bf17168
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_event
+  module:
+    - path
+id: node.oe_event.path
+field_name: path
+entity_type: node
+bundle: oe_event
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

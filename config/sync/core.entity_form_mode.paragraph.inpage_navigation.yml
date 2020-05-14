@@ -1,0 +1,12 @@
+uuid: e1d34c1e-7ba1-42f5-aab0-d969595517ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hAVLDXX8Tr2wcPPvjFAYxq75RE5kZXj75e9kqH9Ht-Q
+id: paragraph.inpage_navigation
+label: 'Inpage navigation'
+targetEntityType: paragraph
+cache: true

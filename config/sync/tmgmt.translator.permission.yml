@@ -1,0 +1,17 @@
+uuid: 12e71120-3df3-478c-b5cb-89a2d890e3bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_translation
+_core:
+  default_config_hash: ViTsJQf2TNSXCgfT9wYEuYEM3c6UPyNDCGtZPhcs_2c
+name: permission
+label: Permission-based
+description: 'Allows users with a certain permission to create translations.'
+auto_accept: true
+weight: null
+plugin: permission
+settings:
+  permission: 'translate any entity'
+remote_languages_mappings: {  }

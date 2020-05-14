@@ -1,0 +1,11 @@
+uuid: 28ff2dc7-ea93-4036-916d-778bc29aa855
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Gai61rA9vVqySxrgVaAo60hrAMH7Yka0pZKhMo_Yywc
+id: ro
+label: Romanian
+direction: ltr
+weight: 19
+locked: false

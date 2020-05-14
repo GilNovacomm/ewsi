@@ -1,0 +1,22 @@
+uuid: 12e8e630-477b-4764-92c7-894a57d4b4e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - json_field
+    - media
+_core:
+  default_config_hash: D10GqUk_nea7YIpQKKbSE1P16ZLGyawFEGlj9qOyaNk
+id: media.oe_media_webtools
+field_name: oe_media_webtools
+entity_type: media
+type: json
+settings:
+  size: 16777216
+module: json_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: f44f1fa7-3363-4363-901e-a03124002f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_contextual_navigation
+id: paragraph.oe_contextual_navigation.created
+field_name: created
+entity_type: paragraph
+bundle: oe_contextual_navigation
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,12 @@
+uuid: 8255ad08-9d8a-4867-8e3d-fa6784e1a417
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: iZAP0VbFyxQSkJLwP-8j710RnNHFORANvKHoi-XMpRA
+id: paragraph.oe_banner_primary
+label: 'Primary banner'
+targetEntityType: paragraph
+cache: true

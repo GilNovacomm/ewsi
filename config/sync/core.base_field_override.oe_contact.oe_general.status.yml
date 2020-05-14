@@ -1,0 +1,22 @@
+uuid: bdf93d19-1406-4895-8467-42026c3072a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_content_entity_contact.oe_contact_type.oe_general
+id: oe_contact.oe_general.status
+field_name: status
+entity_type: oe_contact
+bundle: oe_general
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

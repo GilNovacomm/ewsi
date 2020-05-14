@@ -1,0 +1,18 @@
+uuid: be28d58f-4e89-48b8-89a2-485d10efdce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_news
+id: node.oe_news.created
+field_name: created
+entity_type: node
+bundle: oe_news
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

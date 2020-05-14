@@ -1,0 +1,23 @@
+uuid: 4938d1e7-9a10-4e8a-b009-84052199ae9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ZV0Lg-7a1TLcwfY6bOJOPVJbBJKtAtSfevZnUJ2DZuE
+id: node.oe_event_organiser_name
+field_name: oe_event_organiser_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

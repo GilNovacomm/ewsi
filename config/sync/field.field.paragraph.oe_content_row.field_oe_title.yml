@@ -1,0 +1,21 @@
+uuid: 6205ee84-6d8a-4606-a1a7-b71cd8b9e454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_title
+    - paragraphs.paragraphs_type.oe_content_row
+_core:
+  default_config_hash: CuLOfQqYVk_pCNjrdZbmDofW4mLchditHyGZhUVIbTI
+id: paragraph.oe_content_row.field_oe_title
+field_name: field_oe_title
+entity_type: paragraph
+bundle: oe_content_row
+label: 'Navigation title'
+description: 'The title to show for the inpage navigation.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 08111163-7231-44b2-85b7-6bba12a66463
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.manual
+id: link_list.manual.status
+field_name: status
+entity_type: link_list
+bundle: manual
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

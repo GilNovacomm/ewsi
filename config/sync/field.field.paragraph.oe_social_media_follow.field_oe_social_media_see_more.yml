@@ -1,0 +1,25 @@
+uuid: 76c68711-9f6a-4981-92d8-f573c39cf9b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_social_media_see_more
+    - paragraphs.paragraphs_type.oe_social_media_follow
+  module:
+    - link
+_core:
+  default_config_hash: 1ukmAnKOrn0crMPfe20msWdu3N5-4LceLptoIuhUqmE
+id: paragraph.oe_social_media_follow.field_oe_social_media_see_more
+field_name: field_oe_social_media_see_more
+entity_type: paragraph
+bundle: oe_social_media_follow
+label: 'See more'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

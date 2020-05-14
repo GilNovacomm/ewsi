@@ -1,0 +1,23 @@
+uuid: 2b822e39-4dd0-4284-8cfb-870b9b6a486a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.oe_media_webtools
+    - media.type.webtools_chart
+  module:
+    - json_field
+_core:
+  default_config_hash: HLUJKi482Uf8BYj4ZW-k1PuYx0ynY0lnkQB3T4xk0BY
+id: media.webtools_chart.oe_media_webtools
+field_name: oe_media_webtools
+entity_type: media
+bundle: webtools_chart
+label: 'Webtools chart snippet'
+description: 'Enter the snippet without the script tag. Snippets can be generated in <a href="https://europa.eu/webtools/mgmt/wizard/" target="_blank">Webtools wizard</a>.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json

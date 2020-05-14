@@ -1,0 +1,11 @@
+uuid: 558effec-aa1b-428b-b9ec-3d705d5e710d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IDcwJRoUF5tDmoSQxffKHzAx8X_1dnm3ziCkAqrrOj4
+id: et
+label: Estonian
+direction: ltr
+weight: 4
+locked: false

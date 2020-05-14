@@ -1,0 +1,21 @@
+uuid: 8cf2a580-e6bc-49dd-9f25-c30d76db6fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.oe_contact.oe_email
+    - oe_content_entity_contact.oe_contact_type.oe_general
+_core:
+  default_config_hash: vWKDuBQMPwtujws_AyDNdXbyigzUFE-FExkUTHTP13g
+id: oe_contact.oe_general.oe_email
+field_name: oe_email
+entity_type: oe_contact
+bundle: oe_general
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

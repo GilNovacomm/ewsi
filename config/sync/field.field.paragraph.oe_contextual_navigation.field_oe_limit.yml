@@ -1,0 +1,25 @@
+uuid: 1ae7d12e-ef32-4d48-b656-270b42a83750
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_limit
+    - paragraphs.paragraphs_type.oe_contextual_navigation
+_core:
+  default_config_hash: 18FXx-2pN2nPLNqIHngnvt6ygYwl9yWZGbcOV57EgCo
+id: paragraph.oe_contextual_navigation.field_oe_limit
+field_name: field_oe_limit
+entity_type: paragraph
+bundle: oe_contextual_navigation
+label: Limit
+description: 'The number of items to display. When empty, defaults to 4.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ' items'
+field_type: integer

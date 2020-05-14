@@ -1,0 +1,20 @@
+uuid: 372f5b12-a33b-47e7-a1ff-e8ff5453fa67
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.av_portal_photo
+id: media.av_portal_photo.name
+field_name: name
+entity_type: media
+bundle: av_portal_photo
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

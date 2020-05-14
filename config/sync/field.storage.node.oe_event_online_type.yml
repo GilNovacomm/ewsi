@@ -1,0 +1,29 @@
+uuid: 4a2b9f2c-cd10-497b-ab98-3282d46c787c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: 11mr7JQSqL2e-wkq8HQnaeDArcK7qeeKwbTozU3bqks
+id: node.oe_event_online_type
+field_name: oe_event_online_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: facebook
+      label: Facebook
+    -
+      value: livestream
+      label: Livestream
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

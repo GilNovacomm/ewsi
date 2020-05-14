@@ -1,0 +1,21 @@
+uuid: 99baf1ce-ef46-429d-9b69-d8ecf62a86a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - oe_link_lists_manual_source
+_core:
+  default_config_hash: JSXi8KjVefNHEnaYkhb5r2OK-HHXGo4SjBTu6uON3Qk
+id: link_list_link.url
+field_name: url
+entity_type: link_list_link
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 37e35ed2-4399-444e-92f1-40d91ab081c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_content_entity_venue.oe_venue_type.oe_default
+id: oe_venue.oe_default.status
+field_name: status
+entity_type: oe_venue
+bundle: oe_default
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

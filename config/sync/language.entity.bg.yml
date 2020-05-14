@@ -1,0 +1,11 @@
+uuid: e111ecaa-300f-4d10-a636-bafd7f0e9f98
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: B2Tg-7pXgeLKTg8xACovdPCEBmU4w5qZbV2rVknjmlU
+id: bg
+label: Bulgarian
+direction: ltr
+weight: 0
+locked: false

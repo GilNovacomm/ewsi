@@ -1,0 +1,18 @@
+uuid: 356f2e3d-f14d-47df-8bef-c3e8aa42d1dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept.skos_concept.example
+field_name: example
+entity_type: skos_concept
+bundle: skos_concept
+label: Example
+description: 'The example of the Concept.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

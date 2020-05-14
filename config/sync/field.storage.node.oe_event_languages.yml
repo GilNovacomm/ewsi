@@ -1,0 +1,22 @@
+uuid: 456b7081-63c0-4612-9a9f-99c90279fe17
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - rdf_skos
+_core:
+  default_config_hash: hkEXZjYo7MSN5qDIkqprXHtHdi7yyNJqQhlVHPMinws
+id: node.oe_event_languages
+field_name: oe_event_languages
+entity_type: node
+type: skos_concept_entity_reference
+settings:
+  target_type: skos_concept
+module: rdf_skos
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

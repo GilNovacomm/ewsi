@@ -1,0 +1,23 @@
+uuid: 9484b6ef-a99f-40ce-8fe6-fe3545c87310
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: uT0yVbJ_lcBTokWQejFhkEfde5IFPMr0_BH6gbcVbAk
+id: node.oe_event_featured_media_legend
+field_name: oe_event_featured_media_legend
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

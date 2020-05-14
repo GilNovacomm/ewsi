@@ -1,0 +1,5 @@
+langcode: en
+resource_base_url: 'https://data.ec.europa.eu/ewp/'
+service_url: 'https://oembed.ec.europa.eu'
+_core:
+  default_config_hash: hDWAQUmv6qOsZaC2xOHZ5VIXI3_F5v5Qjl66iHV--78

@@ -1,0 +1,25 @@
+uuid: 9e3f0d57-7778-44d7-b601-62b90db1dd6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.link_list_link.url
+    - oe_link_lists_manual_source.link_list_link_type.external
+  module:
+    - link
+_core:
+  default_config_hash: 5D0eJ3pyWNgDLwoyvIsm4Qxq5IH6P4GjAiXp3j9x4SM
+id: link_list_link.external.url
+field_name: url
+entity_type: link_list_link
+bundle: external
+label: URL
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

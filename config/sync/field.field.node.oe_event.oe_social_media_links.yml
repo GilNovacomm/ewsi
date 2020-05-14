@@ -1,0 +1,25 @@
+uuid: 6f21c3fa-a0bf-4602-ba94-00b1f3f9517a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_social_media_links
+    - node.type.oe_event
+  module:
+    - typed_link
+_core:
+  default_config_hash: b-vK3kjXP7mH48mdprJ8ysuOvrKM1udNU1buzGUXNig
+id: node.oe_event.oe_social_media_links
+field_name: oe_social_media_links
+entity_type: node
+bundle: oe_event
+label: 'Social media links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: typed_link

@@ -1,0 +1,18 @@
+uuid: a5606e99-2c3e-45d0-b19d-1ff049b27e10
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept.skos_concept.change_note
+field_name: change_note
+entity_type: skos_concept
+bundle: skos_concept
+label: 'Change Note'
+description: 'The change note of the Concept.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

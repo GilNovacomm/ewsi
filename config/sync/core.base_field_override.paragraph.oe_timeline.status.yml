@@ -1,0 +1,22 @@
+uuid: ffcde58e-f46a-4ee1-af6e-53f9ef4b9d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_timeline
+id: paragraph.oe_timeline.status
+field_name: status
+entity_type: paragraph
+bundle: oe_timeline
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

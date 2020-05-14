@@ -1,0 +1,22 @@
+uuid: a5701578-7659-4ac7-b39c-9149a4ca9c42
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_event
+id: node.oe_event.status
+field_name: status
+entity_type: node
+bundle: oe_event
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

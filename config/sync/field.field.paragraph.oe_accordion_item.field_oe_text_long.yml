@@ -1,0 +1,23 @@
+uuid: 063b75aa-2682-41b0-a2a9-943f483405b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_accordion_item
+  module:
+    - text
+_core:
+  default_config_hash: 9_C2GVAJ5bIlvMoyDBNy1_Wq9Ajm_j5VZJ1zZ3zfXYw
+id: paragraph.oe_accordion_item.field_oe_text_long
+field_name: field_oe_text_long
+entity_type: paragraph
+bundle: oe_accordion_item
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

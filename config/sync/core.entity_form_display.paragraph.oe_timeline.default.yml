@@ -1,0 +1,32 @@
+uuid: aa4dcb86-c998-4786-a1c3-02c39b875775
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_timeline.field_oe_timeline
+    - field.field.paragraph.oe_timeline.field_oe_timeline_expand
+    - paragraphs.paragraphs_type.oe_timeline
+  module:
+    - oe_content_timeline_field
+_core:
+  default_config_hash: HMLtH0AbQX4ZqU9lkSwYvh4IiF_wo2Iy-KdRK9t0jl4
+id: paragraph.oe_timeline.default
+targetEntityType: paragraph
+bundle: oe_timeline
+mode: default
+content:
+  field_oe_timeline:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: timeline_widget
+    region: content
+  field_oe_timeline_expand:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

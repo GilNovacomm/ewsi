@@ -1,0 +1,10 @@
+uuid: 9f10d1e5-2fa4-419c-919e-822ef1e8d8c8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GX3J36NbsWUEe88M8gWMFL9-eHKIos9pI_E8xzMbro4
+id: oe_event_date
+label: 'Event date'
+locked: false
+pattern: 'j F Y'

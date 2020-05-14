@@ -1,0 +1,26 @@
+uuid: 22d8b168-f3bf-48e5-8a85-0f69b3dfea76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_publication_date
+    - node.type.oe_news
+  module:
+    - datetime
+_core:
+  default_config_hash: pLvEnmDSwZEoP_LgcGCqaxrsw0GJOtMHSnkXo27c3lQ
+id: node.oe_news.oe_publication_date
+field_name: oe_publication_date
+entity_type: node
+bundle: oe_news
+label: 'Publication date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

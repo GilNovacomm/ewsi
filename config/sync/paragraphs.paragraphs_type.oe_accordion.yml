@@ -1,0 +1,12 @@
+uuid: b72bbe5a-b7cd-418f-8c08-586edaa90d60
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5mW5aZl67fk1zy5S10rz73G8WvOa840xCwBW_c_ySrA
+id: oe_accordion
+label: Accordion
+icon_uuid: null
+icon_default: null
+description: 'Accordions are a collection of collapsible items, each of which is composed by the following fields: an icon, a title and a long text.'
+behavior_plugins: {  }

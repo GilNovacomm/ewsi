@@ -1,0 +1,22 @@
+uuid: 4b89e3e2-b4d4-4036-90ba-97409a6a4169
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - oe_link_lists_manual_source
+_core:
+  default_config_hash: 8qqwb3bGPrCm8s2lnLf4zDykd1qkESB3KKgbbZlveTQ
+id: link_list_link.target
+field_name: target
+entity_type: link_list_link
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

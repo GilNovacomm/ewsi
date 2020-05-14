@@ -1,0 +1,25 @@
+uuid: d7f83fed-aba0-4c48-94b8-fa36d4019e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_link
+    - paragraphs.paragraphs_type.oe_list_item_block
+  module:
+    - link
+_core:
+  default_config_hash: 7utJ6pts2S7oteWxxQ3RAuhMphmxDeHa2RnLR7dhfBs
+id: paragraph.oe_list_item_block.field_oe_link
+field_name: field_oe_link
+entity_type: paragraph
+bundle: oe_list_item_block
+label: 'Call to action'
+description: 'Internal or external link to use for a call to action button.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

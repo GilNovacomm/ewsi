@@ -1,0 +1,37 @@
+uuid: 68d6ec9b-0924-4d19-8c38-e9e6c491bf24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_author
+    - node.type.oe_policy
+  module:
+    - rdf_skos
+_core:
+  default_config_hash: F_adom3dRwfVe9Wte0hhVIaUOoWppWjMnZx_sVKj_wU
+id: node.oe_policy.oe_author
+field_name: oe_author
+entity_type: node
+bundle: oe_policy
+label: 'Responsible department'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:skos_concept'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+    concept_schemes:
+      - 'http://publications.europa.eu/resource/authority/corporate-body'
+    field:
+      field_name: oe_author
+      entity_type: node
+      bundle: oe_policy
+      concept_schemes:
+        - 'http://publications.europa.eu/resource/authority/corporate-body'
+field_type: skos_concept_entity_reference

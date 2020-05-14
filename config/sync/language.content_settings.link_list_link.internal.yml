@@ -1,0 +1,18 @@
+uuid: 80167977-90ff-41a6-938e-e0760573bea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists_manual_source.link_list_link_type.internal
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: link_list_link.internal
+target_entity_type_id: link_list_link
+target_bundle: internal
+default_langcode: site_default
+language_alterable: false

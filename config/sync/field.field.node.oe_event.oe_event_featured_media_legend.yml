@@ -1,0 +1,21 @@
+uuid: ec14af33-d45c-4fb3-99c2-34d851973a75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_featured_media_legend
+    - node.type.oe_event
+_core:
+  default_config_hash: 8PObw6X5DsJhLL9h02_bqpPO-aBMqT83mR7PF5HOk04
+id: node.oe_event.oe_event_featured_media_legend
+field_name: oe_event_featured_media_legend
+entity_type: node
+bundle: oe_event
+label: 'Featured media legend'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

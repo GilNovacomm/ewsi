@@ -1,0 +1,22 @@
+uuid: 39f299cd-e95c-4a66-a47e-e54cdc58f8e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_policy
+id: node.oe_policy.status
+field_name: status
+entity_type: node
+bundle: oe_policy
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,10 @@
+uuid: f14d5dc9-5e02-44e3-bef0-2b4b943dfa4a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jRkERK--OVIwwQZ2Oaqn2SIm4yRI68DvuDOBI8rjkYI
+id: oe_theme_news_date
+label: 'News date'
+locked: false
+pattern: 'j F Y'

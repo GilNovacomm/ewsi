@@ -1,0 +1,18 @@
+uuid: 69c80a77-d8f0-43b3-9403-a30e8111dfa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.dynamic
+id: link_list.dynamic.administrative_title
+field_name: administrative_title
+entity_type: link_list
+bundle: dynamic
+label: 'Administrative title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

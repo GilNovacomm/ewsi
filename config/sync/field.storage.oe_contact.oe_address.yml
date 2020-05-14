@@ -1,0 +1,21 @@
+uuid: 9c45cc79-2eed-41fd-8ae6-9573701d059f
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - oe_content_entity_contact
+_core:
+  default_config_hash: zYSicOlJQqNznluq_b8CkgNzJxkThlHaR2I5F2sfh8U
+id: oe_contact.oe_address
+field_name: oe_address
+entity_type: oe_contact
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: fdee4ba8-d049-4f0d-8a43-e8a6137adf24
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gw_LJUaN7EwawyB5nPWjJilVLG9tjn-vNx8znAFIVRk
+id: oe_facts_figures
+label: 'Facts and figures'
+icon_uuid: null
+icon_default: null
+description: 'The facts and figures paragraph is used to deliver numerical representations of facts that are easier to portray visually through the use of statistics.'
+behavior_plugins: {  }

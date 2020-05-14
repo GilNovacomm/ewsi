@@ -1,0 +1,25 @@
+uuid: 16391dff-b53a-4168-ab1d-5b82f371257b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_links
+    - paragraphs.paragraphs_type.oe_contextual_navigation
+  module:
+    - link
+_core:
+  default_config_hash: 5dUP87G4zY3As_mIVPeeWvos2M6QN16v7G0BOe3PsVU
+id: paragraph.oe_contextual_navigation.field_oe_links
+field_name: field_oe_links
+entity_type: paragraph
+bundle: oe_contextual_navigation
+label: Links
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,8 @@
+uuid: bd096d54-f991-4e6c-a7b4-c8506a4fafb7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4ld5XOtI8GavFl4E1g5_8HryrcRoYQ6crkJWjW3fIaw
+id: manual
+label: Manual

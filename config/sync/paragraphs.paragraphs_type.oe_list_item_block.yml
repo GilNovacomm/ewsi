@@ -1,0 +1,12 @@
+uuid: 4087246d-78d2-4a8b-9b31-0829258df42f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dHzSO0zEC_-m2rf-9WOsl3y6wNm_8T9lKiySamgms4A
+id: oe_list_item_block
+label: 'Listing item block'
+icon_uuid: null
+icon_default: null
+description: 'Display multiple list items organised in columns.'
+behavior_plugins: {  }

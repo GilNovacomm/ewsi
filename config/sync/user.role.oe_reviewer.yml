@@ -1,0 +1,18 @@
+uuid: 77c90c99-c947-4a1b-9021-10b110cd12f7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _34WDCljpGGlhIhsmhKCA_zChFHqPZ9VqCCJbaLfZN4
+id: oe_reviewer
+label: Reviewer
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'use oe_corporate_workflow transition needs_review_to_draft'
+  - 'use oe_corporate_workflow transition needs_review_to_needs_review'
+  - 'use oe_corporate_workflow transition needs_review_to_request_validation'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'

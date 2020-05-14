@@ -1,0 +1,23 @@
+uuid: c71b5476-ad80-4456-839c-2ec620dc37d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_timeline
+    - paragraphs.paragraphs_type.oe_timeline
+  module:
+    - oe_content_timeline_field
+_core:
+  default_config_hash: hL8RA9sjcQltE0bn0LIsY36khOyToB2jO9EqdIU1txM
+id: paragraph.oe_timeline.field_oe_timeline
+field_name: field_oe_timeline
+entity_type: paragraph
+bundle: oe_timeline
+label: Items
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timeline_field

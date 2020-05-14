@@ -1,0 +1,11 @@
+uuid: 37e2b673-0acb-4d96-8b7f-c3a6a4aeaa77
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FnfOwYoWjIymeEBpXcMPE7edmlF1sF74akSNlHbyuyE
+id: pl
+label: Polish
+direction: ltr
+weight: 17
+locked: false

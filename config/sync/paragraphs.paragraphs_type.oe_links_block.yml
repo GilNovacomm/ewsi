@@ -1,0 +1,12 @@
+uuid: 3084a87d-0444-4774-bca9-dc90c7b58ca9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: e6TOyYNNoVxiP1QXtAUWt18MTCIZt3PC6YKD2Ptp4ZE
+id: oe_links_block
+label: 'Links block'
+icon_uuid: null
+icon_default: null
+description: 'A set of links with an optional title. This component should be placed in the sidebar only.'
+behavior_plugins: {  }

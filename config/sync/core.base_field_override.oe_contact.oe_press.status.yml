@@ -1,0 +1,22 @@
+uuid: f47d8617-b616-4276-967f-279165bc3be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_content_entity_contact.oe_contact_type.oe_press
+id: oe_contact.oe_press.status
+field_name: status
+entity_type: oe_contact
+bundle: oe_press
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

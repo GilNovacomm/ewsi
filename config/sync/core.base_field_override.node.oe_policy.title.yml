@@ -1,0 +1,20 @@
+uuid: c1c69d34-af0d-4fd8-823a-f11192169beb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_policy
+_core:
+  default_config_hash: V0gZaWV-tjUbfXt1ycKkv5gnMsFQw5C0WjRDlDcYufk
+id: node.oe_policy.title
+field_name: title
+entity_type: node
+bundle: oe_policy
+label: 'Page title'
+description: 'The ideal length is 50 to 60 characters including spaces. If it must be longer, make sure you fill in a shorter version in the Alternative title field.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

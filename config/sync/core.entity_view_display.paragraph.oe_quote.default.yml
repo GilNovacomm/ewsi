@@ -1,0 +1,33 @@
+uuid: 5706e237-1a51-4720-88b5-da81801413bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_quote.field_oe_plain_text_long
+    - field.field.paragraph.oe_quote.field_oe_text
+    - paragraphs.paragraphs_type.oe_quote
+  module:
+    - text
+_core:
+  default_config_hash: O0ZNbd7130E0K7bvXQhnVjMRGIVDZya2TMUPAlysNT4
+id: paragraph.oe_quote.default
+targetEntityType: paragraph
+bundle: oe_quote
+mode: default
+content:
+  field_oe_plain_text_long:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_oe_text:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
