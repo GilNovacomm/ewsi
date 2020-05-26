@@ -86,6 +86,7 @@ module:
   oe_paragraphs_social_feed: 0
   oe_paragraphs_timeline: 0
   oe_search: 0
+  oe_time_caching: 0
   oe_theme_content_entity_contact: 0
   oe_theme_content_entity_venue: 0
   oe_theme_content_event: 0
