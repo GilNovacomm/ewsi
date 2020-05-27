@@ -46,3 +46,12 @@ toolkit:
 commands:
   drupal:setup-test:
   - { task: "process", source: "behat.yml.dist", destination: "behat.yml" }
+
+additional_settings: |
+    $databases['sparql_default']['default'] = [
+      'prefix' => '',
+      'host' => getenv('DRUPAL_SPARQL_HOSTNAME'),
+      'port' => getenv('DRUPAL_SPARQL_PORT'),
+      'namespace' => 'Drupal\\Driver\\Database\\sparql',
+      'driver' => 'sparql',
+    ];
