@@ -1,4 +1,4 @@
-uuid: 37f0e84f-b031-4b42-83e3-940e084c0cec
+uuid: a119c7c3-7a38-45e7-8cbe-053ad94c9f2f
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
 id: investeu_events
 label: 'InvestEU Events'
 type: 'canonical_entities:node'
-pattern: 'event/[node:source:title]'
+pattern: 'events/[node:source:title]'
 selection_criteria:
-  21ca1c6b-2d73-4b3a-ac25-8a21f44dedc8:
+  fd5e2f64-8d65-49f1-91b9-52527f54d3e6:
     id: node_type
     bundles:
       oe_event: oe_event
     negate: false
     context_mapping:
       node: node
-    uuid: 21ca1c6b-2d73-4b3a-ac25-8a21f44dedc8
+    uuid: fd5e2f64-8d65-49f1-91b9-52527f54d3e6
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -1,0 +1,12 @@
+include:
+  - a.laco
+exclude:
+  - .nolaco
+  - .more-link
+  - .pager
+coverage:
+  document: any
+  page: any
+icon: all
+_core:
+  default_config_hash: XirdiUCPen51cR0h3hyL2sUzz7MGp7ZVs0sXHYrvkYs

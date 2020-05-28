@@ -1,4 +1,4 @@
-uuid: 121072af-1abb-4f97-b7d1-8f03b72fc33a
+uuid: 558c4fb5-9495-4604-a699-1c245241df71
 langcode: en
 status: true
 dependencies:
@@ -214,4 +214,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

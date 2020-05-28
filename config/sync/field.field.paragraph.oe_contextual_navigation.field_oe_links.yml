@@ -1,4 +1,4 @@
-uuid: 16391dff-b53a-4168-ab1d-5b82f371257b
+uuid: 57d9195f-ca08-4619-a47b-4c51f20544d5
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: oe_contextual_navigation
 label: Links
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

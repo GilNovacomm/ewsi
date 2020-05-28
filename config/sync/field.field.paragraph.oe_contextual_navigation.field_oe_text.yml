@@ -1,4 +1,4 @@
-uuid: bf6b9b68-a63f-4e66-8ce0-0abb558a1e56
+uuid: 2665ef51-f1f8-42c2-8c67-843d23bd72b5
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ bundle: oe_contextual_navigation
 label: 'More label'
 description: 'The label for the link that displays all the items. When empty, defaults to "More".'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

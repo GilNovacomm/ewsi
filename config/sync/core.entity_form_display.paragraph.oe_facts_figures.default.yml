@@ -1,4 +1,4 @@
-uuid: 8766afc7-a1af-4538-8ca1-e3a79171ddec
+uuid: 478e5cfb-079a-4f96-9a76-97c697e0eb44
 langcode: en
 status: true
 dependencies:
@@ -40,8 +40,8 @@ content:
       autocollapse: none
       closed_mode_threshold: 0
       features:
-        duplicate: duplicate
         collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_oe_title:
     type: string_textfield
@@ -51,6 +51,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   created: true
   status: true

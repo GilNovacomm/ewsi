@@ -1,4 +1,4 @@
-uuid: ddeb8c2f-4be8-4fb9-87dd-502902bba7ea
+uuid: 8b63629a-fe3d-4959-a48e-6da9e4404d7a
 langcode: en
 status: true
 dependencies:
@@ -41,6 +41,7 @@ dependencies:
     - oe_theme_helper
     - options
     - rdf_skos
+    - user
 third_party_settings:
   field_group:
     group_practical_information:

@@ -1,4 +1,4 @@
-uuid: fcac26c0-5eb3-47a4-9f06-2dd4a08fc2ae
+uuid: c211aef9-e221-4fdf-89c6-f62a241f262c
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: oe_page
 label: 'Related links'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

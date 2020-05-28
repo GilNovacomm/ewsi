@@ -1,4 +1,4 @@
-uuid: d95309b5-fb4c-4e21-bdb1-36b4a98c6edd
+uuid: f2d1f9f2-6caa-4b3b-81c8-b9c69b9e2293
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: oe_event
 label: 'Online type'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -1,4 +1,4 @@
-uuid: bf2eccad-6dd5-4eab-b63f-48548bc42a6a
+uuid: a0ae7553-b3a4-41df-8ba2-b182689ee948
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
 id: investeu_policies
 label: 'InvestEU Policies'
 type: 'canonical_entities:node'
-pattern: 'policy/[node:source:title]'
+pattern: 'policies/[node:source:title]'
 selection_criteria:
-  8211e957-85cc-4ec0-835f-d637c19a9cad:
+  3ac47a68-2b7c-4789-8228-9b661e611976:
     id: node_type
     bundles:
       oe_policy: oe_policy
     negate: false
     context_mapping:
       node: node
-    uuid: 8211e957-85cc-4ec0-835f-d637c19a9cad
+    uuid: 3ac47a68-2b7c-4789-8228-9b661e611976
 selection_logic: and
 weight: -5
 relationships: {  }

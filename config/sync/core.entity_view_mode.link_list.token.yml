@@ -1,0 +1,10 @@
+uuid: 8a6e3310-fd3e-45e8-b77b-f46abb7e9972
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_link_lists
+id: link_list.token
+label: Token
+targetEntityType: link_list
+cache: true

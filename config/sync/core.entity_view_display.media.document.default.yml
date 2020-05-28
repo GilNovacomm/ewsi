@@ -1,4 +1,4 @@
-uuid: b53a605b-36e4-4e3c-986c-ac45ef991448
+uuid: 6b0dced3-7e56-4703-ad45-e568f53b3531
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,6 @@ dependencies:
     - media.type.document
   module:
     - file
-    - oe_media_embed
-third_party_settings:
-  oe_media_embed:
-    embeddable: false
 _core:
   default_config_hash: n4V0ZWJfdgQ6WU6hDuy4uDYqVN_nsboMtlhzZxqtIIo
 id: media.document.default

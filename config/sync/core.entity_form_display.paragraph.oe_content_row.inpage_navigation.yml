@@ -1,4 +1,4 @@
-uuid: d4ca1796-b9c4-46be-bd79-fe309954e7f2
+uuid: 1c4b7f15-d9cb-4da2-866d-db6eb452595a
 langcode: en
 status: true
 dependencies:
@@ -29,9 +29,9 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
     type: oe_paragraphs_variants
     region: content

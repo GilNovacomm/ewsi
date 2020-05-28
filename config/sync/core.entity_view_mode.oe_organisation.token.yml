@@ -1,0 +1,10 @@
+uuid: bffc5542-8f1b-4cc7-98b2-c9254d2df6b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_organisation
+id: oe_organisation.token
+label: Token
+targetEntityType: oe_organisation
+cache: true

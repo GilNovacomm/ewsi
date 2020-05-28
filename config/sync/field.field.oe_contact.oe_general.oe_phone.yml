@@ -1,4 +1,4 @@
-uuid: fdd480c4-4c31-4855-8679-b7a1a2631b5d
+uuid: c0e12618-a067-4251-abcf-f08245bd234c
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ bundle: oe_general
 label: 'Phone number'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -1,4 +1,4 @@
-uuid: ca722d13-133f-42df-935b-3e083f9a3c73
+uuid: 90b51077-27e4-451d-a8e4-a389a4fc1429
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ bundle: oe_text_feature_media
 label: Caption
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

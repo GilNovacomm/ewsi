@@ -1,4 +1,4 @@
-uuid: 82147456-1c74-4cb2-ad34-f001fb5e5dfd
+uuid: ddd97841-25d3-4a10-bf48-5241fbe11096
 langcode: en
 status: true
 dependencies:
@@ -8,13 +8,13 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: false
+    enabled: true
     bundle_settings:
-      untranslatable_fields_hide: '0'
+      untranslatable_fields_hide: '1'
 _core:
   default_config_hash: EWjA-b__FWdwoFAHRAL6da7iP_zh35UI5-JvbHCWM-o
 id: oe_contact.oe_press
 target_entity_type_id: oe_contact
 target_bundle: oe_press
-default_langcode: site_default
+default_langcode: en
 language_alterable: true

@@ -1,4 +1,4 @@
-uuid: fba1d683-93a0-48ee-a9aa-5f02b67b7c06
+uuid: bc118871-143b-49e3-95da-74679dc47a72
 langcode: en
 status: true
 dependencies:
@@ -15,4 +15,4 @@ id: media.av_portal_photo
 target_entity_type_id: media
 target_bundle: av_portal_photo
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

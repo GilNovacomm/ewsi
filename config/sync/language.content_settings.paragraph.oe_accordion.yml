@@ -1,4 +1,4 @@
-uuid: f5b2f0d1-07f2-4dc6-a37e-ed43eb2b2ae5
+uuid: e9f87213-5671-49e8-9fa9-af5697f22b02
 langcode: en
 status: true
 dependencies:
@@ -16,5 +16,5 @@ _core:
 id: paragraph.oe_accordion
 target_entity_type_id: paragraph
 target_bundle: oe_accordion
-default_langcode: site_default
+default_langcode: en
 language_alterable: true

@@ -1,4 +1,4 @@
-uuid: a40eddcb-9a15-4395-aeab-0415ba5b619c
+uuid: 09515faf-6519-46e6-a002-2b2fefb842a9
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
 id: paragraph.oe_social_media_follow
 target_entity_type_id: paragraph
 target_bundle: oe_social_media_follow
-default_langcode: en
-language_alterable: true
+default_langcode: site_default
+language_alterable: false

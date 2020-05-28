@@ -1,4 +1,4 @@
-uuid: 6f21c3fa-a0bf-4602-ba94-00b1f3f9517a
+uuid: 9e643e21-b89e-4be9-8e21-2ceb934baeaa
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: oe_event
 label: 'Social media links'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -12,7 +12,6 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "^1.8",
         "drupal/admin_toolbar": "^2.2",
-        "drupal/adminimal_theme": "^1.5",
         "drupal/core": "^8.7",
         "drupal/entity_version_workflows": "^1.0@beta",
         "drupal/extra_field": "^1.2",

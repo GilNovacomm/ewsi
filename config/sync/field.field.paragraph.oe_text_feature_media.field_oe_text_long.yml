@@ -1,4 +1,4 @@
-uuid: 61f7444e-a642-45d3-acf9-0263f0a08992
+uuid: e5e97777-d8c6-4bb1-a073-7db0ec775b77
 langcode: en
 status: true
 dependencies:
@@ -20,7 +20,7 @@ bundle: oe_text_feature_media
 label: 'Full text'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

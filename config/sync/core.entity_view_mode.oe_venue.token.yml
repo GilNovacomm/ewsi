@@ -1,0 +1,10 @@
+uuid: 040e7e83-ad21-4d01-95a2-c7a134a2ac53
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_venue
+id: oe_venue.token
+label: Token
+targetEntityType: oe_venue
+cache: true

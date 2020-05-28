@@ -1,4 +1,4 @@
-uuid: f06dcc2a-53e1-4857-8a17-e2d1d1c188aa
+uuid: 42e5e317-5b82-435d-95ed-44375e911699
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ label: 'InvestEU Pages'
 type: 'canonical_entities:node'
 pattern: 'page/[node:source:title]'
 selection_criteria:
-  dc00452d-9951-4b76-af5c-d8114aa20894:
+  e4cef45d-0839-4198-a5a0-91a20d84b6d2:
     id: node_type
     bundles:
       oe_page: oe_page
     negate: false
     context_mapping:
       node: node
-    uuid: dc00452d-9951-4b76-af5c-d8114aa20894
+    uuid: e4cef45d-0839-4198-a5a0-91a20d84b6d2
 selection_logic: and
 weight: -5
 relationships: {  }

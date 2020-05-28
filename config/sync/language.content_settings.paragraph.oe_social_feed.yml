@@ -1,4 +1,4 @@
-uuid: d3c0c0ac-d621-4bfe-91ca-f741ed079892
+uuid: 05f56341-5ada-4faf-81a8-5f0a25d1f490
 langcode: en
 status: true
 dependencies:
@@ -16,5 +16,5 @@ _core:
 id: paragraph.oe_social_feed
 target_entity_type_id: paragraph
 target_bundle: oe_social_feed
-default_langcode: en
+default_langcode: site_default
 language_alterable: true

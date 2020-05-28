@@ -1,4 +1,4 @@
-uuid: 42cffc49-2e23-4524-a1c1-391e4f381965
+uuid: eaf580e1-3aab-44e1-b2a4-461fe83d5383
 langcode: en
 status: true
 dependencies:
@@ -11,9 +11,9 @@ dependencies:
 third_party_settings:
   content_translation:
     translation_sync:
-      file: file
-      alt: '0'
-      title: '0'
+      alt: alt
+      title: title
+      file: '0'
 _core:
   default_config_hash: P4t_N-XwS9Cbh98KThBLfEJdBLEq7o6NKAIvI0iwzXw
 id: media.image.oe_media_image

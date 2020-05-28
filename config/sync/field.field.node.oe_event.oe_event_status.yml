@@ -1,4 +1,4 @@
-uuid: 1a08dd29-3e74-4f08-a9e0-5b240fd6e0f8
+uuid: caa5d595-44cd-458f-9736-1ead35f34dc0
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: oe_event
 label: Status
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: as_planned

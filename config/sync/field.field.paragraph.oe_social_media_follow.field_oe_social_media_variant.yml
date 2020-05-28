@@ -1,4 +1,4 @@
-uuid: a031d8af-67c5-443a-beaa-b661c40082b0
+uuid: 943b01ef-e4f5-4826-b229-21d38c3410ce
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: oe_social_media_follow
 label: Variant
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: horizontal

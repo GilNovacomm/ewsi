@@ -1,18 +1,11 @@
-uuid: e82688d5-d666-41ab-a024-f94abbebe9fb
+uuid: ae46e0a4-1ba2-4209-a6ce-5ffc0a71eee8
 langcode: en
 status: true
 dependencies:
   config:
     - media.type.document
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      file: file
-      alt: 0
-      title: 0
 id: media.document.thumbnail
 field_name: thumbnail
 entity_type: media
@@ -20,7 +13,7 @@ bundle: document
 label: Thumbnail
 description: 'The thumbnail of the media item.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

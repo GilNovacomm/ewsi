@@ -86,7 +86,6 @@ module:
   oe_paragraphs_social_feed: 0
   oe_paragraphs_timeline: 0
   oe_search: 0
-  oe_time_caching: 0
   oe_theme_content_entity_contact: 0
   oe_theme_content_entity_venue: 0
   oe_theme_content_event: 0
@@ -95,6 +94,7 @@ module:
   oe_theme_content_policy: 0
   oe_theme_content_publication: 0
   oe_theme_helper: 0
+  oe_time_caching: 0
   oe_translation: 0
   oe_translation_poetry: 0
   oe_translation_poetry_html_formatter: 0
@@ -104,6 +104,8 @@ module:
   oe_webtools_analytics_rules: 0
   oe_webtools_cookie_consent: 0
   oe_webtools_globan: 0
+  oe_webtools_laco_service: 0
+  oe_webtools_laco_widget: 0
   oe_webtools_maps: 0
   oe_webtools_media: 0
   oe_webtools_social_share: 0
@@ -132,6 +134,7 @@ module:
   ui_patterns_library: 0
   update: 0
   user: 0
+  views_ui: 0
   workflows: 0
   menu_link_content: 1
   pathauto: 1
