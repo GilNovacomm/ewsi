@@ -40,6 +40,7 @@ module:
   maxlength: 0
   media: 0
   media_avportal: 0
+  neutral_paths: 0
   node: 0
   oe_authentication: 0
   oe_content: 0

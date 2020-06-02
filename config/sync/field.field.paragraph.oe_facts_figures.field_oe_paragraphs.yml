@@ -27,9 +27,6 @@ settings:
     target_bundles:
       oe_fact: oe_fact
     target_bundles_drag_drop:
-      oe_facts_figures:
-        weight: 14
-        enabled: false
       oe_accordion:
         weight: 15
         enabled: false
@@ -45,6 +42,9 @@ settings:
       oe_fact:
         enabled: true
         weight: 19
+      oe_facts_figures:
+        weight: 14
+        enabled: false
       oe_links_block:
         weight: 20
         enabled: false

@@ -1,0 +1,20 @@
+uuid: 5c1e7dbf-c272-4c92-a4f5-64074bf0a5e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_landing_page
+  module:
+    - path
+id: node.investeu_landing_page.path
+field_name: path
+entity_type: node
+bundle: investeu_landing_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

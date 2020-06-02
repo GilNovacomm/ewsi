@@ -1,0 +1,20 @@
+uuid: e0925a24-6803-4a8b-804b-82159f605ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_landing_page
+id: node.investeu_landing_page.uid
+field_name: uid
+entity_type: node
+bundle: investeu_landing_page
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
