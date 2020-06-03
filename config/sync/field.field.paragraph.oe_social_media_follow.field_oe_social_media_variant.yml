@@ -1,0 +1,25 @@
+uuid: 943b01ef-e4f5-4826-b229-21d38c3410ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_social_media_variant
+    - paragraphs.paragraphs_type.oe_social_media_follow
+  module:
+    - options
+_core:
+  default_config_hash: LAvk-mJEoeFyCcHI1NmWlqp7DWppbrNxAsprQ7fAXWU
+id: paragraph.oe_social_media_follow.field_oe_social_media_variant
+field_name: field_oe_social_media_variant
+entity_type: paragraph
+bundle: oe_social_media_follow
+label: Variant
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: horizontal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+uuid: 87c96fa2-cd67-4fa8-ba66-65b37468126a
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+_core:
+  default_config_hash: RCHySgosoIpwjTQuxEAcC2VPxmfSVO6lJDVD-yLiOrg
+id: node.oe_event_online_dates
+field_name: oe_event_online_dates
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

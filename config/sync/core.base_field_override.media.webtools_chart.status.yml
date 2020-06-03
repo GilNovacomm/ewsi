@@ -1,0 +1,22 @@
+uuid: 2bf7d49b-4b11-4c3e-aec6-d68a5a565157
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.webtools_chart
+id: media.webtools_chart.status
+field_name: status
+entity_type: media
+bundle: webtools_chart
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

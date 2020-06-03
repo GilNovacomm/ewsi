@@ -1,0 +1,21 @@
+uuid: 4389aeed-354d-4fb4-97f0-9e998d576571
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_title
+    - paragraphs.paragraphs_type.oe_banner
+_core:
+  default_config_hash: YdPo9M_W8F2UEZWiyWCbKy1LN-pLlj-WtsPLgRtoaOM
+id: paragraph.oe_banner.field_oe_title
+field_name: field_oe_title
+entity_type: paragraph
+bundle: oe_banner
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

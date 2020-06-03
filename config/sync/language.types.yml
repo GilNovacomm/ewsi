@@ -1,0 +1,42 @@
+all:
+  - language_interface
+  - language_content
+  - language_url
+configurable:
+  - language_interface
+  - language_content
+negotiation:
+  language_content:
+    enabled:
+      oe-multilingual-url-suffix-negotiation-method: -20
+      language-selected: -13
+    method_weights:
+      oe-multilingual-url-suffix-negotiation-method: -20
+      language-url: -19
+      language-content-entity: -18
+      language-session: -17
+      language-user: -16
+      language-browser: -15
+      language-interface: -14
+      language-selected: -13
+  language_url:
+    enabled:
+      oe-multilingual-url-suffix-negotiation-method: 0
+      language-url-fallback: 1
+  language_interface:
+    enabled:
+      oe-multilingual-url-suffix-negotiation-method: -20
+      language-selection-page: -19
+      language-selected: -12
+    method_weights:
+      language-selection-page: -19
+      language-admin: -18
+      language-url: -17
+      oe-multilingual-url-suffix-negotiation-method: -20
+      language-user-admin: -16
+      language-session: -15
+      language-user: -14
+      language-browser: -13
+      language-selected: -12
+_core:
+  default_config_hash: dqouFqVseNJNvEjsoYKxbinFOITuCxYhi4y2OTNQP_8

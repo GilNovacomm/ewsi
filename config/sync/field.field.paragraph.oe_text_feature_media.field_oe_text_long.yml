@@ -1,0 +1,27 @@
+uuid: e5e97777-d8c6-4bb1-a073-7db0ec775b77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_text_feature_media
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: '0'
+_core:
+  default_config_hash: KrIah_IIa3z5U2sRF9yyFHFRBj6Wpw2PhJElNgXfogA
+id: paragraph.oe_text_feature_media.field_oe_text_long
+field_name: field_oe_text_long
+entity_type: paragraph
+bundle: oe_text_feature_media
+label: 'Full text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

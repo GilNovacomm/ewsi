@@ -1,0 +1,22 @@
+uuid: ca606de0-7b65-41e1-90a7-348e19f77cb4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9dT0yWk_TD12x3NSSA6Oa1Fb7WbD06KSmU0Rof59nKg
+id: oe_validator
+label: Validator
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'use oe_corporate_workflow transition published_to_archived'
+  - 'use oe_corporate_workflow transition published_to_expired'
+  - 'use oe_corporate_workflow transition request_validation_to_draft'
+  - 'use oe_corporate_workflow transition request_validation_to_needs_review'
+  - 'use oe_corporate_workflow transition request_validation_to_validated'
+  - 'use oe_corporate_workflow transition validated_to_draft'
+  - 'use oe_corporate_workflow transition validated_to_published'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'

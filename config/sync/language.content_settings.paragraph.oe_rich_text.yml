@@ -1,0 +1,20 @@
+uuid: 3c4fa695-9941-4354-a699-dac1c99441cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_rich_text
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: u1cgH6npHbxeig0UYx6Nq9MjJklqBDXAxRt8VNKxP7g
+id: paragraph.oe_rich_text
+target_entity_type_id: paragraph
+target_bundle: oe_rich_text
+default_langcode: en
+language_alterable: true

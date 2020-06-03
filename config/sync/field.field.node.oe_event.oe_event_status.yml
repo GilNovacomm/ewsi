@@ -1,0 +1,25 @@
+uuid: caa5d595-44cd-458f-9736-1ead35f34dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_status
+    - node.type.oe_event
+  module:
+    - options
+_core:
+  default_config_hash: TvWjy1Y48grwjahb_XIBLgjlWfOqM8KvZYTQjHunmNU
+id: node.oe_event.oe_event_status
+field_name: oe_event_status
+entity_type: node
+bundle: oe_event
+label: Status
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: as_planned
+default_value_callback: ''
+settings: {  }
+field_type: list_string

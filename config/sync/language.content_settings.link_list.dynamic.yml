@@ -1,0 +1,18 @@
+uuid: 1df6cd92-4be9-4797-a25c-3a484c3b1539
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.dynamic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: link_list.dynamic
+target_entity_type_id: link_list
+target_bundle: dynamic
+default_langcode: site_default
+language_alterable: false

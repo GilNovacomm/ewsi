@@ -1,0 +1,10 @@
+uuid: b3c738e7-7065-45e8-bb30-6510d88fda04
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept_scheme.token
+label: Token
+targetEntityType: skos_concept_scheme
+cache: true

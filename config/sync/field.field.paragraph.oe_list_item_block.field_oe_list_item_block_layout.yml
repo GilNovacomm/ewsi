@@ -1,0 +1,23 @@
+uuid: b9839d0c-5469-4ad3-93b9-766f33f75d4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_list_item_block_layout
+    - paragraphs.paragraphs_type.oe_list_item_block
+  module:
+    - options
+_core:
+  default_config_hash: Ta7TEd-PfJkPFuK6OWOfN4Xb7cRA5l6g5KbvYLi8vwQ
+id: paragraph.oe_list_item_block.field_oe_list_item_block_layout
+field_name: field_oe_list_item_block_layout
+entity_type: paragraph
+bundle: oe_list_item_block
+label: Layout
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

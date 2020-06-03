@@ -1,0 +1,23 @@
+uuid: d1ff16b5-0d95-4f02-9503-b5bbb3e30f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_date
+    - paragraphs.paragraphs_type.oe_list_item
+  module:
+    - datetime
+_core:
+  default_config_hash: lzeZXIHTPaoGEqAm7B0e7Q0YWO-DHVuP8HT2Vnh8VFs
+id: paragraph.oe_list_item.field_oe_date
+field_name: field_oe_date
+entity_type: paragraph
+bundle: oe_list_item
+label: Date
+description: 'Date information.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

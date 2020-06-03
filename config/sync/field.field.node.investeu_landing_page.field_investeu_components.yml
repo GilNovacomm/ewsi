@@ -1,0 +1,84 @@
+uuid: 046465d9-df21-414e-a3f9-de97ea64a5f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investeu_components
+    - node.type.investeu_landing_page
+  module:
+    - entity_reference_revisions
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.investeu_landing_page.field_investeu_components
+field_name: field_investeu_components
+entity_type: node
+bundle: investeu_landing_page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      oe_accordion:
+        weight: 19
+        enabled: false
+      oe_accordion_item:
+        weight: 20
+        enabled: false
+      oe_banner:
+        weight: 21
+        enabled: false
+      oe_chart:
+        weight: 22
+        enabled: false
+      oe_content_row:
+        weight: 23
+        enabled: false
+      oe_contextual_navigation:
+        weight: 24
+        enabled: false
+      oe_fact:
+        weight: 25
+        enabled: false
+      oe_facts_figures:
+        weight: 26
+        enabled: false
+      oe_links_block:
+        weight: 27
+        enabled: false
+      oe_list_item:
+        weight: 28
+        enabled: false
+      oe_list_item_block:
+        weight: 29
+        enabled: false
+      oe_map:
+        weight: 30
+        enabled: false
+      oe_quote:
+        weight: 31
+        enabled: false
+      oe_rich_text:
+        weight: 32
+        enabled: false
+      oe_social_feed:
+        weight: 33
+        enabled: false
+      oe_social_media_follow:
+        weight: 34
+        enabled: false
+      oe_text_feature_media:
+        weight: 35
+        enabled: false
+      oe_timeline:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

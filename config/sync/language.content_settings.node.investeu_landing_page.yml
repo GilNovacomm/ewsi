@@ -1,0 +1,18 @@
+uuid: 7db11187-3851-4da1-a449-c3019af29a42
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.investeu_landing_page
+target_entity_type_id: node
+target_bundle: investeu_landing_page
+default_langcode: en
+language_alterable: true

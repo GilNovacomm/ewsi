@@ -1,3 +1,12 @@
-component_library: ec
+component_library: eu
 _core:
   default_config_hash: TE2xYrBUMhX3FqXUQZvyMS9-oOWY53_06vqt6xjPW5o
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: true
+favicon:
+  use_default: true

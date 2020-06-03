@@ -1,0 +1,18 @@
+uuid: fb242f9e-6d27-4035-9515-d31a961305a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_fact
+id: paragraph.oe_fact.created
+field_name: created
+entity_type: paragraph
+bundle: oe_fact
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

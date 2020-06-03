@@ -1,0 +1,37 @@
+uuid: 8246c8a6-43d2-4c7c-b34a-0f72d9a853d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.oe_venue.oe_address
+    - oe_content_entity_venue.oe_venue_type.oe_default
+  module:
+    - address
+_core:
+  default_config_hash: jw7Jqt1NxVbptPVK2dqKpJNBDfJAQzEYjRDsNK5cyps
+id: oe_venue.oe_default.oe_address
+field_name: oe_address
+entity_type: oe_venue
+bundle: oe_default
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    dependentLocality:
+      override: hidden
+  fields: {  }
+field_type: address

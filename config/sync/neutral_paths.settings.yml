@@ -1,0 +1,6 @@
+neutral_paths_fix_new:
+  - 'canonical_entities:media'
+  - 'canonical_entities:node'
+  - 'canonical_entities:taxonomy_term'
+_core:
+  default_config_hash: jsu61h4J2Er1PmNWQwzngLgPTVqSoVaRXE8pioRugPg

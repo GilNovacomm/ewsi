@@ -1,0 +1,18 @@
+uuid: 777aee4a-8186-47c3-a347-7a5eb63a3267
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_landing_page
+id: node.investeu_landing_page.changed
+field_name: changed
+entity_type: node
+bundle: investeu_landing_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

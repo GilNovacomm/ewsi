@@ -1,0 +1,21 @@
+uuid: 11e79d02-86de-4c55-8ced-3bb3b521d57c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - oe_content_timeline_field
+_core:
+  default_config_hash: 4liiZl-xi7rjNlDO2AI2MXV1cyGgDe6M06h9xnXavtk
+id: node.oe_timeline
+field_name: oe_timeline
+entity_type: node
+type: timeline_field
+settings: {  }
+module: oe_content_timeline_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

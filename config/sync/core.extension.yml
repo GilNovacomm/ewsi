@@ -1,35 +1,148 @@
 module:
+  address: 0
+  admin_toolbar: 0
+  aggregator: 0
+  allowed_formats: 0
   block: 0
   block_content: 0
   breakpoint: 0
+  cas: 0
+  ckeditor: 0
   config: 0
+  content_moderation: 0
+  ctools: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity_browser: 0
+  entity_browser_entity_form: 0
+  entity_reference_revisions: 0
+  entity_version: 0
+  entity_version_workflows: 0
+  extra_field: 0
   field: 0
+  field_group: 0
+  field_ui: 0
   file: 0
   filter: 0
+  geofield: 0
   image: 0
+  inline_entity_form: 0
+  json_field: 0
+  language: 0
+  language_selection_page: 0
   link: 0
+  linkit: 0
+  locale: 0
+  maxlength: 0
+  media: 0
+  media_avportal: 0
+  neutral_paths: 0
   node: 0
+  oe_authentication: 0
+  oe_content: 0
+  oe_content_entity: 0
+  oe_content_entity_contact: 0
+  oe_content_entity_organisation: 0
+  oe_content_entity_venue: 0
+  oe_content_event: 0
+  oe_content_news: 0
+  oe_content_page: 0
+  oe_content_persistent: 0
+  oe_content_policy: 0
+  oe_content_publication: 0
+  oe_content_social_media_links_field: 0
+  oe_content_timeline_field: 0
+  oe_corporate_blocks: 0
+  oe_corporate_countries: 0
+  oe_corporate_countries_address: 0
+  oe_editorial: 0
+  oe_editorial_corporate_workflow: 0
+  oe_editorial_corporate_workflow_translation: 0
+  oe_editorial_corporate_workflow_translation_poetry: 0
+  oe_editorial_entity_version: 0
+  oe_editorial_unpublish: 0
+  oe_link_lists: 0
+  oe_link_lists_aggregator_item_access: 0
+  oe_link_lists_internal_source: 0
+  oe_link_lists_manual_source: 0
+  oe_link_lists_rss_source: 0
+  oe_media: 0
+  oe_media_avportal: 0
+  oe_media_embed: 0
+  oe_media_webtools: 0
+  oe_multilingual: 0
+  oe_multilingual_front_page: 0
+  oe_multilingual_selection_page: 0
+  oe_multilingual_url_suffix: 0
+  oe_paragraphs: 0
+  oe_paragraphs_banner: 0
+  oe_paragraphs_chart: 0
+  oe_paragraphs_map: 0
+  oe_paragraphs_media: 0
+  oe_paragraphs_media_field_storage: 0
+  oe_paragraphs_social_feed: 0
+  oe_paragraphs_timeline: 0
+  oe_search: 0
+  oe_theme_content_entity_contact: 0
+  oe_theme_content_entity_venue: 0
+  oe_theme_content_event: 0
+  oe_theme_content_news: 0
+  oe_theme_content_page: 0
+  oe_theme_content_policy: 0
+  oe_theme_content_publication: 0
   oe_theme_helper: 0
+  oe_time_caching: 0
+  oe_translation: 0
+  oe_translation_poetry: 0
+  oe_translation_poetry_html_formatter: 0
+  oe_translation_poetry_mock: 0
+  oe_webtools: 0
+  oe_webtools_analytics: 0
+  oe_webtools_analytics_rules: 0
+  oe_webtools_cookie_consent: 0
+  oe_webtools_globan: 0
+  oe_webtools_laco_service: 0
+  oe_webtools_laco_widget: 0
+  oe_webtools_maps: 0
+  oe_webtools_media: 0
+  oe_webtools_social_share: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  rdf_entity: 0
+  rdf_skos: 0
+  redirect: 0
+  remote_stream_wrapper: 0
   responsive_image: 0
+  serialization: 0
   smart_trim: 0
   system: 0
   taxonomy: 0
   text: 0
+  tmgmt: 0
+  tmgmt_content: 0
+  tmgmt_language_combination: 0
+  tmgmt_local: 0
+  token: 0
   toolbar: 0
+  typed_link: 0
   ui_patterns: 0
   ui_patterns_library: 0
   update: 0
   user: 0
+  views_ui: 0
+  workflows: 0
   menu_link_content: 1
+  pathauto: 1
+  content_translation: 10
+  externalauth: 10
   views: 10
+  paragraphs: 11
   oe_profile: 1000
 theme:
   stable: 0

@@ -1,0 +1,20 @@
+uuid: 2a114ba4-8cb9-4910-8490-1c8e0e7c92af
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists_manual_source.link_list_link_type.internal
+id: link_list_link.internal.title
+field_name: title
+entity_type: link_list_link
+bundle: internal
+label: Title
+description: 'The title of the link.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

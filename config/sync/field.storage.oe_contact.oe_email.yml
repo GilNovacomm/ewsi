@@ -1,0 +1,20 @@
+uuid: 5be917bd-61bf-4764-8ba3-c0f4fa17c234
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_contact
+_core:
+  default_config_hash: 4Avdx7WFqaj8iBjrA3OdZvUjQkDTBga2N1XJEkqhdu8
+id: oe_contact.oe_email
+field_name: oe_email
+entity_type: oe_contact
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

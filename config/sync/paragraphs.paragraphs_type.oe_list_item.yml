@@ -1,0 +1,12 @@
+uuid: 36c59817-e0ee-4028-8815-302b442290b6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uA4K2cq6mSafF0ghsQil1V2crv_yyHXiyMNwW44XTwo
+id: oe_list_item
+label: 'Listing item'
+icon_uuid: null
+icon_default: null
+description: 'Use a "List item" when you wish to display content teasers. A list item is available in the following variants: default, date item, highlighted and thumbnail with primary or secondary image.'
+behavior_plugins: {  }

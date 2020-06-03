@@ -1,0 +1,20 @@
+uuid: 32f18b93-61a2-46e2-8fce-23ecf9c26a06
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.webtools_chart
+id: media.webtools_chart.name
+field_name: name
+entity_type: media
+bundle: webtools_chart
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

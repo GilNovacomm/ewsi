@@ -1,0 +1,30 @@
+uuid: 6b0dced3-7e56-4703-ad45-e568f53b3531
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.document.oe_media_file
+    - media.type.document
+  module:
+    - file
+_core:
+  default_config_hash: n4V0ZWJfdgQ6WU6hDuy4uDYqVN_nsboMtlhzZxqtIIo
+id: media.document.default
+targetEntityType: media
+bundle: document
+mode: default
+content:
+  oe_media_file:
+    weight: 0
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

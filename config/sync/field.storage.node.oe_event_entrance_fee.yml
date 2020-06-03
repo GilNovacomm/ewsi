@@ -1,0 +1,23 @@
+uuid: a6f8e6e0-5748-41d6-a981-cb4a112d8498
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LlohYly3o24JEBqdM7ZP93WHu687J4fVfdLDPTm9w5c
+id: node.oe_event_entrance_fee
+field_name: oe_event_entrance_fee
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

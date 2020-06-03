@@ -1,0 +1,4 @@
+langcode: en
+base_url: 'https://data.ec.europa.eu/ewp/'
+_core:
+  default_config_hash: _PBRMO8mx3BmmuwoCGs7azGfHZvTltm83gPNPFYqpz4

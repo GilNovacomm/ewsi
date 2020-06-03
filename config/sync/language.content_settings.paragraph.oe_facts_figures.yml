@@ -1,0 +1,20 @@
+uuid: 3a8007ba-5849-4cf6-914c-a84dcd562799
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_facts_figures
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: kSwh3S18JMep6sAWrKqR-xAv0DEUdYzcNMG7UlXvTtI
+id: paragraph.oe_facts_figures
+target_entity_type_id: paragraph
+target_bundle: oe_facts_figures
+default_langcode: en
+language_alterable: true

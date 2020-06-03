@@ -1,0 +1,23 @@
+uuid: 381a9991-c4c1-406b-b144-5c52c90f8ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_description_summary
+    - node.type.oe_event
+  module:
+    - text
+_core:
+  default_config_hash: tpcmCdQ9NAcx-feqZccS1N4OBxIZID0I72_7lFEhJvI
+id: node.oe_event.oe_event_description_summary
+field_name: oe_event_description_summary
+entity_type: node
+bundle: oe_event
+label: 'Description summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

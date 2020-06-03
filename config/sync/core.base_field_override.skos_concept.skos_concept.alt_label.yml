@@ -1,0 +1,18 @@
+uuid: ee8bfc7e-7b71-480f-812d-a1309f296573
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept.skos_concept.alt_label
+field_name: alt_label
+entity_type: skos_concept
+bundle: skos_concept
+label: 'Alternate Label'
+description: 'The alternate label of the Concept.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

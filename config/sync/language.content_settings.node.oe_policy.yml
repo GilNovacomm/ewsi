@@ -1,0 +1,20 @@
+uuid: f359680c-4359-4cfe-98fe-ea43bcbb97c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oe_policy
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: xlsQX5EEtkgPpLHJiqFDZs1ID1Qy_Br74LM3xfE9ohg
+id: node.oe_policy
+target_entity_type_id: node
+target_bundle: oe_policy
+default_langcode: en
+language_alterable: true

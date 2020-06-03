@@ -1,0 +1,10 @@
+uuid: fff8eeb6-bb23-4777-9a5d-6f325d255d6b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nGcxj76pT9zUndIZiwbvZb_eyj3zW__Fv03m4ko_Ll4
+id: oe_event_long_date_hour
+label: 'Event long date with hour'
+locked: false
+pattern: 'l j F Y, H:i'

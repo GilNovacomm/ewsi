@@ -1,0 +1,27 @@
+uuid: eca47496-f046-4c26-925c-0c20d144b32b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.investeu_landing_page.field_investeu_components
+    - node.type.investeu_landing_page
+  module:
+    - user
+id: node.investeu_landing_page.teaser
+targetEntityType: node
+bundle: investeu_landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_investeu_components: true
+  langcode: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true

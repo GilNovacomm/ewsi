@@ -1,0 +1,23 @@
+uuid: 8ab099ca-5aeb-4fc3-a374-211f73fec78c
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - oe_content_entity_contact
+_core:
+  default_config_hash: BGODpzv4g7lVNdMLyHWJPBUq1a6iXvLVwM4Zps5xR9Y
+id: node.oe_event_contact
+field_name: oe_event_contact
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: oe_contact
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

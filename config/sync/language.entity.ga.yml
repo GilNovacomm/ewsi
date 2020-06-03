@@ -1,0 +1,11 @@
+uuid: 420420f6-2360-4cbf-b8bc-73fae0724a2c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _AQGY3GTJquJNxQI2KLU2I0wU2-WzA7JuweLxSz-Pig
+id: ga
+label: Irish
+direction: ltr
+weight: 9
+locked: false

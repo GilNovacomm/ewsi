@@ -1,0 +1,13 @@
+uuid: feaf6c97-ade9-4259-9ae5-c6b782c3762e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2ETsz4VBPnOGHF9ABoIU-fOxp-mV7QLVFgVEJlLijzg
+name: Event
+type: oe_event
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

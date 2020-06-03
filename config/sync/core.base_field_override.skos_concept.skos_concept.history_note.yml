@@ -1,0 +1,18 @@
+uuid: 91a19813-88d8-4a70-8507-5bf7f0d2618f
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept.skos_concept.history_note
+field_name: history_note
+entity_type: skos_concept
+bundle: skos_concept
+label: 'History Note'
+description: 'The history note of the Concept.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

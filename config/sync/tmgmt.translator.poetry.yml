@@ -1,0 +1,20 @@
+uuid: 5e2b2bc2-3bd1-4eee-bdbb-776bc3ebcb10
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_translation_poetry
+_core:
+  default_config_hash: p9GoRjSPOhLcNMK7cZZxzTgybUunM8zZVKGbxfYaGnw
+name: poetry
+label: Poetry
+description: ''
+auto_accept: false
+weight: null
+plugin: poetry
+settings:
+  identifier_code: WEB
+  title_prefix: ''
+  application_reference: FPFIS
+remote_languages_mappings:
+  pt-pt: pt

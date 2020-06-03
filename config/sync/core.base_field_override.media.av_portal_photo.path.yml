@@ -1,0 +1,20 @@
+uuid: 54826cd7-525d-4abd-a359-b3ac201e284c
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.av_portal_photo
+  module:
+    - path
+id: media.av_portal_photo.path
+field_name: path
+entity_type: media
+bundle: av_portal_photo
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

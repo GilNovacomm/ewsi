@@ -1,0 +1,10 @@
+uuid: 560ac1f9-e515-4191-9637-7457224074c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_contact
+id: oe_contact.token
+label: Token
+targetEntityType: oe_contact
+cache: true

@@ -1,0 +1,20 @@
+uuid: 05f56341-5ada-4faf-81a8-5f0a25d1f490
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_social_feed
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: T8vPPPq5wKsRkbPHmhxuhmM58KSWzx5T8VOx0J9zrkQ
+id: paragraph.oe_social_feed
+target_entity_type_id: paragraph
+target_bundle: oe_social_feed
+default_langcode: site_default
+language_alterable: true

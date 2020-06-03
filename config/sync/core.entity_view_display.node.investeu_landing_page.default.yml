@@ -1,0 +1,35 @@
+uuid: 46cf48b0-56cb-4e05-b3f0-bc1146fe37b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.investeu_landing_page.field_investeu_components
+    - node.type.investeu_landing_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.investeu_landing_page.default
+targetEntityType: node
+bundle: investeu_landing_page
+mode: default
+content:
+  field_investeu_components:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true

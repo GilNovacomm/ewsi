@@ -1,0 +1,25 @@
+uuid: fdad85ae-f52d-410a-90fa-1a9e1459ec59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_banner_full_width
+    - paragraphs.paragraphs_type.oe_banner
+_core:
+  default_config_hash: k6Fw5wqfmim5Fu7zdw-rP-cSXELsDMnfx_JlV2SAPSA
+id: paragraph.oe_banner.field_oe_banner_full_width
+field_name: field_oe_banner_full_width
+entity_type: paragraph
+bundle: oe_banner
+label: 'Display as full width'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

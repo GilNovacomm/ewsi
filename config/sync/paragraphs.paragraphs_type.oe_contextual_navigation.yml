@@ -1,0 +1,12 @@
+uuid: 66ece347-ed65-4bbb-8fbd-2de98a57ed40
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _bOo4AXLwvd-UKM_JPPyx2clgZ50UO849xChyVjX_FM
+id: oe_contextual_navigation
+label: 'Contextual navigation'
+icon_uuid: null
+icon_default: null
+description: 'The contextual navigation allows editors to add a number of links that helps the user navigate the page. The links, their visibility limit and navigation label can be configured using the available fields.'
+behavior_plugins: {  }

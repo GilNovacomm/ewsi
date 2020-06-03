@@ -1,0 +1,21 @@
+uuid: e50e9bed-31d3-48f8-bd09-06cbe0c3b1a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: ZF7plDwam7c2tQl3Qu6JAvzxR111aiD7hXUgIJ2XdXg
+id: node.oe_event_online_link
+field_name: oe_event_online_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

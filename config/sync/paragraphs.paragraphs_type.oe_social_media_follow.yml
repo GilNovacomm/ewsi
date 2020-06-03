@@ -1,0 +1,12 @@
+uuid: b6f841df-d4b5-42f0-9403-11c61477b1e6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-iac8NTdbBwdAUVRH6LoaYi5Cm0h6vMlFiTUH2UOBjE'
+id: oe_social_media_follow
+label: 'Social media follow'
+icon_uuid: null
+icon_default: null
+description: 'The Social media follow paragraph allows the editor to add a list of social media links.'
+behavior_plugins: {  }

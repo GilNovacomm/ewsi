@@ -1,0 +1,20 @@
+uuid: 1fdcc769-bec1-4847-8b22-25b38144061a
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.dynamic
+  module:
+    - oe_link_lists
+id: link_list.dynamic.configuration
+field_name: configuration
+entity_type: link_list
+bundle: dynamic
+label: Configuration
+description: 'The list configuration.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: link_list_configuration

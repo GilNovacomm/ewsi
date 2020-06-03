@@ -1,0 +1,20 @@
+uuid: af8aaf2c-5319-4056-841f-d01f22f3f127
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists_manual_source.link_list_link_type.internal
+id: link_list_link.internal.teaser
+field_name: teaser
+entity_type: link_list_link
+bundle: internal
+label: Teaser
+description: 'The teaser of the link.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string_long

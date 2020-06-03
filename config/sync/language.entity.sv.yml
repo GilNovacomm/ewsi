@@ -1,0 +1,11 @@
+uuid: bc82185d-0cce-4db6-a8c5-edcf9eea2016
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: h2Hh1SFrQaN0OBZOlLu8p7SX_-ED0U7oKG_GNQpsmUo
+id: sv
+label: Swedish
+direction: ltr
+weight: 23
+locked: false

@@ -1,0 +1,18 @@
+uuid: fca3098e-63d1-4c56-8e3e-0375d815b5b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_accordion_item
+id: paragraph.oe_accordion_item.created
+field_name: created
+entity_type: paragraph
+bundle: oe_accordion_item
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

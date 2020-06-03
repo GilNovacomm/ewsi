@@ -1,0 +1,21 @@
+uuid: 76557cbe-ddf3-44ca-ab89-ab293350160a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.oe_media_avportal_photo
+    - media.type.av_portal_photo
+_core:
+  default_config_hash: Hv6UNoDmwRg1yxbqqu9Bp3nkBAjGzWBPGWhWbku9Jkg
+id: media.av_portal_photo.oe_media_avportal_photo
+field_name: oe_media_avportal_photo
+entity_type: media
+bundle: av_portal_photo
+label: 'Media AV Portal Photo'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

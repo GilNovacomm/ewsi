@@ -1,0 +1,23 @@
+uuid: 6d50da29-b73a-4188-8135-ccac3024f9d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_contact
+_core:
+  default_config_hash: FfaEgrznePmjp2CZ1gYjV5n2fLo55wSpf1mXKZ3Ay_g
+id: oe_contact.oe_phone
+field_name: oe_phone
+entity_type: oe_contact
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

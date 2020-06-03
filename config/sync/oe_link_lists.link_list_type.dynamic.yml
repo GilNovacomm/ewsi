@@ -1,0 +1,8 @@
+uuid: 76ad813d-9681-438d-8f9a-384e01bdf2c2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YPYDoNT_0ktO_Gajp96iK39FALUtfbTeP-HrJrj7WKM
+id: dynamic
+label: Dynamic

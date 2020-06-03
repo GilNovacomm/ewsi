@@ -1,0 +1,23 @@
+uuid: 4b135c66-d12a-44ee-8cbe-c569b7119748
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_media_embed
+_core:
+  default_config_hash: WUgQ3zJWECsZxzcxHl_9DBvkhMwBWIrkEkNMYRmDkHY
+label: Media
+id: media
+type_id: embed_media
+type_settings:
+  media_types:
+    av_portal_photo: av_portal_photo
+    av_portal_video: av_portal_video
+    document: document
+    image: image
+    remote_video: remote_video
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

@@ -1,0 +1,22 @@
+uuid: 5351cc15-06db-404b-870f-01e83da5f9ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_news
+label: 'InvestEU News'
+type: 'canonical_entities:node'
+pattern: 'news/[node:source:title]'
+selection_criteria:
+  c0ef68bd-20bd-41a2-af35-d4ecc083cc0e:
+    id: node_type
+    bundles:
+      oe_news: oe_news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c0ef68bd-20bd-41a2-af35-d4ecc083cc0e
+selection_logic: and
+weight: -5
+relationships: {  }

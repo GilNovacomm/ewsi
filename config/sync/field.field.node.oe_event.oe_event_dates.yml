@@ -1,0 +1,28 @@
+uuid: 95d6d0dd-e9ba-4991-b1e0-caaedf146a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_event_dates
+    - node.type.oe_event
+  module:
+    - datetime_range
+_core:
+  default_config_hash: Q5XATat0XlWTYD6IrOeDIk08nPpLrj9RrKxoKm6zYRw
+id: node.oe_event.oe_event_dates
+field_name: oe_event_dates
+entity_type: node
+bundle: oe_event
+label: 'Event date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
+default_value_callback: ''
+settings: {  }
+field_type: daterange

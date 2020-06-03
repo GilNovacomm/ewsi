@@ -1,0 +1,18 @@
+uuid: 6e0e4d43-8225-4f9c-925b-accdeae605c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - rdf_skos
+id: skos_concept.skos_concept.pref_label
+field_name: pref_label
+entity_type: skos_concept
+bundle: skos_concept
+label: 'Preferred Label'
+description: 'The preferred label of the Concept.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

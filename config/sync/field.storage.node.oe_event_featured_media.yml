@@ -1,0 +1,22 @@
+uuid: 7611f150-2674-494d-b666-9fe7c2f51b1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+_core:
+  default_config_hash: cYyTFOJ3xYjhcdP7uNBauZSvoQ64wX-dIxUKMju7Uyo
+id: node.oe_event_featured_media
+field_name: oe_event_featured_media
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

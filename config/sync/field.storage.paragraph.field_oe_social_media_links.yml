@@ -1,0 +1,35 @@
+uuid: 2c033258-bada-4a8d-abc1-dd4e3960d5dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - typed_link
+_core:
+  default_config_hash: _CObZs07DGnubkwUwI1Z69EYCCcOyeTwMcDWPBD8mA8
+id: paragraph.field_oe_social_media_links
+field_name: field_oe_social_media_links
+entity_type: paragraph
+type: typed_link
+settings:
+  allowed_values:
+    email: Email
+    facebook: Facebook
+    flickr: Flickr
+    google: Google+
+    instagram: Instagram
+    linkedin: Linkedin
+    pinterest: Pinterest
+    rss: RSS
+    storify: Storify
+    twitter: Twitter
+    yammer: Yammer
+    youtube: YouTube
+  allowed_values_function: ''
+module: typed_link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

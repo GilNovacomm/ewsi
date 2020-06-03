@@ -1,0 +1,22 @@
+uuid: a119c7c3-7a38-45e7-8cbe-053ad94c9f2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_events
+label: 'InvestEU Events'
+type: 'canonical_entities:node'
+pattern: 'events/[node:source:title]'
+selection_criteria:
+  fd5e2f64-8d65-49f1-91b9-52527f54d3e6:
+    id: node_type
+    bundles:
+      oe_event: oe_event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fd5e2f64-8d65-49f1-91b9-52527f54d3e6
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 1ab13c2d-14b0-4bd2-9997-de5d781e0b99
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_contextual_navigation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: sFA1z82_zsXpI4VzeC6TGDaJdp30TaSXynqzjfiFZSg
+id: paragraph.oe_contextual_navigation
+target_entity_type_id: paragraph
+target_bundle: oe_contextual_navigation
+default_langcode: site_default
+language_alterable: true

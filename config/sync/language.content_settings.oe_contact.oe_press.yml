@@ -1,0 +1,20 @@
+uuid: ddd97841-25d3-4a10-bf48-5241fbe11096
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_content_entity_contact.oe_contact_type.oe_press
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: EWjA-b__FWdwoFAHRAL6da7iP_zh35UI5-JvbHCWM-o
+id: oe_contact.oe_press
+target_entity_type_id: oe_contact
+target_bundle: oe_press
+default_langcode: en
+language_alterable: true

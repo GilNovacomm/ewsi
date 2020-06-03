@@ -1,0 +1,35 @@
+uuid: 4e3874ea-9aca-4593-b03d-c8cb8836ca94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_content_row.field_oe_paragraphs
+    - field.field.paragraph.oe_content_row.field_oe_title
+    - paragraphs.paragraphs_type.oe_content_row
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: zyI-J6SzdMJK-a8-PR0JYs5DIWbfKt3BEE7-FemYQwI
+id: paragraph.oe_content_row.default
+targetEntityType: paragraph
+bundle: oe_content_row
+mode: default
+content:
+  field_oe_paragraphs:
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_oe_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

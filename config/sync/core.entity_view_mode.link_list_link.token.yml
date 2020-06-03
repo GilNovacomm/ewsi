@@ -1,0 +1,10 @@
+uuid: 01893927-ca98-48cd-9aaf-602d26836de8
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_link_lists_manual_source
+id: link_list_link.token
+label: Token
+targetEntityType: link_list_link
+cache: true

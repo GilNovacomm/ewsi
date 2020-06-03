@@ -1,0 +1,23 @@
+uuid: 75332677-6269-4f20-b182-fe5b9caf341a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: xWQ664YGbM6Fq82hqg8XgPtfywuLPPXItTCFEY19iyc
+id: node.oe_event_registration_capacity
+field_name: oe_event_registration_capacity
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

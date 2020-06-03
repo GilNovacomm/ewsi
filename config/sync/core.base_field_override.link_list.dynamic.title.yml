@@ -1,0 +1,18 @@
+uuid: d4203f69-104e-4520-8791-72a94f0e7615
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.dynamic
+id: link_list.dynamic.title
+field_name: title
+entity_type: link_list
+bundle: dynamic
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

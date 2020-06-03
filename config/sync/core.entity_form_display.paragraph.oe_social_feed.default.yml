@@ -1,0 +1,32 @@
+uuid: 5745f474-4f0e-4459-855b-4e7684642118
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_social_feed.field_oe_media
+    - paragraphs.paragraphs_type.oe_social_feed
+_core:
+  default_config_hash: KzTKUHaHVNCFCjeQ1XMvCgxWAYRiUDckIo5CC_B7aAE
+id: paragraph.oe_social_feed.default
+targetEntityType: paragraph
+bundle: oe_social_feed
+mode: default
+content:
+  field_oe_media:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: d4d71649-2888-4451-9317-c64d8568c8f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists_manual_source.link_list_link_type.external
+id: link_list_link.external.status
+field_name: status
+entity_type: link_list_link
+bundle: external
+label: Published
+description: 'A boolean indicating whether the Link list link is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

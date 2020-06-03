@@ -1,0 +1,25 @@
+uuid: 15886614-3e80-4c2c-908b-f5ea25ebf259
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oe_policy
+  module:
+    - text
+_core:
+  default_config_hash: K8xG5jpSuzeG7CjXOmaQaa81F5JMgz95Ja7Jwz-mtFU
+id: node.oe_policy.body
+field_name: body
+entity_type: node
+bundle: oe_policy
+label: 'Body text'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

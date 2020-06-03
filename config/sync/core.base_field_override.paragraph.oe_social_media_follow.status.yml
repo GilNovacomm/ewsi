@@ -1,0 +1,22 @@
+uuid: 7cb6a026-7e0b-4256-951b-09efa252106c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_social_media_follow
+id: paragraph.oe_social_media_follow.status
+field_name: status
+entity_type: paragraph
+bundle: oe_social_media_follow
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

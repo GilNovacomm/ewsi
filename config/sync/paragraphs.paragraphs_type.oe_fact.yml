@@ -1,0 +1,12 @@
+uuid: 8107ea38-ab73-4ca2-a5e9-fd141ca0766a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SurpE_n0zQbHcN6gtZjx35P_lmF0OQEmDuUiu0xla5M
+id: oe_fact
+label: Fact
+icon_uuid: null
+icon_default: null
+description: 'Single fact item, to be used exclusively in conjunction with the "Facts and figures" paragraph type.'
+behavior_plugins: {  }

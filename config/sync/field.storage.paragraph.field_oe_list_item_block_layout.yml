@@ -1,0 +1,32 @@
+uuid: 14408db7-5799-476e-9bd7-6ad111d06d96
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: Vp6ebsrojpDgWDftGkZ8qMZ2Gm3Y1JSF-qgpK8no_Ko
+id: paragraph.field_oe_list_item_block_layout
+field_name: field_oe_list_item_block_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: one_column
+      label: 'One column'
+    -
+      value: two_columns
+      label: 'Two columns'
+    -
+      value: three_columns
+      label: 'Three columns'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

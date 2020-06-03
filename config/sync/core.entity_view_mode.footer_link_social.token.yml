@@ -1,0 +1,10 @@
+uuid: d2e055ce-4395-4278-88b2-00cff7c985c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_corporate_blocks
+id: footer_link_social.token
+label: Token
+targetEntityType: footer_link_social
+cache: true

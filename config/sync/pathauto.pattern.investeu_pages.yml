@@ -1,0 +1,22 @@
+uuid: 42e5e317-5b82-435d-95ed-44375e911699
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_pages
+label: 'InvestEU Pages'
+type: 'canonical_entities:node'
+pattern: 'page/[node:source:title]'
+selection_criteria:
+  e4cef45d-0839-4198-a5a0-91a20d84b6d2:
+    id: node_type
+    bundles:
+      oe_page: oe_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e4cef45d-0839-4198-a5a0-91a20d84b6d2
+selection_logic: and
+weight: -5
+relationships: {  }

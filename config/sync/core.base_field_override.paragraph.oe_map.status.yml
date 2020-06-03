@@ -1,0 +1,22 @@
+uuid: 1b17d553-8723-4b89-bcf6-83bb20b5d962
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_map
+id: paragraph.oe_map.status
+field_name: status
+entity_type: paragraph
+bundle: oe_map
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

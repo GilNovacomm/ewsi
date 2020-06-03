@@ -1,0 +1,13 @@
+uuid: bfe589eb-e1f7-4e29-aff9-a8bfef19e904
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qJlBQLpNpCeoT3f0CTMs017qXWeFKSQRYPoupvtK79Y
+name: Policy
+type: oe_policy
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

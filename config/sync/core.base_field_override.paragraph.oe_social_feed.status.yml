@@ -1,0 +1,22 @@
+uuid: 456ed855-d8b3-4eeb-a768-9af8e3dd21dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.oe_social_feed
+id: paragraph.oe_social_feed.status
+field_name: status
+entity_type: paragraph
+bundle: oe_social_feed
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

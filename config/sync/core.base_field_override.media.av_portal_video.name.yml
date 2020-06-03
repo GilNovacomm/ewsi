@@ -1,0 +1,20 @@
+uuid: a9c7b7f7-c10a-4fb6-b0c5-243aa7d1d024
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.av_portal_video
+id: media.av_portal_video.name
+field_name: name
+entity_type: media
+bundle: av_portal_video
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 408a20a3-54bc-4fad-874b-8b18bb451f65
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: B5TLVO3SgA5C4iWJVm82nttYV3JSPmeQYig3nHUeZ34
+id: oe_event_date_hour_timezone
+label: 'Event date with hour and timezone'
+locked: false
+pattern: 'j F Y, H:i T'
