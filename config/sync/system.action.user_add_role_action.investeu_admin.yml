@@ -1,0 +1,14 @@
+uuid: 7521298d-2283-4575-ba76-278baf6c146b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.investeu_admin
+  module:
+    - user
+id: user_add_role_action.investeu_admin
+label: 'Add the InvestEU admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: investeu_admin
