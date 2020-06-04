@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * InvestEU core install file.
+ */
+
+declare(strict_types = 1);
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ */
+function investeu_core_install(): void {
+  if (user_load_by_name('novacomm') === FALSE) {
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    $user = User::create();
+    $user->enforceIsNew();
+    $user->setPassword(user_password(20));
+    $user->setEmail('luis.pereira@novacomm-europa.eu');
+    $user->setUsername('novacomm');
+    $user->set("init", 'email');
+    $user->set("langcode", $language);
+    $user->set("preferred_langcode", $language);
+    $user->set("preferred_admin_langcode", $language);
+    $user->addRole('investeu_admin');
+    $user->activate();
+    $user->save();
+    _user_mail_notify('register_admin_created', $user);
+  }
+}

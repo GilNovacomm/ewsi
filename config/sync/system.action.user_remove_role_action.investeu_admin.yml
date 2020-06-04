@@ -1,0 +1,14 @@
+uuid: acc18b24-794b-48af-9eaf-e110dcf5ec07
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.investeu_admin
+  module:
+    - user
+id: user_remove_role_action.investeu_admin
+label: 'Remove the InvestEU admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: investeu_admin
