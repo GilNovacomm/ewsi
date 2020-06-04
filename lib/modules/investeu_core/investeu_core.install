@@ -13,17 +13,19 @@ use Drupal\user\Entity\User;
  * Implements hook_install().
  */
 function investeu_core_install(): void {
-  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
-  $user = User::create();
-  $user->setPassword('%8@91H85pbBQpTt#LTynK');
-  $user->enforceIsNew();
-  $user->setEmail('luis.pereira@novacomm-europa.eu');
-  $user->setUsername('novacomm');
-  $user->set("init", 'email');
-  $user->set("langcode", $language);
-  $user->set("preferred_langcode", $language);
-  $user->set("preferred_admin_langcode", $language);
-  $user->addRole('investeu_admin');
-  $user->activate();
-  $user->save();
+  if (user_load_by_name('novacomm') === FALSE) {
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    $user = User::create();
+    $user->setPassword(md5('novacomm'));
+    $user->enforceIsNew();
+    $user->setEmail('luis.pereira@novacomm-europa.eu');
+    $user->setUsername('novacomm');
+    $user->set("init", 'email');
+    $user->set("langcode", $language);
+    $user->set("preferred_langcode", $language);
+    $user->set("preferred_admin_langcode", $language);
+    $user->addRole('investeu_admin');
+    $user->activate();
+    $user->save();
+  }
 }
