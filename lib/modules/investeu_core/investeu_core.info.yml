@@ -1,0 +1,5 @@
+name: InvestEU Core
+type: module
+description: 'InvestEU Core module.'
+package: InvestEU
+core: 8.x
