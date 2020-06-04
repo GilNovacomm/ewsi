@@ -7,29 +7,23 @@
 
 declare(strict_types = 1);
 
+use Drupal\user\Entity\User;
 
 /**
  * Implements hook_install().
  */
 function investeu_core_install(): void {
-  // Create temp user.
   $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
-  $user = \Drupal\user\Entity\User::create();
-
-  //Mandatory settings
+  $user = User::create();
   $user->setPassword('%8@91H85pbBQpTt#LTynK');
   $user->enforceIsNew();
   $user->setEmail('luis.pereira@novacomm-europa.eu');
-  $user->setUsername('novacomm'); //This username must be unique and accept only a-Z,0-9, - _ @ .
-
-  //Optional settings
+  $user->setUsername('novacomm');
   $user->set("init", 'email');
   $user->set("langcode", $language);
   $user->set("preferred_langcode", $language);
   $user->set("preferred_admin_langcode", $language);
   $user->addRole('investeu_admin');
   $user->activate();
-
-  //Save user
-  $res = $user->save();
+  $user->save();
 }
