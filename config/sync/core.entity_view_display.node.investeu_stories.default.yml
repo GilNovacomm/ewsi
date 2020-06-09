@@ -1,0 +1,35 @@
+uuid: 83b37439-8757-4f4b-b442-b5fb35628bd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.investeu_stories.field_investeu_components
+    - node.type.investeu_stories
+  module:
+    - entity_reference_revisions
+    - user
+id: node.investeu_stories.default
+targetEntityType: node
+bundle: investeu_stories
+mode: default
+content:
+  field_investeu_components:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true

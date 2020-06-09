@@ -1,0 +1,22 @@
+uuid: f9a5ea9d-72f3-490a-a9cf-d670b5f9197c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_stories
+label: 'InvestEU Stories'
+type: 'canonical_entities:node'
+pattern: 'stories/[node:source:title]'
+selection_criteria:
+  101eb00e-7c4b-4199-b9cb-2cdd8b0bc6f9:
+    id: node_type
+    bundles:
+      investeu_stories: investeu_stories
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 101eb00e-7c4b-4199-b9cb-2cdd8b0bc6f9
+selection_logic: and
+weight: -5
+relationships: {  }

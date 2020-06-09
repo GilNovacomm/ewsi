@@ -1,0 +1,27 @@
+uuid: 69d51b05-7775-423b-ab6f-5df96243c6c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.investeu_stories.field_investeu_components
+    - node.type.investeu_stories
+  module:
+    - user
+id: node.investeu_stories.teaser
+targetEntityType: node
+bundle: investeu_stories
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_investeu_components: true
+  langcode: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true
