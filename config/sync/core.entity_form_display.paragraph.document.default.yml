@@ -1,0 +1,25 @@
+uuid: fbd45792-d0cb-4fe2-b365-6768e305f609
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.document.field_document
+    - paragraphs.paragraphs_type.document
+id: paragraph.document.default
+targetEntityType: paragraph
+bundle: document
+mode: default
+content:
+  field_document:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

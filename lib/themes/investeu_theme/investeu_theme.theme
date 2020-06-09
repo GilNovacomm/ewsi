@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\file\FileInterface;
+use Drupal\oe_theme\ValueObject\FileValueObject;
+
+/**
+ * Implements hook_preprocess_media__document__default().
+ *
+ * Provides the translations of media files for the media document.
+ */
+function investeu_theme_preprocess_media__document__default(&$variables) {
+  /** @var \Drupal\media\Entity\Media $media */
+  $media = $variables['media'];
+  $translations = [];
+  $translation_languages = $media->getTranslationLanguages(FALSE);
+  foreach ($translation_languages as $translation_language) {
+    $translation = $media->getTranslation($translation_language->getId());
+    /** @var \Drupal\file\FileInterface $file */
+    $file = $translation->get('oe_media_file')->first()->entity;
+
+    if ($file instanceof FileInterface) {
+      $translations[] = FileValueObject::fromArray(
+        [
+          'name' => $file->getFilename(),
+          'url' => file_create_url($file->getFileUri()),
+          'mime' => $file->getMimeType(),
+          'size' => (string) $file->getSize(),
+          'language_code' => $translation_language->getId(),
+        ]
+      )->setTitle($translation->getName());
+    }
+  }
+
+  $variables['translations'] = $translations;
+}
