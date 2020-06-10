@@ -1,0 +1,20 @@
+uuid: 8ab19ad5-d18d-4f58-9e50-3dc26d45c1ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_investeu_date
+field_name: field_investeu_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
