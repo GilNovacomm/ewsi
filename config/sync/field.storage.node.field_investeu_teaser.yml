@@ -1,0 +1,19 @@
+uuid: 3a8830d6-01dd-444a-9e1e-f23d57d03f01
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_investeu_teaser
+field_name: field_investeu_teaser
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
