@@ -47,6 +47,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_investeu_media: true
+  field_investeu_teaser: true
   langcode: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
