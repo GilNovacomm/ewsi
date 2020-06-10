@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.investeu_stories.field_investeu_components
+    - field.field.node.investeu_stories.field_investeu_sector
+    - field.field.node.investeu_stories.field_investeu_theme
     - node.type.investeu_stories
   module:
     - user
@@ -20,6 +22,8 @@ content:
     region: content
 hidden:
   field_investeu_components: true
+  field_investeu_sector: true
+  field_investeu_theme: true
   langcode: true
   oe_content_content_owner: true
   oe_content_legacy_link: true

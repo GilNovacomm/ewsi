@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.investeu_stories.field_investeu_components
+    - field.field.node.investeu_stories.field_investeu_sector
+    - field.field.node.investeu_stories.field_investeu_theme
     - node.type.investeu_stories
   module:
     - link
@@ -38,6 +40,26 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     type: oe_paragraphs_variants
+    region: content
+  field_investeu_sector:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_investeu_theme:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select
