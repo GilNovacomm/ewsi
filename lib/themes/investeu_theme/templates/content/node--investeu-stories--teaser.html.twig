@@ -1,0 +1,16 @@
+<article class="ecl-u-d-flex ecl-u-pv-m ecl-u-border-bottom ecl-u-border-color-grey-15">
+    <div class="ecl-u-flex-grow-1">
+        <a href="/example" class="ecl-u-d-inline-block ecl-u-type-prolonged-m ecl-u-type-bold ecl-u-type-family-alt ecl-u-mt-xs ecl-link ecl-link--standalone">{{ label }}</a>
+        <p class="ecl-u-type-paragraph ecl-u-type-color-grey-100 ecl-u-mt-xs">{{ node.field_investeu_teaser.value }}</p>
+    </div>
+    <div role="img" aria-label="Example image" class="ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none ecl-u-flex-shrink-0 ecl-u-ml-xl ecl-u-d-lg-none" style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:7.5rem"></div>
+    <div role="img" aria-label="Example image" class="ecl-u-media-ratio-3-2 ecl-u-media-bg-size-contain ecl-u-media-bg-repeat-none ecl-u-flex-shrink-0 ecl-u-ml-xl ecl-u-d-none ecl-u-d-lg-block" style="background-image:url(&quot;https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg&quot;);width:13.125rem"></div>
+</article>
+
+{{ pattern('list_item', {
+  'variant': 'thumbnail_primary',
+  'url': url,
+  'title': label,
+  'detail': content.field_investeu_teaser,
+  'image': image,
+}) }}

@@ -1,0 +1,23 @@
+uuid: 6dd01741-f33a-4569-b4ac-d8355f0e446a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.success_stories.field_oe_title
+    - paragraphs.paragraphs_type.success_stories
+id: paragraph.success_stories.default
+targetEntityType: paragraph
+bundle: success_stories
+mode: default
+content:
+  field_oe_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

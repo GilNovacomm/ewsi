@@ -1,0 +1,21 @@
+uuid: 9917110a-38f4-49a3-befe-d98e250ce839
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.success_stories.field_oe_title
+    - paragraphs.paragraphs_type.success_stories
+id: paragraph.success_stories.default
+targetEntityType: paragraph
+bundle: success_stories
+mode: default
+content:
+  field_oe_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

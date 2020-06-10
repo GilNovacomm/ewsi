@@ -1,0 +1,10 @@
+uuid: c9208965-11a0-4665-86a4-49b9d90eedf5
+langcode: en
+status: true
+dependencies: {  }
+id: success_stories
+label: 'Success stories'
+icon_uuid: null
+icon_default: null
+description: "A simple paragraph containing a success stories block.\t"
+behavior_plugins: {  }

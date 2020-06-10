@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\views\Views;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\file\Entity\File;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Add a success stories view to the paragraph.
+ */
+function investeu_theme_preprocess_paragraph__success_stories(&$variables) {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = Views::getView('success_stories');
+  $view->execute();
+
+  if (!empty($view->result)) {
+    $variables['content']['view'] = $view->getDisplay()->buildRenderable();
+  }
+}
+
+/**
+ * Implements hook_preprocess_node() for node--investeu-stories.html.twig.
+ */
+function investeu_theme_preprocess_node__investeu_stories(array &$variables): void {
+  $cacheability = CacheableMetadata::createFromRenderArray($variables);
+
+  $node = $variables['node'];
+  // Extract the image if present.
+  if ($node instanceof NodeInterface && !$node->get('field_investeu_media')->isEmpty()) {
+    /** @var \Drupal\file\Plugin\Field\FieldType\FileItem $image_item */
+    $image_item = $node->get('field_investeu_media')->first();
+    $target_id = $image_item->target_id;
+    $file = File::load($target_id);
+
+    $variables['image'] = [
+      'src' => file_url_transform_relative(file_create_url($file->getFileUri())),
+      'alt' => 'alt',
+      'position' => 'after',
+    ];
+
+    // Caches are handled by the formatter usually. Since we are not rendering
+    // the original render arrays, we need to propagate our caches to the
+    // paragraph template.
+    $cacheability->addCacheableDependency($file);
+
+  }
+
+  $cacheability->applyTo($variables);
+}
