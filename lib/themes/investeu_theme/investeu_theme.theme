@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\link\LinkItemInterface;
+use Drupal\paragraphs\ParagraphInterface;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function investeu_theme_preprocess_pattern_text_featured_media(array &$variables): void {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['title']['#object'];
+
+  if ($paragraph instanceof ParagraphInterface) {
+    $variables['alignment'] = $paragraph->get('field_alignment')->getString() ?? 'right';
+    $link = $paragraph->get('field_oe_link')->first();
+
+    if ($link instanceof LinkItemInterface) {
+      $variables['cta'] = array_merge($link->getValue(), ['uri' => $link->getUrl()->toString()]);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+uuid: 87c3d4fb-a68e-404d-b460-35bf2f388b28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.oe_text_feature_media
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.oe_text_feature_media.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: oe_text_feature_media
+label: Alignment
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string
