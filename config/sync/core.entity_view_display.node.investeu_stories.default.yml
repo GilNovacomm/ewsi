@@ -16,7 +16,7 @@ bundle: investeu_stories
 mode: default
 content:
   field_investeu_components:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       view_mode: default
@@ -25,7 +25,7 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
