@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.investeu_stories.field_investeu_components
+    - field.field.node.investeu_stories.field_investeu_media
     - field.field.node.investeu_stories.field_investeu_sector
+    - field.field.node.investeu_stories.field_investeu_teaser
     - field.field.node.investeu_stories.field_investeu_theme
     - node.type.investeu_stories
   module:
@@ -30,7 +32,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_investeu_media: true
   field_investeu_sector: true
+  field_investeu_teaser: true
   field_investeu_theme: true
   langcode: true
   oe_content_content_owner: true

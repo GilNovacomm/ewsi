@@ -1,0 +1,20 @@
+uuid: b62c07cb-1535-4e6c-8743-0e76cb9a7d99
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_investeu_media
+field_name: field_investeu_media
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
