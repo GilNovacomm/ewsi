@@ -1,8 +1,8 @@
-uuid: cf389eb1-af73-40d6-958f-9390f9bca9b9
-langcode: en
+uuid: d3c2a6a9-70a7-4b4b-b835-6120e82b70a4
+langcode: de
 status: true
 dependencies: {  }
-id: document
+id: investeu_document
 label: Document
 icon_uuid: null
 icon_default: null

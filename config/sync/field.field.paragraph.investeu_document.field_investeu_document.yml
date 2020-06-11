@@ -1,23 +1,23 @@
-uuid: b6e0f54f-4cba-4722-be8c-9db885037a1b
-langcode: en
+uuid: 8b30b9ce-2649-4b95-bbd5-df8eeeb1dccf
+langcode: de
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_document
+    - field.storage.paragraph.field_investeu_document
     - media.type.document
-    - paragraphs.paragraphs_type.document
+    - paragraphs.paragraphs_type.investeu_document
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: paragraph.document.field_document
-field_name: field_document
+id: paragraph.investeu_document.field_investeu_document
+field_name: field_investeu_document
 entity_type: paragraph
-bundle: document
+bundle: investeu_document
 label: Document
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -27,8 +27,7 @@ settings:
     target_bundles:
       document: document
     sort:
-      field: name
-      direction: ASC
+      field: _none
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

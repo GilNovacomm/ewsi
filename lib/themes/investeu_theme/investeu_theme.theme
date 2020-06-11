@@ -17,14 +17,24 @@ function investeu_theme_preprocess_media__document__default(&$variables) {
   /** @var \Drupal\media\Entity\Media $media */
   $media = $variables['media'];
   $translations = [];
-  $translation_languages = $media->getTranslationLanguages(FALSE);
-  foreach ($translation_languages as $translation_language) {
-    $translation = $media->getTranslation($translation_language->getId());
-    /** @var \Drupal\file\FileInterface $file */
-    $file = $translation->get('oe_media_file')->first()->entity;
+  $translation_languages = $media->getTranslationLanguages();
+  $current_language = Drupal::languageManager()->getCurrentLanguage();
 
-    if ($file instanceof FileInterface) {
-      $translations[] = FileValueObject::fromArray(
+  // Make sure we are starting with the current language.
+  if (isset($translation_languages[$current_language->getId()])) {
+    unset($translation_languages[$current_language->getId()]);
+  }
+
+  $translation_languages = [$current_language->getId() => $current_language] + $translation_languages;
+
+  foreach ($translation_languages as $translation_language) {
+    if ($media->hasTranslation($translation_language->getId())) {
+      $translation = $media->getTranslation($translation_language->getId());
+      /** @var \Drupal\file\FileInterface $file */
+      $file = $translation->get('oe_media_file')->first()->entity;
+
+      if ($file instanceof FileInterface) {
+        $translations[] = FileValueObject::fromArray(
         [
           'name' => $file->getFilename(),
           'url' => file_create_url($file->getFileUri()),
@@ -32,7 +42,8 @@ function investeu_theme_preprocess_media__document__default(&$variables) {
           'size' => (string) $file->getSize(),
           'language_code' => $translation_language->getId(),
         ]
-      )->setTitle($translation->getName());
+        )->setTitle($translation->getName());
+      }
     }
   }
 

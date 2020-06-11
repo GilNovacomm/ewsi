@@ -1,13 +1,56 @@
-{#
-/**
- * @file
- * Theme override to display a media item.
- *
- * @see ./core/themes/stable/templates/content/media.html.twig
- */
-#}
-{{ pattern('file_translation', {
-    'button_label': 'Download'|t,
-    'file': file|default([]),
-    'translations': translations
-}) }}
+{# Process value objects into ECL compatible array. #}
+{% set _translations = [] %}
+{% for item in translations %}
+    {% set _translations = _translations|merge([{
+    'title': item.language_code|to_native_language,
+    'meta': '(' ~ item.size|format_size ~ ' - ' ~ file.extension|upper  ~ ')',
+    'lang': item.language_code,
+    'download': {
+      'link': {
+        'label': button_label|default('Download'|t),
+        'path': item.url,
+      },
+    },
+  }]) %}
+{% endfor %}
+
+{% set file = translations.0 %}
+{% set _translations = _translations|slice(1) %}
+
+{% include '@ecl-twig/file' with {
+  'title': file.title,
+  'language': file.language_code|to_language,
+  'meta': '(' ~ file.size|format_size ~ ' - ' ~ file.extension|upper ~ ')',
+  'icon': {
+    'path': ecl_icon_path,
+    'type': 'general',
+    'name': file.extension|to_file_icon,
+    'size': '2xl',
+  },
+  'download': {
+    'link': {
+      'label': button_label|default('Download'|t),
+      'path': file.url,
+    },
+    'icon': {
+      'path': ecl_icon_path,
+      'type': 'ui',
+      'name': 'download',
+      'size': 'fluid',
+    },
+  },
+  'translation': {
+    'toggle': {
+      'label': "Available translations (@count)"|t({ '@count': _translations|length}),
+      'icon': {
+        'path': ecl_icon_path,
+        'type': 'ui',
+        'name': 'corner-arrow',
+        'size': 'fluid',
+        'transform': 'rotate-180',
+      },
+    },
+    'description': 'Looking for another language which is not on the list? Find out why.'|t,
+    'items': _translations,
+  },'extra_classes': 'ecl-u-mb-l'
+} only %}
