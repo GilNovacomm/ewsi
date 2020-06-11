@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.oe_text_feature_media.field_alignment
+    - field.field.paragraph.oe_text_feature_media.field_investeu_alignment
     - field.field.paragraph.oe_text_feature_media.field_oe_link
     - field.field.paragraph.oe_text_feature_media.field_oe_media
     - field.field.paragraph.oe_text_feature_media.field_oe_plain_text_long
@@ -20,8 +20,8 @@ targetEntityType: paragraph
 bundle: oe_text_feature_media
 mode: default
 content:
-  field_alignment:
-    weight: 5
+  field_investeu_alignment:
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select

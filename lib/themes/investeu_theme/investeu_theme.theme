@@ -16,7 +16,7 @@ function investeu_theme_preprocess_pattern_text_featured_media(array &$variables
   $paragraph = $variables['title']['#object'];
 
   if ($paragraph instanceof ParagraphInterface) {
-    $variables['alignment'] = $paragraph->get('field_alignment')->getString() ?? 'right';
+    $variables['alignment'] = $paragraph->get('field_investeu_alignment')->getString() ?? 'right';
     $link = $paragraph->get('field_oe_link')->first();
 
     if ($link instanceof LinkItemInterface) {
