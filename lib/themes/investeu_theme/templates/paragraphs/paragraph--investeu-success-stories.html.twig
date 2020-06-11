@@ -53,6 +53,7 @@
         {% block content %}
             {{ content|without('field_oe_title', 'field_oe_link') }}
             {{ view }}
+            {% if paragraph.field_oe_link.title %}
             {% include '@ecl-twig/link' with {
                         'link': {
                             'type': 'standalone',
@@ -68,6 +69,7 @@
                         },
                         'extra_classes': 'ecl-u-type-bold ecl-u-mt-m ecl-u-mt-md-l'
                     } only %}
+            {% endif %}
         {% endblock %}
     </div>
 {% endblock paragraph %}

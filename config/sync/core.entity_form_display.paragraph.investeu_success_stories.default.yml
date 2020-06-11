@@ -1,16 +1,16 @@
-uuid: 6dd01741-f33a-4569-b4ac-d8355f0e446a
+uuid: f4d52cdd-91c4-42e8-9197-ab842cdb12f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.success_stories.field_oe_link
-    - field.field.paragraph.success_stories.field_oe_title
-    - paragraphs.paragraphs_type.success_stories
+    - field.field.paragraph.investeu_success_stories.field_oe_link
+    - field.field.paragraph.investeu_success_stories.field_oe_title
+    - paragraphs.paragraphs_type.investeu_success_stories
   module:
     - link
-id: paragraph.success_stories.default
+id: paragraph.investeu_success_stories.default
 targetEntityType: paragraph
-bundle: success_stories
+bundle: investeu_success_stories
 mode: default
 content:
   field_oe_link:

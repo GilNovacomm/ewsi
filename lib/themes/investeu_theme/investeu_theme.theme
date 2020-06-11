@@ -17,7 +17,7 @@ use Drupal\node\NodeInterface;
  *
  * Add a success stories view to the paragraph.
  */
-function investeu_theme_preprocess_paragraph__success_stories(&$variables) {
+function investeu_theme_preprocess_paragraph__investeu_success_stories(&$variables) {
   /** @var \Drupal\views\ViewExecutable $view */
   $view = Views::getView('success_stories');
   $view->execute();

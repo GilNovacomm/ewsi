@@ -1,20 +1,20 @@
-uuid: 1b6596d2-7da5-478a-af6b-bed32854b085
+uuid: c5d890d1-8275-469b-873f-2cd2cbc55d6d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_oe_link
-    - paragraphs.paragraphs_type.success_stories
+    - paragraphs.paragraphs_type.investeu_success_stories
   module:
     - link
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: paragraph.success_stories.field_oe_link
+id: paragraph.investeu_success_stories.field_oe_link
 field_name: field_oe_link
 entity_type: paragraph
-bundle: success_stories
+bundle: investeu_success_stories
 label: Link
 description: ''
 required: false

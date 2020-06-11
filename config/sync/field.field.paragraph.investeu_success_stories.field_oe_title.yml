@@ -1,19 +1,19 @@
-uuid: 658f9b3e-4853-4ad4-b3f7-44cbdbebe8e8
+uuid: 984fba44-81e9-4635-ad11-a1da1cdb23ed
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_oe_title
-    - paragraphs.paragraphs_type.success_stories
+    - paragraphs.paragraphs_type.investeu_success_stories
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: paragraph.success_stories.field_oe_title
+id: paragraph.investeu_success_stories.field_oe_title
 field_name: field_oe_title
 entity_type: paragraph
-bundle: success_stories
+bundle: investeu_success_stories
 label: Title
 description: ''
 required: false
