@@ -3,13 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.success_stories.field_oe_link
     - field.field.paragraph.success_stories.field_oe_title
     - paragraphs.paragraphs_type.success_stories
+  module:
+    - link
 id: paragraph.success_stories.default
 targetEntityType: paragraph
 bundle: success_stories
 mode: default
 content:
+  field_oe_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_oe_title:
     weight: 0
     settings:

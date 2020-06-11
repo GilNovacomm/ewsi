@@ -51,8 +51,23 @@
     <h2 class="ecl-u-type-heading-2">{{ content.field_oe_title }}</h2>
     <div{{attributes.addClass(classes)}}>
         {% block content %}
-            {{ content|without('field_oe_title') }}
+            {{ content|without('field_oe_title', 'field_oe_link') }}
             {{ view }}
+            {% include '@ecl-twig/link' with {
+                        'link': {
+                            'type': 'standalone',
+                            'label': paragraph.field_oe_link.title,
+                            'path': paragraph.field_oe_link.get(0).getUrl().toString(),
+                            'icon_position': 'after'
+                        },
+                        'icon': {
+                            'path': ecl_icon_path,
+                            'type': 'ui',
+                            'name': 'corner-arrow',
+                            'extra_classes': 'ecl-link__icon ecl-icon ecl-icon--fluid ecl-icon--rotate-90'
+                        },
+                        'extra_classes': 'ecl-u-type-bold ecl-u-mt-m ecl-u-mt-md-l'
+                    } only %}
         {% endblock %}
     </div>
 {% endblock paragraph %}

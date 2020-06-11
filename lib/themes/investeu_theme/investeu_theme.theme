@@ -8,6 +8,8 @@
 use Drupal\views\Views;
 use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\file\Entity\File;
+use Drupal\image\Plugin\Field\FieldType\ImageItem;
+use Drupal\media\MediaInterface;
 use Drupal\node\NodeInterface;
 
 /**
@@ -30,25 +32,28 @@ function investeu_theme_preprocess_paragraph__success_stories(&$variables) {
  */
 function investeu_theme_preprocess_node__investeu_stories(array &$variables): void {
   $cacheability = CacheableMetadata::createFromRenderArray($variables);
-
   $node = $variables['node'];
+
   // Extract the image if present.
   if ($node instanceof NodeInterface && !$node->get('field_investeu_media')->isEmpty()) {
-    /** @var \Drupal\file\Plugin\Field\FieldType\FileItem $image_item */
-    $image_item = $node->get('field_investeu_media')->first();
-    $target_id = $image_item->target_id;
-    $file = File::load($target_id);
+    /** @var \Drupal\media\MediaInterface $media_item */
+    $media_item = $node->get('field_investeu_media')->first()->get('entity')->getValue();
 
-    $variables['image'] = [
-      'src' => file_url_transform_relative(file_create_url($file->getFileUri())),
-      'alt' => 'alt',
-      'position' => 'after',
-    ];
+    if ($media_item instanceof MediaInterface) {
+      /** @var \Drupal\file\Entity\ImageItem $image_item */
+      $image_item = $media_item->get('oe_media_image')->first();
 
-    // Caches are handled by the formatter usually. Since we are not rendering
-    // the original render arrays, we need to propagate our caches to the
-    // paragraph template.
-    $cacheability->addCacheableDependency($file);
+      if ($image_item instanceof ImageItem) {
+        $file = File::load($image_item->target_id);
+
+        $variables['image'] = [
+          'src' => file_url_transform_relative(file_create_url($file->getFileUri())),
+          'alt' => $image_item->get('alt')->getValue(),
+        ];
+
+        $cacheability->addCacheableDependency($file);
+      }
+    }
 
   }
 
