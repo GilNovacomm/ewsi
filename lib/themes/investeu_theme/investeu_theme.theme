@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function investeu_theme_preprocess_page(array &$variables): void {
+  $variables['main_attributes'] = new Attribute([
+    'class' => [],
+    'id' => ['main-content'],
+  ]);
+}
