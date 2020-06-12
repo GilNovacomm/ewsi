@@ -1,0 +1,32 @@
+uuid: 79ae3769-6b9c-405f-8ae3-9f79b60f5e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.investeu_webform.field_investeu_webform
+    - field.field.paragraph.investeu_webform.field_oe_title
+    - paragraphs.paragraphs_type.investeu_webform
+  module:
+    - webform
+id: paragraph.investeu_webform.default
+targetEntityType: paragraph
+bundle: investeu_webform
+mode: default
+content:
+  field_investeu_webform:
+    weight: 1
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_oe_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

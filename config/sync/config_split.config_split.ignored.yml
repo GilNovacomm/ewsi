@@ -1,0 +1,17 @@
+uuid: f47dd970-b7dc-4182-a169-63547fea4f3a
+langcode: en
+status: true
+dependencies: {  }
+id: ignored
+label: Ignored
+description: ''
+folder: ''
+module: {  }
+theme: {  }
+blacklist:
+  - 'webform.webform.*'
+  - 'webform.webform_options.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
