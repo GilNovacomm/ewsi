@@ -54,7 +54,7 @@
             {{ content|without('field_oe_title', 'field_oe_link') }}
             {{ view }}
             {% if paragraph.field_oe_link.title %}
-            {% include '@ecl-twig/link' with {
+                {% include '@ecl-twig/link' with {
                         'link': {
                             'type': 'standalone',
                             'label': paragraph.field_oe_link.title,

@@ -19,7 +19,8 @@ use Drupal\node\NodeInterface;
  */
 function investeu_theme_preprocess_paragraph__investeu_success_stories(&$variables) {
   /** @var \Drupal\views\ViewExecutable $view */
-  $view = Views::getView('success_stories');
+  $view = Views::getView('investeu_stories');
+  $view->setDisplay('investeu_latest_3_success_stories');
   $view->execute();
 
   if (!empty($view->result)) {

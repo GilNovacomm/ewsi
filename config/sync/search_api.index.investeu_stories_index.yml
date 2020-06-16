@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
     - oe_content
+    - node
     - search_api
   config:
     - search_api.server.investeu_database_server
@@ -14,6 +14,14 @@ name: 'InvestEU Stories'
 description: ''
 read_only: false
 field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
   default_langcode:
     label: 'Default translation'
     datasource_id: 'entity:node'

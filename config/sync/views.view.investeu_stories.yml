@@ -193,6 +193,88 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.investeu_stories_index'
+  investeu_latest_3_success_stories:
+    display_plugin: block
+    id: investeu_latest_3_success_stories
+    display_title: 'Latest 3 success stories'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      style:
+        type: default
+        options: {  }
+      defaults:
+        style: false
+        row: false
+        pager: false
+        sorts: false
+        arguments: false
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              investeu_stories: teaser
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+      sorts:
+        created:
+          id: created
+          table: search_api_index_investeu_stories_index
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: search_api
+      block_description: 'Latest 3 success stories'
+      display_description: ''
+      arguments:
+        nid:
+          id: nid
+          table: search_api_index_investeu_stories_index
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: node
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options: {  }
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: true
+          plugin_id: search_api
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.investeu_stories_index'
   page_1:
     display_plugin: page
     id: page_1
