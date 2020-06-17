@@ -1,0 +1,20 @@
+uuid: c97b7e24-478a-4ee8-ae3f-cd98d39eacc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.investeu_sector
+  module:
+    - path
+id: taxonomy_term.investeu_sector.path
+field_name: path
+entity_type: taxonomy_term
+bundle: investeu_sector
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

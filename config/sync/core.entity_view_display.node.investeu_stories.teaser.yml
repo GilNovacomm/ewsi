@@ -1,0 +1,53 @@
+uuid: 69d51b05-7775-423b-ab6f-5df96243c6c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.investeu_stories.field_investeu_components
+    - field.field.node.investeu_stories.field_investeu_date
+    - field.field.node.investeu_stories.field_investeu_media
+    - field.field.node.investeu_stories.field_investeu_sector
+    - field.field.node.investeu_stories.field_investeu_teaser
+    - field.field.node.investeu_stories.field_investeu_theme
+    - image.style.oe_theme_list_item_featured
+    - node.type.investeu_stories
+  module:
+    - media
+    - user
+id: node.investeu_stories.teaser
+targetEntityType: node
+bundle: investeu_stories
+mode: teaser
+content:
+  field_investeu_media:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: oe_theme_list_item_featured
+      image_link: content
+    third_party_settings: {  }
+  field_investeu_teaser:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_investeu_components: true
+  field_investeu_date: true
+  field_investeu_sector: true
+  field_investeu_theme: true
+  langcode: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true

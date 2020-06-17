@@ -1,0 +1,22 @@
+uuid: 172e62d5-01ec-44ae-b1e4-30df8fab3c52
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_stories
+id: node.investeu_stories.status
+field_name: status
+entity_type: node
+bundle: investeu_stories
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
