@@ -6,13 +6,17 @@
  */
 
 use Drupal\Core\Template\Attribute;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_preprocess_page().
  */
 function investeu_theme_preprocess_page(array &$variables): void {
-  $variables['main_attributes'] = new Attribute([
-    'class' => [],
-    'id' => ['main-content'],
-  ]);
+  $node = $variables['node'];
+  if ($node instanceof NodeInterface && $node->getType() === 'investeu_landing_page') {
+    $variables['main_attributes'] = new Attribute([
+      'class' => [],
+      'id' => ['main-content'],
+    ]);
+  }
 }
