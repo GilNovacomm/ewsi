@@ -1,0 +1,25 @@
+uuid: 40909fb9-b8b9-443c-91af-5d44b8eb4ff6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.investeu_document.field_investeu_document
+    - paragraphs.paragraphs_type.investeu_document
+id: paragraph.investeu_document.default
+targetEntityType: paragraph
+bundle: investeu_document
+mode: default
+content:
+  field_investeu_document:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
