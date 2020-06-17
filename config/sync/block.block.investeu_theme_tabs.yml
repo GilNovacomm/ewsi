@@ -1,0 +1,22 @@
+uuid: 4f8691b8-2004-4ad6-ad7a-90d5999323a8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - investeu_theme
+_core:
+  default_config_hash: PnhvOOg3dp0eO7NMXGJQijwuDBdEqDF2hag3eVvSMzk
+id: investeu_theme_tabs
+theme: investeu_theme
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
