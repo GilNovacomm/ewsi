@@ -11,6 +11,8 @@ use Drupal\file\Entity\File;
 use Drupal\image\Plugin\Field\FieldType\ImageItem;
 use Drupal\media\MediaInterface;
 use Drupal\node\NodeInterface;
+use Drupal\link\LinkItemInterface;
+use Drupal\paragraphs\ParagraphInterface;
 
 /**
  * Implements hook_preprocess_HOOK().
@@ -58,4 +60,21 @@ function investeu_theme_preprocess_node__investeu_stories(array &$variables): vo
   }
 
   $cacheability->applyTo($variables);
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function investeu_theme_preprocess_pattern_text_featured_media(array &$variables): void {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['title']['#object'];
+
+  if ($paragraph instanceof ParagraphInterface) {
+    $variables['alignment'] = $paragraph->get('field_investeu_alignment')->getString() ?? 'right';
+    $link = $paragraph->get('field_oe_link')->first();
+
+    if ($link instanceof LinkItemInterface) {
+      $variables['cta'] = array_merge($link->getValue(), ['uri' => $link->getUrl()->toString()]);
+    }
+  }
 }
