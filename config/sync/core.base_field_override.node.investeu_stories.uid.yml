@@ -1,0 +1,20 @@
+uuid: a73e7dd6-8d72-4182-8577-79922b8558b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_stories
+id: node.investeu_stories.uid
+field_name: uid
+entity_type: node
+bundle: investeu_stories
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

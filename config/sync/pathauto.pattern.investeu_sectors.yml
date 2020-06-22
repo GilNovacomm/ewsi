@@ -1,0 +1,23 @@
+uuid: e17d2c2f-def9-4215-b2ba-f2235189627f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: investeu_sectors
+label: 'InvestEU Sectors'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'sectors/[term:original:name]'
+selection_criteria:
+  9e397fb7-5631-4e08-ad7c-0bc67831276c:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      investeu_sector: investeu_sector
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 9e397fb7-5631-4e08-ad7c-0bc67831276c
+selection_logic: and
+weight: -5
+relationships: {  }

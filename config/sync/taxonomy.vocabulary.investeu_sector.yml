@@ -1,0 +1,8 @@
+uuid: 47ea5e4a-ad7c-4620-8542-7f7089be8b4a
+langcode: en
+status: true
+dependencies: {  }
+name: 'InvestEU Sector'
+vid: investeu_sector
+description: ''
+weight: 0

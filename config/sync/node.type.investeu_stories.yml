@@ -1,0 +1,11 @@
+uuid: 130b1dc5-3c69-4838-950b-3ee92a2b7f8d
+langcode: en
+status: true
+dependencies: {  }
+name: 'InvestEU Success Stories'
+type: investeu_stories
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

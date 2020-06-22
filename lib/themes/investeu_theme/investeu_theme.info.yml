@@ -1,0 +1,16 @@
+name: InvestEU Theme
+type: theme
+description: InvestEU theme.
+core: 8.x
+core_version_requirement: ^8 || ^9
+php: 7.1
+base theme: oe_theme
+
+regions:
+  site_top_bar: "Site top bar"
+  site_header: "Site header"
+  site_header_secondary: "Site header secondary"
+  page_header: "Page header"
+  navigation: "Navigation"
+  content: "Content"
+  footer: "Footer"

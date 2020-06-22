@@ -1,0 +1,8 @@
+uuid: 483e4092-1602-499e-baab-e0d46d544763
+langcode: en
+status: true
+dependencies: {  }
+name: 'InvestEU Theme'
+vid: investeu_theme
+description: ''
+weight: 0
