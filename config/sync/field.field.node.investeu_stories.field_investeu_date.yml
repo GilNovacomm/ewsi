@@ -1,0 +1,28 @@
+uuid: 6cb7e8fe-06ef-47a5-b26e-b172fbd643a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investeu_date
+    - node.type.investeu_stories
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.investeu_stories.field_investeu_date
+field_name: field_investeu_date
+entity_type: node
+bundle: investeu_stories
+label: 'Publication date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

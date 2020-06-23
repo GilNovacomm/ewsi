@@ -1,0 +1,18 @@
+uuid: 1c35c088-d0b3-4c20-aedc-fee389aa57ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.investeu_sector
+id: taxonomy_term.investeu_sector.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: investeu_sector
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,10 @@
+uuid: ad8aba51-5807-4179-af9f-b56b274cef4d
+langcode: en
+status: true
+dependencies: {  }
+id: investeu_success_stories
+label: 'Success stories'
+icon_uuid: null
+icon_default: null
+description: "A simple paragraph containing a success stories block.\t"
+behavior_plugins: {  }

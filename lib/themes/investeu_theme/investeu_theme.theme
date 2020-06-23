@@ -1,0 +1,124 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\views\Views;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\file\Entity\File;
+use Drupal\image\Plugin\Field\FieldType\ImageItem;
+use Drupal\media\MediaInterface;
+use Drupal\node\NodeInterface;
+use Drupal\link\LinkItemInterface;
+use Drupal\paragraphs\ParagraphInterface;
+use Drupal\file\FileInterface;
+use Drupal\oe_theme\ValueObject\FileValueObject;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Add a success stories view to the paragraph.
+ */
+function investeu_theme_preprocess_paragraph__investeu_success_stories(&$variables) {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = Views::getView('success_stories');
+  $view->execute();
+
+  if (!empty($view->result)) {
+    $variables['content']['view'] = $view->getDisplay()->buildRenderable();
+  }
+}
+
+/**
+ * Implements hook_preprocess_node() for node--investeu-stories.html.twig.
+ */
+function investeu_theme_preprocess_node__investeu_stories(array &$variables): void {
+  $cacheability = CacheableMetadata::createFromRenderArray($variables);
+  $node = $variables['node'];
+
+  // Extract the image if present.
+  if ($node instanceof NodeInterface && !$node->get('field_investeu_media')->isEmpty()) {
+    /** @var \Drupal\media\MediaInterface $media_item */
+    $media_item = $node->get('field_investeu_media')->first()->get('entity')->getValue();
+
+    if ($media_item instanceof MediaInterface) {
+      /** @var \Drupal\file\Entity\ImageItem $image_item */
+      $image_item = $media_item->get('oe_media_image')->first();
+
+      if ($image_item instanceof ImageItem) {
+        $file = File::load($image_item->target_id);
+
+        $variables['image'] = [
+          'src' => file_url_transform_relative(file_create_url($file->getFileUri())),
+          'alt' => $image_item->get('alt')->getValue(),
+        ];
+
+        $cacheability->addCacheableDependency($file);
+      }
+    }
+
+  }
+
+  $cacheability->applyTo($variables);
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function investeu_theme_preprocess_pattern_text_featured_media(array &$variables): void {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['title']['#object'];
+
+  if ($paragraph instanceof ParagraphInterface) {
+    $variables['alignment'] = $paragraph->get('field_investeu_alignment')->getString() ?? 'right';
+    $link = $paragraph->get('field_oe_link')->first();
+
+    if ($link instanceof LinkItemInterface) {
+      $variables['cta'] = array_merge($link->getValue(), ['uri' => $link->getUrl()->toString()]);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_media__document__default().
+ *
+ * Provides the translations of media files for the media document.
+ */
+function investeu_theme_preprocess_media__document__default(&$variables) {
+  /** @var \Drupal\media\Entity\Media $media */
+  $media = $variables['media'];
+  $translations = [];
+  $translation_languages = $media->getTranslationLanguages();
+  $current_language = Drupal::languageManager()->getCurrentLanguage();
+
+  // Make sure we are starting with the current language.
+  if (isset($translation_languages[$current_language->getId()])) {
+    unset($translation_languages[$current_language->getId()]);
+  }
+
+  $translation_languages = [$current_language->getId() => $current_language] + $translation_languages;
+
+  foreach ($translation_languages as $translation_language) {
+    if ($media->hasTranslation($translation_language->getId())) {
+      $translation = $media->getTranslation($translation_language->getId());
+      /** @var \Drupal\file\FileInterface $file */
+      $file = $translation->get('oe_media_file')->first()->entity;
+
+      if ($file instanceof FileInterface) {
+        $translations[] = FileValueObject::fromArray(
+          [
+            'name' => $file->getFilename(),
+            'url' => file_create_url($file->getFileUri()),
+            'mime' => $file->getMimeType(),
+            'size' => (string) $file->getSize(),
+            'language_code' => $translation_language->getId(),
+          ]
+        )->setTitle($translation->getName());
+      }
+    }
+  }
+
+  $variables['translations'] = $translations;
+}
