@@ -5,6 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_investeu_components
     - node.type.investeu_landing_page
+    - paragraphs.paragraphs_type.oe_fact
+    - paragraphs.paragraphs_type.oe_facts_figures
+    - paragraphs.paragraphs_type.oe_list_item
+    - paragraphs.paragraphs_type.oe_list_item_block
   module:
     - entity_reference_revisions
     - tmgmt_content
@@ -24,8 +28,12 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
-    target_bundles: null
+    negate: 1
+    target_bundles:
+      oe_fact: oe_fact
+      oe_facts_figures: oe_facts_figures
+      oe_list_item: oe_list_item
+      oe_list_item_block: oe_list_item_block
     target_bundles_drag_drop:
       oe_accordion:
         weight: 19
@@ -46,20 +54,20 @@ settings:
         weight: 24
         enabled: false
       oe_fact:
+        enabled: true
         weight: 25
-        enabled: false
       oe_facts_figures:
+        enabled: true
         weight: 26
-        enabled: false
       oe_links_block:
         weight: 27
         enabled: false
       oe_list_item:
+        enabled: true
         weight: 28
-        enabled: false
       oe_list_item_block:
+        enabled: true
         weight: 29
-        enabled: false
       oe_map:
         weight: 30
         enabled: false

@@ -19,6 +19,7 @@
         "drupal/geofield": "^1.13",
         "drupal/json_field": "^1.0@RC",
         "drupal/neutral_paths": "^1.1",
+        "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drush/drush": "^9.0",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
