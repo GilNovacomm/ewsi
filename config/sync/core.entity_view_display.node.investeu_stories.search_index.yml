@@ -1,43 +1,54 @@
-uuid: 8fd87267-a024-4fb1-9ab1-ae9231a3e4e9
+uuid: c4fe16c0-ecc6-41bc-a460-81e8aa984ee3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.investeu_stories.field_investeu_components
-    - field.field.node.investeu_stories.field_investeu_date
-    - field.field.node.investeu_stories.field_investeu_media
     - field.field.node.investeu_stories.field_investeu_sector
-    - field.field.node.investeu_stories.field_investeu_teaser
     - field.field.node.investeu_stories.field_investeu_theme
     - node.type.investeu_stories
   module:
     - entity_reference_revisions
     - user
-id: node.investeu_stories.default
+id: node.investeu_stories.search_index
 targetEntityType: node
 bundle: investeu_stories
-mode: default
+mode: search_index
 content:
   field_investeu_components:
-    type: entity_reference_revisions_entity_view
-    weight: 0
-    region: content
+    weight: 101
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_investeu_sector:
+    weight: 103
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_investeu_theme:
+    weight: 102
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
-    weight: 1
+    weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_investeu_date: true
   field_investeu_media: true
-  field_investeu_sector: true
   field_investeu_teaser: true
-  field_investeu_theme: true
   langcode: true
   oe_content_content_owner: true
   oe_content_legacy_link: true

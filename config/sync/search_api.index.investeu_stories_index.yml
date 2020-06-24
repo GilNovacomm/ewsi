@@ -1,0 +1,170 @@
+uuid: 68c6a3e6-a263-4ed5-b56b-3cb900f7319a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - oe_content
+    - search_api
+  config:
+    - search_api.server.investeu_database_server
+    - core.entity_view_mode.node.search_index
+id: investeu_stories_index
+name: 'InvestEU Stories'
+description: ''
+read_only: false
+field_settings:
+  default_langcode:
+    label: 'Default translation'
+    datasource_id: 'entity:node'
+    property_path: default_langcode
+    type: boolean
+    dependencies:
+      module:
+        - node
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  oe_content_navigation_title:
+    label: 'Navigation title'
+    datasource_id: 'entity:node'
+    property_path: oe_content_navigation_title
+    type: string
+    dependencies:
+      module:
+        - oe_content
+  oe_content_short_title:
+    label: 'Alternative title'
+    datasource_id: 'entity:node'
+    property_path: oe_content_short_title
+    type: string
+    dependencies:
+      module:
+        - oe_content
+  promote:
+    label: 'Promoted to front page'
+    datasource_id: 'entity:node'
+    property_path: promote
+    type: boolean
+    dependencies:
+      module:
+        - node
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          investeu_stories: search_index
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - investeu_stories
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_status: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - langcode
+      - language_with_fallback
+      - oe_content_navigation_title
+      - oe_content_short_title
+      - rendered_item
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  tokenizer:
+    all_fields: false
+    fields:
+      - rendered_item
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  transliteration:
+    all_fields: false
+    fields:
+      - langcode
+      - language_with_fallback
+      - oe_content_navigation_title
+      - oe_content_short_title
+      - rendered_item
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: investeu_database_server
