@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.investeu_stories.field_investeu_date
     - field.field.node.investeu_stories.field_investeu_initiative
     - field.field.node.investeu_stories.field_investeu_media
+    - field.field.node.investeu_stories.field_investeu_member_states
     - field.field.node.investeu_stories.field_investeu_sector
     - field.field.node.investeu_stories.field_investeu_teaser
     - image.style.oe_theme_list_item_featured
@@ -54,6 +55,7 @@ content:
 hidden:
   field_investeu_date: true
   field_investeu_initiative: true
+  field_investeu_member_states: true
   field_investeu_sector: true
   langcode: true
   links: true

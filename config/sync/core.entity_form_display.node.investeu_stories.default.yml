@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.investeu_stories.field_investeu_date
     - field.field.node.investeu_stories.field_investeu_initiative
     - field.field.node.investeu_stories.field_investeu_media
+    - field.field.node.investeu_stories.field_investeu_member_states
     - field.field.node.investeu_stories.field_investeu_sector
     - field.field.node.investeu_stories.field_investeu_teaser
     - node.type.investeu_stories
@@ -26,13 +27,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_investeu_date:
-    weight: 9
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_investeu_initiative:
-    weight: 26
+    weight: 7
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -51,8 +52,18 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_investeu_member_states:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: skos_concept_entity_reference_autocomplete
+    region: content
   field_investeu_sector:
-    weight: 7
+    weight: 6
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -78,7 +89,7 @@ content:
     third_party_settings: {  }
   oe_content_content_owner:
     type: skos_concept_entity_reference_autocomplete
-    weight: 10
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS

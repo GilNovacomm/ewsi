@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.investeu_stories.field_investeu_date
     - field.field.node.investeu_stories.field_investeu_initiative
     - field.field.node.investeu_stories.field_investeu_media
+    - field.field.node.investeu_stories.field_investeu_member_states
     - field.field.node.investeu_stories.field_investeu_sector
     - field.field.node.investeu_stories.field_investeu_teaser
     - node.type.investeu_stories
   module:
+    - rdf_skos
     - user
 id: node.investeu_stories.default
 targetEntityType: node
@@ -28,6 +30,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_investeu_member_states:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: skos_concept_entity_reference_label
     region: content
   links:
     weight: 1
