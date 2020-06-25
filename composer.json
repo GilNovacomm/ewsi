@@ -69,6 +69,11 @@
                 }
             }
         },
+        "patches": {
+            "drupal/rdf_entity": {
+                "TypeError: Return value of getEntityTypeGraphUris must be of the type array": "https://www.drupal.org/files/issues/2019-12-06/rdf_entity-fix_undefined_index_rdf_entity-087381-2.patch"
+            }
+        },
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
         "installer-paths": {
