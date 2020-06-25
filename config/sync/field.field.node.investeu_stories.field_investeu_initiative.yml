@@ -1,21 +1,21 @@
-uuid: 5f506803-2684-4fed-aae2-bed5c2707cc6
+uuid: 0449040d-38dd-4ab0-9c68-431b68955aae
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_investeu_theme
+    - field.storage.node.field_investeu_initiative
     - node.type.investeu_stories
-    - taxonomy.vocabulary.investeu_theme
+    - taxonomy.vocabulary.investeu_initiative
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.investeu_stories.field_investeu_theme
-field_name: field_investeu_theme
+id: node.investeu_stories.field_investeu_initiative
+field_name: field_investeu_initiative
 entity_type: node
 bundle: investeu_stories
-label: Theme
+label: Initiative
 description: ''
 required: false
 translatable: false
@@ -25,7 +25,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      investeu_theme: investeu_theme
+      investeu_initiative: investeu_initiative
     sort:
       field: name
       direction: asc

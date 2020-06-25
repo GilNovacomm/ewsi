@@ -4,12 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.investeu_stories.field_investeu_components
     - field.field.node.investeu_stories.field_investeu_date
+    - field.field.node.investeu_stories.field_investeu_initiative
     - field.field.node.investeu_stories.field_investeu_media
     - field.field.node.investeu_stories.field_investeu_sector
     - field.field.node.investeu_stories.field_investeu_teaser
-    - field.field.node.investeu_stories.field_investeu_theme
     - image.style.oe_theme_list_item_featured
     - node.type.investeu_stories
   module:
@@ -21,6 +20,11 @@ targetEntityType: node
 bundle: investeu_stories
 mode: teaser
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_investeu_media:
     type: media_thumbnail
     weight: 0
@@ -48,10 +52,9 @@ content:
       trim_options: {  }
     third_party_settings: {  }
 hidden:
-  field_investeu_components: true
   field_investeu_date: true
+  field_investeu_initiative: true
   field_investeu_sector: true
-  field_investeu_theme: true
   langcode: true
   links: true
   oe_content_content_owner: true

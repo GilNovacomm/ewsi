@@ -1,0 +1,6 @@
+services:
+  investeu_core.redirect_event:
+    class: Drupal\investeu_core\EventSubscriber\RedirectEventSubscriber
+    arguments: ['@current_route_match']
+    tags:
+      - { name: event_subscriber }
