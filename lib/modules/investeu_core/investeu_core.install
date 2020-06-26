@@ -7,26 +7,12 @@
 
 declare(strict_types = 1);
 
-use Drupal\user\Entity\User;
-
 /**
- * Implements hook_install().
+ * Grant backend access to the NVC team.
  */
-function investeu_core_install(): void {
-  if (user_load_by_name('novacomm') === FALSE) {
-    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
-    $user = User::create();
-    $user->enforceIsNew();
-    $user->setPassword(user_password(20));
-    $user->setEmail('luis.pereira@novacomm-europa.eu');
-    $user->setUsername('novacomm');
-    $user->set("init", 'email');
-    $user->set("langcode", $language);
-    $user->set("preferred_langcode", $language);
-    $user->set("preferred_admin_langcode", $language);
-    $user->addRole('investeu_admin');
-    $user->activate();
-    $user->save();
-    _user_mail_notify('register_admin_created', $user);
+function investeu_core_update_8001(): void {
+  if ($account = user_load_by_name('nptrosef')) {
+    $account->addRole('investeu_admin');
+    $account->save();
   }
 }

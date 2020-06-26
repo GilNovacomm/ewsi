@@ -1,0 +1,22 @@
+uuid: 92e7148d-a37d-48a8-b349-0db3d8670188
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_stories
+  module:
+    - link
+id: node.investeu_stories.oe_content_legacy_link
+field_name: oe_content_legacy_link
+entity_type: node
+bundle: investeu_stories
+label: 'Redirect link'
+description: 'Add a link to this field to automatically redirect the user to a different page. Use this to prevent duplication of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

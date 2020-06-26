@@ -1,0 +1,10 @@
+uuid: c3f669ae-df53-4632-89b4-ea7968378e49
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.highlight_with_description
+label: 'Highlight with description'
+targetEntityType: paragraph
+cache: true

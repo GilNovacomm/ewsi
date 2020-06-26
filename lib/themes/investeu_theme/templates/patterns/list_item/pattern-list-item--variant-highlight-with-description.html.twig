@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Default implementation for the highlight list item component.
+ */
+#}
+{% include '@ecl-twig/card' with {
+  card: {
+    title: {
+      label: title,
+      path: url,
+      type: "standalone",
+    },
+    description: detail,
+    image: image
+  }
+} only %}

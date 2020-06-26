@@ -1,0 +1,22 @@
+uuid: 742fd3cb-904b-4bf7-a836-2a2041e163ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_stories
+id: node.investeu_stories.promote
+field_name: promote
+entity_type: node
+bundle: investeu_stories
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
