@@ -1,0 +1,22 @@
+uuid: b9ff2b7a-5280-4266-bf58-2fbf52061b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.investeu_sector
+id: taxonomy_term.investeu_sector.status
+field_name: status
+entity_type: taxonomy_term
+bundle: investeu_sector
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
