@@ -1,0 +1,34 @@
+uuid: 5f506803-2684-4fed-aae2-bed5c2707cc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investeu_theme
+    - node.type.investeu_stories
+    - taxonomy.vocabulary.investeu_theme
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.investeu_stories.field_investeu_theme
+field_name: field_investeu_theme
+entity_type: node
+bundle: investeu_stories
+label: Theme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      investeu_theme: investeu_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
