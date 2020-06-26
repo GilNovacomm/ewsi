@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.investeu_landing_page.field_investeu_components
+    - field.field.node.investeu_landing_page.field_investeu_sector
     - node.type.investeu_landing_page
   module:
     - link
@@ -17,13 +18,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_investeu_components:
     type: oe_paragraphs_variants
-    weight: 1
+    weight: 2
     settings:
       title: Component
       title_plural: Components
@@ -40,16 +41,26 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
+  field_investeu_sector:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
-    weight: 6
+    weight: 7
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   oe_content_content_owner:
     type: skos_concept_entity_reference_autocomplete
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -59,7 +70,7 @@ content:
     third_party_settings: {  }
   oe_content_legacy_link:
     type: link_default
-    weight: 5
+    weight: 6
     region: content
     settings:
       placeholder_url: ''
@@ -67,7 +78,7 @@ content:
     third_party_settings: {  }
   oe_content_navigation_title:
     type: string_textfield
-    weight: 3
+    weight: 4
     region: content
     settings:
       size: 60
@@ -75,7 +86,7 @@ content:
     third_party_settings: {  }
   oe_content_short_title:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -83,7 +94,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -91,21 +102,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 15
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 12
     region: content
     third_party_settings: {  }
   title:
@@ -117,13 +128,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60
@@ -132,7 +143,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }

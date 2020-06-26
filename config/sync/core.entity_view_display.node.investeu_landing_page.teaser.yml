@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.investeu_landing_page.field_investeu_components
+    - field.field.node.investeu_landing_page.field_investeu_sector
     - node.type.investeu_landing_page
   module:
     - user
@@ -20,6 +21,7 @@ content:
     region: content
 hidden:
   field_investeu_components: true
+  field_investeu_sector: true
   langcode: true
   oe_content_content_owner: true
   oe_content_legacy_link: true
