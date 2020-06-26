@@ -1,0 +1,16 @@
+uuid: b84b1e54-1041-4eb5-9ba7-6038739efa2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.investeu_initiative
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.investeu_initiative
+target_entity_type_id: taxonomy_term
+target_bundle: investeu_initiative
+default_langcode: site_default
+language_alterable: false
