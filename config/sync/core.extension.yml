@@ -41,6 +41,7 @@ module:
   maxlength: 0
   media: 0
   media_avportal: 0
+  menu_ui: 0
   neutral_paths: 0
   nexteuropa_dashboard_agent: 0
   node: 0
