@@ -1,9 +1,10 @@
-uuid: 83b37439-8757-4f4b-b442-b5fb35628bd4
+uuid: 8fd87267-a024-4fb1-9ab1-ae9231a3e4e9
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.investeu_stories.field_investeu_components
+    - field.field.node.investeu_stories.field_investeu_date
     - field.field.node.investeu_stories.field_investeu_media
     - field.field.node.investeu_stories.field_investeu_sector
     - field.field.node.investeu_stories.field_investeu_teaser
@@ -18,20 +19,21 @@ bundle: investeu_stories
 mode: default
 content:
   field_investeu_components:
+    type: entity_reference_revisions_entity_view
     weight: 0
+    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
   links:
     weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_investeu_date: true
   field_investeu_media: true
   field_investeu_sector: true
   field_investeu_teaser: true

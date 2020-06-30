@@ -1,0 +1,10 @@
+uuid: d3c2a6a9-70a7-4b4b-b835-6120e82b70a4
+langcode: de
+status: true
+dependencies: {  }
+id: investeu_document
+label: Document
+icon_uuid: null
+icon_default: null
+description: 'A paragraph containing 1 or more documents'
+behavior_plugins: {  }

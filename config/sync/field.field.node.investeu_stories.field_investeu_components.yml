@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_investeu_components
     - node.type.investeu_stories
+    - paragraphs.paragraphs_type.investeu_success_stories
     - paragraphs.paragraphs_type.oe_accordion
     - paragraphs.paragraphs_type.oe_accordion_item
     - paragraphs.paragraphs_type.oe_banner
@@ -45,6 +46,7 @@ settings:
     negate: 0
     target_bundles:
       oe_accordion: oe_accordion
+      investeu_success_stories: investeu_success_stories
       oe_accordion_item: oe_accordion_item
       oe_banner: oe_banner
       oe_chart: oe_chart
@@ -63,6 +65,9 @@ settings:
       oe_text_feature_media: oe_text_feature_media
       oe_timeline: oe_timeline
     target_bundles_drag_drop:
+      investeu_success_stories:
+        enabled: true
+        weight: 20
       oe_accordion:
         enabled: true
         weight: 19
