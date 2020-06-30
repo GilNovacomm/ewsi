@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
 use Drupal\rdf_skos\Entity\Concept;
 use Drupal\rdf_skos\Entity\ConceptInterface;
 
@@ -14,10 +15,15 @@ use Drupal\rdf_skos\Entity\ConceptInterface;
  *
  * Sets the default content owner value.
  */
-function investeu_core_form_node_investeu_stories_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+function investeu_core_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $concept = Concept::load('http://publications.europa.eu/resource/authority/corporate-body/ECFIN');
+  $node = $form_state->getFormObject()->getEntity();
 
-  if ($concept instanceof ConceptInterface) {
+  if ($node instanceof NodeInterface
+    && $concept instanceof ConceptInterface
+    && $node->hasField('oe_content_content_owner')
+    && $node->get('oe_content_content_owner')->isEmpty()
+  ) {
     $form['oe_content_content_owner']['widget'][0]['target_id']['#default_value'] = $concept;
   }
 }
