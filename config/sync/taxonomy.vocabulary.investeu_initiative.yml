@@ -1,0 +1,8 @@
+uuid: bdffe9c0-1c75-4fb6-8aed-9f897216bb85
+langcode: en
+status: true
+dependencies: {  }
+name: 'InvestEU Initiative'
+vid: investeu_initiative
+description: ''
+weight: 0
