@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
     - oe_content
+    - node
     - search_api
   config:
+    - field.storage.node.field_investeu_sector
     - search_api.server.investeu_database_server
     - core.entity_view_mode.node.search_index
 id: investeu_stories_index
@@ -14,6 +15,14 @@ name: 'InvestEU Stories'
 description: ''
 read_only: false
 field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
   default_langcode:
     label: 'Default translation'
     datasource_id: 'entity:node'
@@ -22,6 +31,22 @@ field_settings:
     dependencies:
       module:
         - node
+  field_investeu_sector:
+    label: Sector
+    datasource_id: 'entity:node'
+    property_path: field_investeu_sector
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_investeu_sector
+  field_investeu_sector_1:
+    label: Sector
+    datasource_id: 'entity:node'
+    property_path: field_investeu_sector
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_investeu_sector
   langcode:
     label: Language
     datasource_id: 'entity:node'

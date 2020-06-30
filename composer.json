@@ -20,6 +20,7 @@
         "drupal/json_field": "^1.0@RC",
         "drupal/neutral_paths": "^1.1",
         "drupal/redirect": "^1.6",
+        "drupal/search_api": "^1.17",
         "drush/drush": "^9.0",
         "easyrdf/easyrdf": "0.10.0-alpha.1 as 0.9.1",
         "ec-europa/nexteuropa_dashboard_agent": "^1.3",

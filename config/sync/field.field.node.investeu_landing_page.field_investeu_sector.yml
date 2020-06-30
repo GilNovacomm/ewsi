@@ -1,0 +1,34 @@
+uuid: bc7606ca-8165-44ed-907f-15bc5e090666
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investeu_sector
+    - node.type.investeu_landing_page
+    - taxonomy.vocabulary.investeu_sector
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.investeu_landing_page.field_investeu_sector
+field_name: field_investeu_sector
+entity_type: node
+bundle: investeu_landing_page
+label: Sector
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      investeu_sector: investeu_sector
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: investeu_sector
+field_type: entity_reference

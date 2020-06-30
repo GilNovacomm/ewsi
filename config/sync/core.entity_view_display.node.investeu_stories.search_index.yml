@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_index
-    - field.field.node.investeu_stories.field_investeu_components
     - field.field.node.investeu_stories.field_investeu_sector
-    - field.field.node.investeu_stories.field_investeu_theme
     - node.type.investeu_stories
   module:
     - entity_reference_revisions
@@ -47,7 +45,10 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_investeu_date: true
+  field_investeu_initiative: true
   field_investeu_media: true
+  field_investeu_member_states: true
   field_investeu_teaser: true
   langcode: true
   oe_content_content_owner: true
