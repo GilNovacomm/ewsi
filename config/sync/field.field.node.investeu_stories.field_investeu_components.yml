@@ -6,9 +6,8 @@ dependencies:
     - field.storage.node.field_investeu_components
     - node.type.investeu_stories
     - paragraphs.paragraphs_type.oe_fact
-    - paragraphs.paragraphs_type.oe_facts_figures
     - paragraphs.paragraphs_type.oe_list_item
-    - paragraphs.paragraphs_type.oe_list_item_block
+    - paragraphs.paragraphs_type.oe_accordion_item
   module:
     - entity_reference_revisions
     - tmgmt_content
