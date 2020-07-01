@@ -5,6 +5,7 @@
  * Functions to support theming.
  */
 
+use Drupal\paragraphs\ParagraphInterface;
 use Drupal\Core\Template\Attribute;
 use Drupal\node\NodeInterface;
 
@@ -12,11 +13,20 @@ use Drupal\node\NodeInterface;
  * Implements hook_preprocess_page().
  */
 function investeu_theme_preprocess_page(array &$variables): void {
-  $node = $variables['node'];
-  if ($node instanceof NodeInterface && $node->getType() === 'investeu_landing_page') {
-    $variables['main_attributes'] = new Attribute([
-      'class' => [],
-      'id' => ['main-content'],
-    ]);
+  $node = $variables['node'] ?? NULL;
+
+  // If the node type is a landing page and the first paragraph is a banner
+  // we remove the additional margin.
+  if ($node instanceof NodeInterface && $node->getType() === 'investeu_landing_page'
+    && !$node->get('field_investeu_components')->isEmpty()) {
+    $paragraph = $node->get('field_investeu_components')->first()->entity;
+    if ($paragraph instanceof ParagraphInterface && $paragraph->getType() === 'oe_banner') {
+      $variables['main_attributes'] = new Attribute(
+        [
+          'class' => [],
+          'id' => ['main-content'],
+        ]
+      );
+    }
   }
 }
