@@ -21,10 +21,10 @@ content:
   oe_media_oembed_video:
     type: oembed
     weight: 0
-    label: above
+    label: hidden
     settings:
-      max_width: 0
-      max_height: 0
+      max_width: 640
+      max_height: 480
     third_party_settings: {  }
     region: content
 hidden:

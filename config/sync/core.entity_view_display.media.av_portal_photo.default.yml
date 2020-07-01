@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.media.av_portal_photo.oe_media_avportal_photo
     - media.type.av_portal_photo
+    - responsive_image.styles.oe_theme_main_content
   module:
     - media_avportal
     - oe_media_embed
@@ -22,9 +23,9 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: oe_theme_main_content
     third_party_settings: {  }
-    type: avportal_photo
+    type: avportal_photo_responsive
     region: content
 hidden:
   created: true

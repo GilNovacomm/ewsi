@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.investeu_landing_page.field_investeu_components
+    - field.field.node.investeu_landing_page.field_investeu_sector
     - node.type.investeu_landing_page
   module:
     - entity_reference_revisions
@@ -13,6 +14,11 @@ targetEntityType: node
 bundle: investeu_landing_page
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_investeu_components:
     type: entity_reference_revisions_entity_view
     weight: 101
@@ -21,6 +27,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_investeu_sector:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100
