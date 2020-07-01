@@ -23,6 +23,7 @@ module:
   entity_version: 0
   entity_version_workflows: 0
   extra_field: 0
+  facets: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -134,6 +135,7 @@ module:
   tmgmt_local: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   typed_link: 0
   ui_patterns: 0
   ui_patterns_library: 0

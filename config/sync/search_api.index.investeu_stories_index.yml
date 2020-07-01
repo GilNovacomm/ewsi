@@ -7,6 +7,8 @@ dependencies:
     - node
     - search_api
   config:
+    - field.storage.node.field_investeu_initiative
+    - field.storage.node.field_investeu_member_states
     - field.storage.node.field_investeu_sector
     - search_api.server.investeu_database_server
     - core.entity_view_mode.node.search_index
@@ -31,15 +33,23 @@ field_settings:
     dependencies:
       module:
         - node
-  field_investeu_sector:
-    label: Sector
+  field_investeu_initiative:
+    label: Initiative
     datasource_id: 'entity:node'
-    property_path: field_investeu_sector
+    property_path: field_investeu_initiative
     type: integer
     dependencies:
       config:
-        - field.storage.node.field_investeu_sector
-  field_investeu_sector_1:
+        - field.storage.node.field_investeu_initiative
+  field_investeu_member_states:
+    label: 'Member states'
+    datasource_id: 'entity:node'
+    property_path: field_investeu_member_states
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_investeu_member_states
+  field_investeu_sector:
     label: Sector
     datasource_id: 'entity:node'
     property_path: field_investeu_sector
