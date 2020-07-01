@@ -14,3 +14,4 @@ regions:
   navigation: "Navigation"
   content: "Content"
   footer: "Footer"
+  facets: "Facets"
