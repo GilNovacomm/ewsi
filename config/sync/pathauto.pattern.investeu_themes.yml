@@ -1,0 +1,23 @@
+uuid: 0218ce11-4261-47de-a2de-416aea1d1d0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: investeu_themes
+label: 'InvestEU Themes'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'themes/[term:original:name]'
+selection_criteria:
+  7a1e108a-55e4-4585-9ddc-ec571a922456:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      investeu_theme: investeu_theme
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 7a1e108a-55e4-4585-9ddc-ec571a922456
+selection_logic: and
+weight: -5
+relationships: {  }

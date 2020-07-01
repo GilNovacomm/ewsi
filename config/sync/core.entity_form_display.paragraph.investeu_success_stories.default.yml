@@ -1,0 +1,34 @@
+uuid: f4d52cdd-91c4-42e8-9197-ab842cdb12f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.investeu_success_stories.field_oe_link
+    - field.field.paragraph.investeu_success_stories.field_oe_title
+    - paragraphs.paragraphs_type.investeu_success_stories
+  module:
+    - link
+id: paragraph.investeu_success_stories.default
+targetEntityType: paragraph
+bundle: investeu_success_stories
+mode: default
+content:
+  field_oe_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_oe_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
