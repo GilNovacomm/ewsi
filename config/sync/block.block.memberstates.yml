@@ -1,0 +1,23 @@
+uuid: 525a71fe-f430-47f7-aa55-0db8c34babad
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_states
+  module:
+    - facets
+  theme:
+    - investeu_theme
+id: memberstates
+theme: investeu_theme
+region: facets
+weight: 0
+provider: null
+plugin: 'facet_block:member_states'
+settings:
+  id: 'facet_block:member_states'
+  label: 'Member states'
+  provider: facets
+  label_display: '0'
+  block_id: memberstates
+visibility: {  }
