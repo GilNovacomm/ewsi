@@ -1,20 +1,18 @@
-uuid: a456d4d8-5b40-41cc-b987-b7703dcca62a
+uuid: da2754c6-d553-48d5-92f8-8c9deb825d3e
 langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.oe_map
+    - paragraphs.paragraphs_type.investeu_document
   module:
     - content_translation
 third_party_settings:
   content_translation:
     enabled: false
     bundle_settings:
-      untranslatable_fields_hide: '1'
-_core:
-  default_config_hash: qw7S0DiFc3btqazb_0_xhIrD995emNQscUU2EbAAwKE
-id: paragraph.oe_map
+      untranslatable_fields_hide: '0'
+id: paragraph.investeu_document
 target_entity_type_id: paragraph
-target_bundle: oe_map
+target_bundle: investeu_document
 default_langcode: site_default
 language_alterable: false
