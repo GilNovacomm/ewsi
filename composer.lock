@@ -13934,7 +13934,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2020-05-22T19:35:43+00:00"
+            "time": "2020-05-22T19:35:43+00:00",
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
