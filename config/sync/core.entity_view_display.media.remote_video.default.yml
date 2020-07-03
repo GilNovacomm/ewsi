@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.media.remote_video.oe_media_oembed_video
-    - image.style.thumbnail
     - media.type.remote_video
   module:
-    - image
     - media
-    - user
+    - oe_media_embed
+third_party_settings:
+  oe_media_embed:
+    embeddable: true
 _core:
   default_config_hash: MlMxCCOsCUCFp_Sh5z_q1gNw4uLnqFGIGgVV4S9AH-4
 id: media.remote_video.default
@@ -17,41 +18,18 @@ targetEntityType: media
 bundle: remote_video
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
-    weight: 0
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   oe_media_oembed_video:
     type: oembed
-    weight: 6
-    label: above
-    settings:
-      max_width: 0
-      max_height: 0
-    third_party_settings: {  }
-    region: content
-  thumbnail:
-    type: image
-    weight: 5
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    region: content
-    third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
     weight: 0
-    region: content
-    settings: {  }
+    label: hidden
+    settings:
+      max_width: 640
+      max_height: 480
     third_party_settings: {  }
+    region: content
 hidden:
+  created: true
   langcode: true
   name: true
+  thumbnail: true
+  uid: true

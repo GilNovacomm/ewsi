@@ -2,6 +2,14 @@ uuid: 2a2b1b40-8e05-42e1-980b-7a78b9ce64bc
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.investeu_landing_page
+    - node.type.investeu_stories
+    - node.type.oe_event
+    - node.type.oe_news
+    - node.type.oe_page
+    - node.type.oe_policy
+    - node.type.oe_publication
   module:
     - content_moderation
     - entity_version_workflows
@@ -153,4 +161,13 @@ type_settings:
         - validated
       to: published
       weight: 1
-  entity_types: {  }
+  entity_types:
+    node:
+      - investeu_landing_page
+      - investeu_stories
+      - oe_event
+      - oe_news
+      - oe_page
+      - oe_policy
+      - oe_publication
+  default_moderation_state: draft

@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.media.av_portal_photo.oe_media_avportal_photo
-    - image.style.thumbnail
     - media.type.av_portal_photo
+    - responsive_image.styles.oe_theme_main_content
   module:
-    - image
     - media_avportal
-    - user
+    - oe_media_embed
+third_party_settings:
+  oe_media_embed:
+    embeddable: false
 _core:
   default_config_hash: G2xm8kky8GSjaAiv9EgTaLZGPCLINqV2M_uRt19xm80
 id: media.av_portal_photo.default
@@ -17,39 +19,17 @@ targetEntityType: media
 bundle: av_portal_photo
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
-    weight: 0
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   oe_media_avportal_photo:
-    weight: 6
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: avportal_photo
-    region: content
-  thumbnail:
-    type: image
-    weight: 5
+    weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: ''
-    region: content
+      responsive_image_style: oe_theme_main_content
     third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
-    weight: 0
+    type: avportal_photo_responsive
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  created: true
   langcode: true
   name: true
+  thumbnail: true
+  uid: true

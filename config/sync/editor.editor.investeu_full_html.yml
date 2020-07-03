@@ -30,11 +30,12 @@ settings:
         -
           name: Media
           items:
+            - media
             - Blockquote
-            - DrupalImage
         -
           name: Tools
           items:
+            - RemoveFormat
             - Source
   plugins:
     stylescombo:

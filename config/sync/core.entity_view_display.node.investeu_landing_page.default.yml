@@ -14,6 +14,11 @@ targetEntityType: node
 bundle: investeu_landing_page
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_investeu_components:
     type: entity_reference_revisions_entity_view
     weight: 101
