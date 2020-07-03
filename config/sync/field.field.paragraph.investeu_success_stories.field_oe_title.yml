@@ -17,7 +17,7 @@ bundle: investeu_success_stories
 label: Title
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

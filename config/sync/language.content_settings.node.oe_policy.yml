@@ -10,7 +10,7 @@ third_party_settings:
   content_translation:
     enabled: true
     bundle_settings:
-      untranslatable_fields_hide: '0'
+      untranslatable_fields_hide: '1'
 _core:
   default_config_hash: xlsQX5EEtkgPpLHJiqFDZs1ID1Qy_Br74LM3xfE9ohg
 id: node.oe_policy
