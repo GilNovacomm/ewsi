@@ -129,8 +129,18 @@ function investeu_theme_preprocess_media__document__default(&$variables) {
  * Implements hook_form_alter().
  */
 function investeu_theme_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // Add top margin to the views exposed form submit button.
   if ($form_id === 'views_exposed_form') {
-    $form['actions']['submit']['#attributes']['class'][] = 'ecl-u-mt-xs';
+    // Add top margin to the form submit button.
+    if (isset($form['actions']['submit'])) {
+      $form['actions']['submit']['#attributes']['class'][] = 'ecl-u-mt-xl';
+      $form['actions']['submit']['#attributes']['class'][] = 'ecl-col-12';
+    }
+
+    // Add secondary button class to the form reset button.
+    if (isset($form['actions']['reset'])) {
+      $form['actions']['reset']['#attributes']['class'][] = 'ecl-u-mt-m';
+      $form['actions']['reset']['#attributes']['class'][] = 'ecl-button--secondary';
+      $form['actions']['reset']['#attributes']['class'][] = 'ecl-col-12';
+    }
   }
 }
