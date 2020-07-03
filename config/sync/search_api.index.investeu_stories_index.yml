@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_investeu_initiative
     - field.storage.node.field_investeu_member_states
     - field.storage.node.field_investeu_sector
+    - field.storage.node.field_investeu_teaser
     - search_api.server.investeu_database_server
     - core.entity_view_mode.node.search_index
 id: investeu_stories_index
@@ -57,6 +58,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_investeu_sector
+  field_investeu_teaser:
+    label: Teaser
+    datasource_id: 'entity:node'
+    property_path: field_investeu_teaser
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_investeu_teaser
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -163,21 +172,25 @@ processor_settings:
       preprocess_query: -30
   entity_status: {  }
   ignorecase:
-    all_fields: false
+    all_fields: true
     fields:
+      - field_investeu_member_states
+      - field_investeu_teaser
       - langcode
       - language_with_fallback
       - oe_content_navigation_title
       - oe_content_short_title
       - rendered_item
+      - title
     weights:
       preprocess_index: -20
       preprocess_query: -20
   language_with_fallback: {  }
   rendered_item: {  }
   tokenizer:
-    all_fields: false
+    all_fields: true
     fields:
+      - field_investeu_teaser
       - rendered_item
     spaces: ''
     overlap_cjk: 1
@@ -186,13 +199,16 @@ processor_settings:
       preprocess_index: -6
       preprocess_query: -6
   transliteration:
-    all_fields: false
+    all_fields: true
     fields:
+      - field_investeu_member_states
+      - field_investeu_teaser
       - langcode
       - language_with_fallback
       - oe_content_navigation_title
       - oe_content_short_title
       - rendered_item
+      - title
     weights:
       preprocess_index: -20
       preprocess_query: -20

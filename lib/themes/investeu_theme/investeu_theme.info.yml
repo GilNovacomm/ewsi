@@ -15,3 +15,6 @@ regions:
   content: "Content"
   footer: "Footer"
   facets: "Facets"
+
+libraries-override:
+  facets/drupal.facets.checkbox-widget: investeu_theme/investeu.facets.checkbox-widget

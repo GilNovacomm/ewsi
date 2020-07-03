@@ -5,6 +5,7 @@
  * Functions to support theming.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\views\Views;
 use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\file\Entity\File;
@@ -122,4 +123,14 @@ function investeu_theme_preprocess_media__document__default(&$variables) {
   }
 
   $variables['translations'] = $translations;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function investeu_theme_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add top margin to the views exposed form submit button.
+  if ($form_id === 'views_exposed_form') {
+    $form['actions']['submit']['#attributes']['class'][] = 'ecl-u-mt-xs';
+  }
 }

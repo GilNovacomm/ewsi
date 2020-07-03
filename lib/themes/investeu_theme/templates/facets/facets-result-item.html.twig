@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a facet result item.
+ *
+ * Available variables:
+ * - value: The item value.
+ * - raw_value: The raw item value.
+ * - show_count: If this facet provides count.
+ * - count: The amount of results.
+ * - is_active: The item is active.
+ * - facet: The facet for this result item.
+ *   - id: the machine name for the facet.
+ *   - label: The facet label.
+ *
+ * @ingroup themeable
+ */
+#}
+<span class="ecl-checkbox__box">
+    {% include '@ecl-twig/ec-component-icon/ecl-icon.html.twig' with {
+        icon: {
+            path: ecl_icon_path,
+            type: "ui",
+            name: "check",
+            size: "s"
+        },
+        extra_classes: 'ecl-checkbox__icon',
+    } only %}
+</span>
+{{- value -}}
+{% if show_count %}
+    <span class="facet-item__count">({{ count }})</span>
+{% endif %}

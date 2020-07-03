@@ -410,6 +410,7 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - field_investeu_teaser
             - rendered_item
           plugin_id: search_api_fulltext
       defaults:
