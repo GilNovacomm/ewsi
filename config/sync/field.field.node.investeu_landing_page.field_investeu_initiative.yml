@@ -1,21 +1,21 @@
-uuid: bc7606ca-8165-44ed-907f-15bc5e090666
+uuid: f2514d84-6b13-4311-a33d-39810d7aab1e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_investeu_sector
+    - field.storage.node.field_investeu_initiative
     - node.type.investeu_landing_page
-    - taxonomy.vocabulary.investeu_sector
+    - taxonomy.vocabulary.investeu_initiative
   module:
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.investeu_landing_page.field_investeu_sector
-field_name: field_investeu_sector
+id: node.investeu_landing_page.field_investeu_initiative
+field_name: field_investeu_initiative
 entity_type: node
 bundle: investeu_landing_page
-label: Sector
+label: Initiative
 description: ''
 required: false
 translatable: false
@@ -25,10 +25,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      investeu_sector: investeu_sector
+      investeu_initiative: investeu_initiative
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: investeu_sector
+    auto_create_bundle: ''
 field_type: entity_reference
