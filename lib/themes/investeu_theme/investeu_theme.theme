@@ -141,6 +141,7 @@ function investeu_theme_form_alter(&$form, FormStateInterface $form_state, $form
       $form['actions']['reset']['#attributes']['class'][] = 'ecl-u-mt-m';
       $form['actions']['reset']['#attributes']['class'][] = 'ecl-button--secondary';
       $form['actions']['reset']['#attributes']['class'][] = 'ecl-col-12';
+      $form['actions']['reset']['#attributes']['class'][] = 'ecl-u-bg-white';
     }
   }
 }
