@@ -2,6 +2,8 @@ uuid: 4b135c66-d12a-44ee-8cbe-c569b7119748
 langcode: en
 status: true
 dependencies:
+  config:
+    - entity_browser.browser.embed
   module:
     - oe_media_embed
 _core:
@@ -11,12 +13,15 @@ id: media
 type_id: embed_media
 type_settings:
   media_types:
-    av_portal_photo: av_portal_photo
-    av_portal_video: av_portal_video
     document: document
     image: image
-    remote_video: remote_video
-  entity_browser: ''
+    av_portal_photo: '0'
+    av_portal_video: '0'
+    remote_video: '0'
+    webtools_chart: '0'
+    webtools_map: '0'
+    webtools_social_feed: '0'
+  entity_browser: embed
   entity_browser_settings:
     display_review: false
 icon: {  }

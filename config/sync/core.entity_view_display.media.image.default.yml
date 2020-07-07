@@ -11,7 +11,7 @@ dependencies:
     - responsive_image
 third_party_settings:
   oe_media_embed:
-    embeddable: false
+    embeddable: true
 _core:
   default_config_hash: Io7rEAP7BEHAdpaOQIYMsl7N7Cpqh8MHlFFOf-jQbfI
 id: media.image.default

@@ -7,6 +7,10 @@ dependencies:
     - media.type.document
   module:
     - file
+    - oe_media_embed
+third_party_settings:
+  oe_media_embed:
+    embeddable: true
 _core:
   default_config_hash: n4V0ZWJfdgQ6WU6hDuy4uDYqVN_nsboMtlhzZxqtIIo
 id: media.document.default
@@ -26,5 +30,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true
