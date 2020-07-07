@@ -9,7 +9,11 @@ dependencies:
   module:
     - image
     - media
+    - oe_media_embed
     - user
+third_party_settings:
+  oe_media_embed:
+    embeddable: false
 _core:
   default_config_hash: MlMxCCOsCUCFp_Sh5z_q1gNw4uLnqFGIGgVV4S9AH-4
 id: media.remote_video.default
@@ -55,3 +59,4 @@ content:
 hidden:
   langcode: true
   name: true
+  search_api_excerpt: true

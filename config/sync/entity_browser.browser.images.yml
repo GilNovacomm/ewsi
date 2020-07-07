@@ -1,0 +1,42 @@
+uuid: d93de306-43f3-4602-8bc4-98125ec3b84d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.investeu_entity_browsers
+  module:
+    - views
+name: images
+label: Images
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  27bd0944-d4f6-4f26-b84e-bd12e83ec36a:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: Select
+    uuid: 27bd0944-d4f6-4f26-b84e-bd12e83ec36a
+    weight: -9
+    label: Upload
+    id: media_image_upload
+  727281fb-06fe-4c40-9aa0-95669c6a18b9:
+    settings:
+      view: investeu_entity_browsers
+      view_display: images
+      submit_text: Select
+      auto_select: false
+    uuid: 727281fb-06fe-4c40-9aa0-95669c6a18b9
+    weight: -10
+    label: Select
+    id: view

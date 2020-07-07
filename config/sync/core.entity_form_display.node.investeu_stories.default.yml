@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.images
     - field.field.node.investeu_stories.field_investeu_date
     - field.field.node.investeu_stories.field_investeu_initiative
     - field.field.node.investeu_stories.field_investeu_media
@@ -12,6 +13,7 @@ dependencies:
     - node.type.investeu_stories
   module:
     - datetime
+    - entity_browser
     - link
     - path
     - rdf_skos
@@ -43,15 +45,20 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_investeu_media:
-    weight: 4
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
+    weight: 2
     region: content
+    settings:
+      entity_browser: images
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: browse
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+    third_party_settings: {  }
   field_investeu_member_states:
     weight: 10
     settings:
@@ -107,7 +114,7 @@ content:
     third_party_settings: {  }
   oe_content_navigation_title:
     type: string_textfield
-    weight: 3
+    weight: 4
     region: content
     settings:
       size: 60
@@ -115,7 +122,7 @@ content:
     third_party_settings: {  }
   oe_content_short_title:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60

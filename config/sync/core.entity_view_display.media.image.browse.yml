@@ -1,31 +1,32 @@
-uuid: 099961cd-e5e0-4720-803b-e83a804e35ad
+uuid: 9e283e5d-3223-49d9-848b-541db291a28e
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.browse
     - field.field.media.image.oe_media_image
+    - image.style.medium
     - media.type.image
-    - responsive_image.styles.oe_theme_main_content
   module:
+    - image
     - oe_media_embed
-    - responsive_image
 third_party_settings:
   oe_media_embed:
     embeddable: false
 _core:
   default_config_hash: Io7rEAP7BEHAdpaOQIYMsl7N7Cpqh8MHlFFOf-jQbfI
-id: media.image.default
+id: media.image.browse
 targetEntityType: media
 bundle: image
-mode: default
+mode: browse
 content:
   oe_media_image:
-    type: responsive_image
+    type: image
     weight: 0
     region: content
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:
