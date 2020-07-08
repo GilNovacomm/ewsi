@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - views.view.av_portal_entity_browsers
     - views.view.investeu_entity_browsers
   module:
     - views
@@ -27,7 +28,7 @@ widgets:
       auto_select: false
     uuid: 85a52e41-fddd-4df9-ba0b-abeb5dce6d5e
     weight: 1
-    label: View
+    label: 'All local media'
     id: view
   afc14b77-2d4c-4084-b425-9bd7b5477e16:
     settings:
@@ -38,5 +39,15 @@ widgets:
       submit_text: 'Save media'
     uuid: afc14b77-2d4c-4084-b425-9bd7b5477e16
     weight: 2
-    label: Upload
+    label: 'Upload image'
     id: media_image_upload
+  0e17a29c-c0af-47e5-90a4-050987e59b33:
+    settings:
+      view: av_portal_entity_browsers
+      view_display: all
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 0e17a29c-c0af-47e5-90a4-050987e59b33
+    weight: 3
+    label: 'Search in AV Portal'
+    id: avportal_search

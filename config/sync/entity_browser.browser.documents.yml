@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.investeu_entity_browsers
   module:
+    - entity_browser_entity_form
     - views
 name: documents
 label: Documents
@@ -29,14 +30,13 @@ widgets:
     weight: 1
     label: Select
     id: view
-  bfefa482-a05b-4a60-a733-2e284f264985:
+  034bd348-ad36-432b-b186-b9aeb2c39062:
     settings:
-      extensions: 'jpg jpeg png gif'
-      media_type: image
-      upload_location: 'public://'
-      multiple: '1'
-      submit_text: 'Select files'
-    uuid: bfefa482-a05b-4a60-a733-2e284f264985
-    weight: 2
-    label: Upload
-    id: media_image_upload
+      entity_type: media
+      bundle: document
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: 034bd348-ad36-432b-b186-b9aeb2c39062
+    weight: 3
+    label: 'Upload document'
+    id: entity_form

@@ -9,6 +9,10 @@ dependencies:
     - media.type.av_portal_video
   module:
     - image
+    - oe_media_embed
+third_party_settings:
+  oe_media_embed:
+    embeddable: false
 _core:
   default_config_hash: RHDrMsUazV-WBQpSBcWD6X2aj-6DJ83-0kuAOkeqL-8
 id: media.av_portal_video.browse

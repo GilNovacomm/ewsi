@@ -6,12 +6,12 @@ dependencies:
     - field.field.media.av_portal_photo.oe_media_avportal_photo
     - media.type.av_portal_photo
   module:
+    - image
     - media_avportal
     - oe_media_embed
-    - user
 third_party_settings:
   oe_media_embed:
-    embeddable: false
+    embeddable: true
 _core:
   default_config_hash: G2xm8kky8GSjaAiv9EgTaLZGPCLINqV2M_uRt19xm80
 id: media.av_portal_photo.default
@@ -33,6 +33,7 @@ content:
     label: hidden
     settings:
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
     region: content
 hidden:
@@ -40,5 +41,4 @@ hidden:
   langcode: true
   name: true
   search_api_excerpt: true
-  thumbnail: true
   uid: true

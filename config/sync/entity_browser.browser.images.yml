@@ -3,15 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - views.view.av_portal_entity_browsers
     - views.view.investeu_entity_browsers
   module:
+    - entity_browser_entity_form
     - views
 name: images
 label: Images
 display: modal
 display_configuration:
-  width: '650'
-  height: '500'
+  width: ''
+  height: '640'
   link_text: 'Select entities'
   auto_open: false
 selection_display: no_display
@@ -28,7 +30,7 @@ widgets:
       submit_text: Select
     uuid: 27bd0944-d4f6-4f26-b84e-bd12e83ec36a
     weight: -9
-    label: Upload
+    label: 'Upload image'
     id: media_image_upload
   727281fb-06fe-4c40-9aa0-95669c6a18b9:
     settings:
@@ -38,5 +40,25 @@ widgets:
       auto_select: false
     uuid: 727281fb-06fe-4c40-9aa0-95669c6a18b9
     weight: -10
-    label: Select
+    label: 'All local media'
     id: view
+  cb90f93b-fa6e-4d49-9bf8-915ab3689194:
+    settings:
+      view: av_portal_entity_browsers
+      view_display: all
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: cb90f93b-fa6e-4d49-9bf8-915ab3689194
+    weight: -6
+    label: 'Search in AV Portal'
+    id: avportal_search
+  5186998c-1b94-4c92-afb4-9817c8be1d4f:
+    settings:
+      entity_type: media
+      bundle: remote_video
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: 5186998c-1b94-4c92-afb4-9817c8be1d4f
+    weight: -8
+    label: 'New remote video'
+    id: entity_form
