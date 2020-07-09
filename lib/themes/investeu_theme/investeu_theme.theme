@@ -132,8 +132,32 @@ function investeu_theme_form_alter(&$form, FormStateInterface $form_state, $form
   if ($form_id === 'views_exposed_form') {
     // Add top margin to the form submit button.
     if (isset($form['actions']['submit'])) {
-      $form['actions']['submit']['#attributes']['class'][] = 'ecl-u-mt-xl';
       $form['actions']['submit']['#attributes']['class'][] = 'ecl-col-12';
+    }
+
+    // Fetch all the blocks from the facets region and create a lazy builder
+    // block per facet.
+    $blocks = \Drupal::entityTypeManager()
+      ->getStorage('block')
+      ->loadByProperties(
+        [
+          'theme' => \Drupal::config('system.theme')->get('default'),
+          'region' => 'facets',
+        ]
+      );
+
+    foreach ($blocks as $block) {
+      $build = [
+        '#lazy_builder' => [
+          '\Drupal\block\BlockViewBuilder::lazyBuilder',
+          [$block->id(), $block->id()],
+        ],
+        '#cache' => [
+          'contexts' => ['user'],
+        ],
+      ];
+
+      $form['facets'][$block->id()]['#markup'] = Drupal::service('renderer')->render($build);
     }
 
     // Add secondary button class to the form reset button.
