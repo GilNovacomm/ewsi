@@ -126,6 +126,7 @@ module:
   rdf_entity: 0
   rdf_skos: 0
   redirect: 0
+  redis: 0
   remote_stream_wrapper: 0
   responsive_image: 0
   search_api: 0
