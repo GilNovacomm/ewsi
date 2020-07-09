@@ -28,7 +28,7 @@ widgets:
       auto_select: false
     uuid: d9bf5dd7-76db-4aec-9ef0-36389b717d21
     weight: 1
-    label: Select
+    label: 'All local media'
     id: view
   034bd348-ad36-432b-b186-b9aeb2c39062:
     settings:

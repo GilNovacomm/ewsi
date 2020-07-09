@@ -6,6 +6,7 @@ dependencies:
     - views.view.av_portal_entity_browsers
     - views.view.investeu_entity_browsers
   module:
+    - entity_browser_entity_form
     - views
 name: embed
 label: Embed
@@ -27,7 +28,7 @@ widgets:
       submit_text: 'Select entities'
       auto_select: false
     uuid: 85a52e41-fddd-4df9-ba0b-abeb5dce6d5e
-    weight: 1
+    weight: -10
     label: 'All local media'
     id: view
   afc14b77-2d4c-4084-b425-9bd7b5477e16:
@@ -38,7 +39,7 @@ widgets:
       multiple: '1'
       submit_text: 'Save media'
     uuid: afc14b77-2d4c-4084-b425-9bd7b5477e16
-    weight: 2
+    weight: -9
     label: 'Upload image'
     id: media_image_upload
   0e17a29c-c0af-47e5-90a4-050987e59b33:
@@ -48,6 +49,36 @@ widgets:
       submit_text: 'Select entities'
       auto_select: false
     uuid: 0e17a29c-c0af-47e5-90a4-050987e59b33
-    weight: 3
+    weight: -5
     label: 'Search in AV Portal'
     id: avportal_search
+  e9a054a3-c1d8-4708-b348-e94886d8a120:
+    settings:
+      entity_type: media
+      bundle: remote_video
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: e9a054a3-c1d8-4708-b348-e94886d8a120
+    weight: -8
+    label: 'New remote video'
+    id: entity_form
+  d8d4cb5a-4b0d-41a1-9806-d2e5df2acd8a:
+    settings:
+      entity_type: media
+      bundle: av_portal_video
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: d8d4cb5a-4b0d-41a1-9806-d2e5df2acd8a
+    weight: -7
+    label: 'New AV Portal video'
+    id: entity_form
+  233aaa3b-3db0-4c0c-9c01-a9b7da939f5c:
+    settings:
+      entity_type: media
+      bundle: av_portal_photo
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: 233aaa3b-3db0-4c0c-9c01-a9b7da939f5c
+    weight: -6
+    label: 'New AV Portal photo'
+    id: entity_form
