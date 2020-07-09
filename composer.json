@@ -24,6 +24,7 @@
         "drupal/neutral_paths": "^1.1",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
+        "drupal/redis": "^1.4",
         "drupal/search_api": "^1.17",
         "drupal/twig_tweak": "^2.6",
         "drupal/typed_link": "^1.1",
