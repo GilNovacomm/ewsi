@@ -1,0 +1,23 @@
+uuid: ab76ae7e-00db-4717-a1de-c0a5cf7e026c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.initiative
+  module:
+    - facets
+  theme:
+    - investeu_theme
+id: initiative
+theme: investeu_theme
+region: facets
+weight: 0
+provider: null
+plugin: 'facet_block:initiative'
+settings:
+  id: 'facet_block:initiative'
+  label: Initiative
+  provider: facets
+  label_display: '0'
+  block_id: initiative
+visibility: {  }

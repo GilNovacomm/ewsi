@@ -1,13 +1,13 @@
-uuid: 387d0b86-a911-4b48-963b-8f756470afda
+uuid: 0ce57dcb-9305-4599-9dbb-2d0f3b68d71f
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.investeu_theme
-id: taxonomy_term.investeu_theme.status
+    - paragraphs.paragraphs_type.investeu_success_stories
+id: paragraph.investeu_success_stories.status
 field_name: status
-entity_type: taxonomy_term
-bundle: investeu_theme
+entity_type: paragraph
+bundle: investeu_success_stories
 label: Published
 description: ''
 required: false

@@ -1,0 +1,5 @@
+investeu.facets.checkbox-widget:
+  js:
+    js/checkbox-widget.js: {}
+  dependencies:
+    - facets/widget

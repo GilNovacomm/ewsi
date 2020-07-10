@@ -16,5 +16,5 @@ _core:
 id: paragraph.oe_chart
 target_entity_type_id: paragraph
 target_bundle: oe_chart
-default_langcode: en
-language_alterable: true
+default_langcode: site_default
+language_alterable: false

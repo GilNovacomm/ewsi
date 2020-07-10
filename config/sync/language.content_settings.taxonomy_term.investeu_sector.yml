@@ -15,4 +15,4 @@ id: taxonomy_term.investeu_sector
 target_entity_type_id: taxonomy_term
 target_bundle: investeu_sector
 default_langcode: en
-language_alterable: false
+language_alterable: true
