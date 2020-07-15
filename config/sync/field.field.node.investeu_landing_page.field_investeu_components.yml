@@ -5,16 +5,18 @@ dependencies:
   config:
     - field.storage.node.field_investeu_components
     - node.type.investeu_landing_page
+    - paragraphs.paragraphs_type.oe_accordion_item
     - paragraphs.paragraphs_type.oe_fact
-    - paragraphs.paragraphs_type.oe_facts_figures
     - paragraphs.paragraphs_type.oe_list_item
-    - paragraphs.paragraphs_type.oe_list_item_block
   module:
+    - composite_reference
     - entity_reference_revisions
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
+  composite_reference:
+    composite: false
 id: node.investeu_landing_page.field_investeu_components
 field_name: field_investeu_components
 entity_type: node
@@ -30,17 +32,22 @@ settings:
   handler_settings:
     negate: 1
     target_bundles:
+      oe_accordion_item: oe_accordion_item
       oe_fact: oe_fact
-      oe_facts_figures: oe_facts_figures
       oe_list_item: oe_list_item
-      oe_list_item_block: oe_list_item_block
     target_bundles_drag_drop:
+      investeu_document:
+        weight: 21
+        enabled: false
+      investeu_success_stories:
+        weight: 22
+        enabled: false
       oe_accordion:
         weight: 19
         enabled: false
       oe_accordion_item:
+        enabled: true
         weight: 20
-        enabled: false
       oe_banner:
         weight: 21
         enabled: false
@@ -57,8 +64,8 @@ settings:
         enabled: true
         weight: 25
       oe_facts_figures:
-        enabled: true
         weight: 26
+        enabled: false
       oe_links_block:
         weight: 27
         enabled: false
@@ -66,8 +73,8 @@ settings:
         enabled: true
         weight: 28
       oe_list_item_block:
-        enabled: true
         weight: 29
+        enabled: false
       oe_map:
         weight: 30
         enabled: false

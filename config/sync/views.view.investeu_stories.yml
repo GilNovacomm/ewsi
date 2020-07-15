@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - search_api.index.investeu_stories_index
+    - taxonomy.vocabulary.investeu_initiative
   module:
     - search_api
 id: investeu_stories
@@ -269,10 +270,10 @@ display:
           break_phrase: false
           not: true
           plugin_id: search_api
-        field_investeu_sector_1:
-          id: field_investeu_sector_1
+        field_investeu_initiative:
+          id: field_investeu_initiative
           table: search_api_index_investeu_stories_index
-          field: field_investeu_sector_1
+          field: field_investeu_initiative
           relationship: none
           group_type: group
           admin_label: ''
@@ -288,7 +289,7 @@ display:
             node: true
             limit: true
             vids:
-              investeu_sector: investeu_sector
+              investeu_initiative: investeu_initiative
             anyall: ','
             term_page: '0'
           default_argument_skip_url: false
@@ -428,11 +429,11 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
+          submit_button: 'Refine results'
+          reset_button: true
+          reset_button_label: 'Clear all'
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:

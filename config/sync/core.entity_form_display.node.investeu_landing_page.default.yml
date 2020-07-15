@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.investeu_landing_page.field_investeu_components
-    - field.field.node.investeu_landing_page.field_investeu_sector
+    - field.field.node.investeu_landing_page.field_investeu_initiative
     - node.type.investeu_landing_page
   module:
     - link
@@ -41,8 +41,8 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
-  field_investeu_sector:
-    weight: 1
+  field_investeu_initiative:
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
