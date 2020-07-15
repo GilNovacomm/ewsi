@@ -6,9 +6,11 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Drupal\node\NodeInterface;
 use Drupal\rdf_skos\Entity\Concept;
 use Drupal\rdf_skos\Entity\ConceptInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -46,5 +48,21 @@ function investeu_core_form_views_exposed_form_alter(&$form, FormStateInterface 
         '#weight' => -1,
       ];
     }
+
+    $form['actions']['reset'] = [
+      '#type' => 'submit',
+      '#value' => t('Clear all'),
+      '#submit' => ['investeu_core_form_views_exposed_form_filter_reset'],
+    ];
   }
+}
+
+/**
+ * {@inheritdoc}
+ *
+ * Clears the form values of an exposed form filter.
+ */
+function investeu_core_form_views_exposed_form_filter_reset(&$form, FormStateInterface $form_state) {
+  $redirect = new RedirectResponse(Url::fromRoute('<current>')->toString());
+  $redirect->send();
 }
