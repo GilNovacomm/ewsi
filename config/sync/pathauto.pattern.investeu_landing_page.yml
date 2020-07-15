@@ -1,0 +1,22 @@
+uuid: 2b671d01-23ab-49fc-ab63-9e2b4f0ed35a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: investeu_landing_page
+label: 'InvestEU Landing page'
+type: 'canonical_entities:node'
+pattern: '[node:source:title]'
+selection_criteria:
+  ad4964a7-21a9-405e-a8a7-9e4f53270f1f:
+    id: node_type
+    bundles:
+      investeu_landing_page: investeu_landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ad4964a7-21a9-405e-a8a7-9e4f53270f1f
+selection_logic: and
+weight: -5
+relationships: {  }

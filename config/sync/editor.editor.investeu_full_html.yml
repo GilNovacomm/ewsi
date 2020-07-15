@@ -30,18 +30,19 @@ settings:
         -
           name: Media
           items:
+            - media
             - Blockquote
-            - DrupalImage
         -
           name: Tools
           items:
+            - RemoveFormat
             - Source
   plugins:
     stylescombo:
       styles: ''
     drupallink:
-      linkit_enabled: false
-      linkit_profile: ''
+      linkit_enabled: true
+      linkit_profile: default
     language:
       language_list: un
 image_upload:
