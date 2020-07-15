@@ -1,0 +1,17 @@
+uuid: 6a09ea1a-a7ad-4fe0-9542-565add340eaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: investeu_database_server
+name: 'InvestEU database server'
+description: 'InvestEU database server.'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: words
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

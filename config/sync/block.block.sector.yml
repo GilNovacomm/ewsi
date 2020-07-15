@@ -1,0 +1,23 @@
+uuid: db47846e-7b23-435f-b9fd-c1e9c85819b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sector
+  module:
+    - facets
+  theme:
+    - investeu_theme
+id: sector
+theme: investeu_theme
+region: facets
+weight: 0
+provider: null
+plugin: 'facet_block:sector'
+settings:
+  id: 'facet_block:sector'
+  label: Sector
+  provider: facets
+  label_display: '0'
+  block_id: sector
+visibility: {  }

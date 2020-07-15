@@ -1,0 +1,20 @@
+uuid: 2314b1ad-4d01-4a54-b576-e911f3278510
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_investeu_initiative
+field_name: field_investeu_initiative
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -8,6 +8,7 @@ module:
   breakpoint: 0
   cas: 0
   ckeditor: 0
+  composite_reference: 0
   config: 0
   config_filter: 0
   config_ignore: 0
@@ -26,6 +27,7 @@ module:
   entity_version: 0
   entity_version_workflows: 0
   extra_field: 0
+  facets: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -44,7 +46,13 @@ module:
   maxlength: 0
   media: 0
   media_avportal: 0
+  menu_ui: 0
+  metatag: 0
+  metatag_open_graph: 0
+  metatag_twitter_cards: 0
+  metatag_views: 0
   neutral_paths: 0
+  nexteuropa_dashboard_agent: 0
   node: 0
   oe_authentication: 0
   oe_content: 0
@@ -121,8 +129,11 @@ module:
   rdf_entity: 0
   rdf_skos: 0
   redirect: 0
+  redis: 0
   remote_stream_wrapper: 0
   responsive_image: 0
+  search_api: 0
+  search_api_db: 0
   serialization: 0
   smart_trim: 0
   system: 0
@@ -134,6 +145,7 @@ module:
   tmgmt_local: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   typed_link: 0
   ui_patterns: 0
   ui_patterns_library: 0

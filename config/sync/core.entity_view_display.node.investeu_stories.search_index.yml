@@ -1,0 +1,41 @@
+uuid: c4fe16c0-ecc6-41bc-a460-81e8aa984ee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.investeu_stories.field_investeu_sector
+    - node.type.investeu_stories
+  module:
+    - entity_reference_revisions
+    - user
+id: node.investeu_stories.search_index
+targetEntityType: node
+bundle: investeu_stories
+mode: search_index
+content:
+  field_investeu_sector:
+    weight: 103
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_investeu_date: true
+  field_investeu_initiative: true
+  field_investeu_media: true
+  field_investeu_member_states: true
+  field_investeu_teaser: true
+  langcode: true
+  oe_content_content_owner: true
+  oe_content_legacy_link: true
+  oe_content_navigation_title: true
+  oe_content_short_title: true
+  search_api_excerpt: true

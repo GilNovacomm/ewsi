@@ -1,0 +1,40 @@
+uuid: bbc1f71c-1db1-4071-a5fb-7313fd26f48b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investeu_member_states
+    - node.type.investeu_stories
+  module:
+    - rdf_skos
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.investeu_stories.field_investeu_member_states
+field_name: field_investeu_member_states
+entity_type: node
+bundle: investeu_stories
+label: 'Member states'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:skos_concept'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: pref_label
+      direction: ASC
+    auto_create: false
+    concept_schemes:
+      - 'http://eurovoc.europa.eu/100277'
+    field:
+      field_name: field_investeu_member_states
+      entity_type: node
+      bundle: investeu_stories
+      concept_schemes:
+        - 'http://eurovoc.europa.eu/100277'
+field_type: skos_concept_entity_reference

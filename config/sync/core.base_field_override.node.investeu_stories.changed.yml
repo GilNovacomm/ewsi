@@ -1,0 +1,18 @@
+uuid: 07b9fcb8-71f5-49fa-93f8-0df88bc679f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.investeu_stories
+id: node.investeu_stories.changed
+field_name: changed
+entity_type: node
+bundle: investeu_stories
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

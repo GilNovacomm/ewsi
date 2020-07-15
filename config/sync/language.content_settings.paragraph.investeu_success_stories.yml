@@ -1,0 +1,18 @@
+uuid: 2a5c9e6d-6820-45ba-9348-3f8cca9844bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.investeu_success_stories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.investeu_success_stories
+target_entity_type_id: paragraph
+target_bundle: investeu_success_stories
+default_langcode: site_default
+language_alterable: false

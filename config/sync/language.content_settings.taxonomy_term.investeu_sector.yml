@@ -1,0 +1,18 @@
+uuid: b905e7ac-9541-4342-838a-336ca47bb11f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.investeu_sector
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.investeu_sector
+target_entity_type_id: taxonomy_term
+target_bundle: investeu_sector
+default_langcode: en
+language_alterable: true

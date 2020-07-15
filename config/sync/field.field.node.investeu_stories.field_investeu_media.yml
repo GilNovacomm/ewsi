@@ -1,0 +1,39 @@
+uuid: 90121c97-66b0-446b-8181-acfa44ab5f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investeu_media
+    - media.type.av_portal_photo
+    - media.type.av_portal_video
+    - media.type.image
+    - media.type.remote_video
+    - node.type.investeu_stories
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.investeu_stories.field_investeu_media
+field_name: field_investeu_media
+entity_type: node
+bundle: investeu_stories
+label: 'Featured media'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      av_portal_photo: av_portal_photo
+      av_portal_video: av_portal_video
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: av_portal_photo
+field_type: entity_reference
