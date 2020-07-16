@@ -5,7 +5,10 @@
  * Functions to support site logic.
  */
 
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Breadcrumb\Breadcrumb;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
 use Drupal\Core\Url;
 use Drupal\node\NodeInterface;
 use Drupal\rdf_skos\Entity\Concept;
@@ -65,4 +68,26 @@ function investeu_core_form_views_exposed_form_alter(&$form, FormStateInterface 
 function investeu_core_form_views_exposed_form_filter_reset(&$form, FormStateInterface $form_state) {
   $redirect = new RedirectResponse(Url::fromRoute('<current>')->toString());
   $redirect->send();
+}
+
+/**
+ * {@inheritdoc}
+ *
+ * Alters the home breadcrumb label to Europa and adds
+ * an additional link to the frontpage.
+ */
+function investeu_core_system_breadcrumb_alter(Breadcrumb &$breadcrumb, RouteMatchInterface $route_match, array $context) {
+  $links = $breadcrumb->getLinks();
+  $site_name = \Drupal::config('system.site')->get('name');
+  $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $link_europa = Url::fromUri('https://europa.eu/european-union/index_' . $langcode);
+
+  if (!empty($links[0]) && $links[0] instanceof Link) {
+    $links[0]->setText(t('Europa'))->setUrl($link_europa);
+  }
+  else {
+    $breadcrumb->addLink(Link::fromTextAndUrl(t('Europa'), $link_europa));
+  }
+
+  $breadcrumb->addLink(Link::createFromRoute($site_name, '<front>'));
 }
