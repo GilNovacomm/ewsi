@@ -408,7 +408,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: terms
+          parse_mode: direct
           min_length: null
           fields:
             - field_investeu_teaser
