@@ -192,11 +192,3 @@ function investeu_theme_preprocess_page(array &$variables): void {
     }
   }
 }
-
-/**
- * Implements hook_preprocess_HOOK().
- */
-function investeu_theme_preprocess_pattern_page_header(array &$variables): void {
-  // Make the is_front variable available to the page header pattern.
-  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
-}
