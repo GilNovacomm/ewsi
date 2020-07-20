@@ -1,0 +1,18 @@
+uuid: 22460780-b0fa-493d-9ed4-8031003a3727
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.webtools_chart
+id: media.webtools_chart.metatag
+field_name: metatag
+entity_type: media
+bundle: webtools_chart
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
