@@ -72,7 +72,7 @@ function investeu_theme_preprocess_node__investeu_stories(array &$variables): vo
  */
 function investeu_theme_preprocess_pattern_text_featured_media(array &$variables): void {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
-  $paragraph = $variables['title']['#object'];
+  $paragraph = $variables['title']['#object'] ?? $variables['text']['#object'] ?? NULL;
 
   if ($paragraph instanceof ParagraphInterface) {
     $variables['alignment'] = $paragraph->get('field_investeu_alignment')->getString() ?? 'right';
