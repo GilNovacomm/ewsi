@@ -1,0 +1,18 @@
+uuid: fdb2c62a-0ef5-42f6-9dc0-d10b8a8dcda1
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.webtools_map
+id: media.webtools_map.metatag
+field_name: metatag
+entity_type: media
+bundle: webtools_map
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

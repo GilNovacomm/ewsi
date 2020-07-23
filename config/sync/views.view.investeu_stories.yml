@@ -180,7 +180,19 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_language
-      sorts: {  }
+      sorts:
+        field_investeu_date:
+          id: field_investeu_date
+          table: search_api_index_investeu_stories_index
+          field: field_investeu_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: search_api
       title: 'InvestEU Stories'
       header: {  }
       footer: {  }
@@ -408,7 +420,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: terms
+          parse_mode: direct
           min_length: null
           fields:
             - field_investeu_teaser

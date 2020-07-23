@@ -1,0 +1,18 @@
+uuid: 815410f9-2a0a-46eb-a5d8-c07de6afa062
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.av_portal_video
+id: media.av_portal_video.metatag
+field_name: metatag
+entity_type: media
+bundle: av_portal_video
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
