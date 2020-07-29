@@ -1,0 +1,18 @@
+uuid: 262f1961-c00c-404d-9cc1-a4d7c61532ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.manual
+id: link_list.manual.metatag
+field_name: metatag
+entity_type: link_list
+bundle: manual
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

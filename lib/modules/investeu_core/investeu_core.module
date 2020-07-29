@@ -5,10 +5,15 @@
  * Functions to support site logic.
  */
 
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Breadcrumb\Breadcrumb;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
 use Drupal\node\NodeInterface;
 use Drupal\rdf_skos\Entity\Concept;
 use Drupal\rdf_skos\Entity\ConceptInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -26,4 +31,72 @@ function investeu_core_form_node_form_alter(&$form, FormStateInterface $form_sta
   ) {
     $form['oe_content_content_owner']['widget'][0]['target_id']['#default_value'] = $concept;
   }
+}
+
+/**
+ * {@inheritdoc}
+ *
+ * Keeps the selected facets when a views exposed form is submitted.
+ */
+function investeu_core_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $facets = \Drupal::request()->query->get('f');
+
+  if (!empty($facets)) {
+    // Iterate through facet query parameters and add hidden
+    // form fields containing the facet values.
+    foreach ($facets as $facet_key => $facet_value) {
+      $form['f[' . $facet_key . ']'] = [
+        '#type' => 'hidden',
+        '#value' => $facet_value,
+        '#weight' => -1,
+      ];
+    }
+
+    $form['actions']['reset'] = [
+      '#type' => 'submit',
+      '#value' => t('Clear all'),
+      '#submit' => ['investeu_core_form_views_exposed_form_filter_reset'],
+    ];
+  }
+}
+
+/**
+ * {@inheritdoc}
+ *
+ * Clears the form values of an exposed form filter.
+ */
+function investeu_core_form_views_exposed_form_filter_reset(&$form, FormStateInterface $form_state) {
+  $redirect = new RedirectResponse(Url::fromRoute('<current>')->toString());
+  $redirect->send();
+}
+
+/**
+ * Implements hook_system_breadcrumb_alter().
+ */
+function investeu_core_system_breadcrumb_alter(Breadcrumb &$breadcrumb, RouteMatchInterface $route_match, array $context) {
+  $blinks = $breadcrumb->getLinks();
+  $parameters = \Drupal::menuTree()->getCurrentRouteMenuTreeParameters('menu-breadcrumb-menu');
+  $tree = \Drupal::menuTree()->load('menu-breadcrumb-menu', $parameters);
+  $links = [];
+  foreach ($tree as $item) {
+    if (Url::fromRoute('<current>')->toString() == $item->link->getUrlObject()->toString()) {
+      continue;
+    }
+    $link_entity = \Drupal::service('entity.repository')
+      ->loadEntityByUuid('menu_link_content', $item->link->getDerivativeId());
+    $translated_entity = \Drupal::service('entity.repository')->getTranslationFromContext($link_entity);
+    $url = $translated_entity->link_override->first();
+    $link_url = $item->link->getUrlObject();
+    if ($url !== NULL) {
+      $link_url = $url->isEmpty() ? $link_url : $url->getUrl();
+    }
+
+    $links[] = Link::fromTextAndUrl($item->link->getTitle(), $link_url);
+  }
+  foreach ($blinks as $blink) {
+    $links[] = $blink;
+  }
+
+  $breadcrumb = new Breadcrumb();
+  $breadcrumb->setLinks($links);
 }

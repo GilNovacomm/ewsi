@@ -1,0 +1,18 @@
+uuid: bfbe7158-925a-4ab8-9bd0-c1a34683e371
+langcode: en
+status: true
+dependencies:
+  config:
+    - oe_link_lists.link_list_type.dynamic
+id: link_list.dynamic.metatag
+field_name: metatag
+entity_type: link_list
+bundle: dynamic
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
