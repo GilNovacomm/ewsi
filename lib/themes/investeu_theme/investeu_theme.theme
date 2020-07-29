@@ -192,3 +192,21 @@ function investeu_theme_preprocess_page(array &$variables): void {
     }
   }
 }
+
+/**
+ * Implements template_preprocess_block__system_branding_block().
+ */
+function investeu_theme_preprocess_block__system_branding_block(&$variables) {
+  $parameters = \Drupal::menuTree()->getCurrentRouteMenuTreeParameters('menu-breadcrumb-menu');
+  $tree = \Drupal::menuTree()->load('menu-breadcrumb-menu', $parameters);
+  $home = array_shift($tree);
+  $link_entity = \Drupal::service('entity.repository')
+    ->loadEntityByUuid('menu_link_content', $home->link->getDerivativeId());
+  $translated_entity = \Drupal::service('entity.repository')->getTranslationFromContext($link_entity);
+  $url = $translated_entity->link_override->first();
+  $link_url = $home->link->getUrlObject()->toString();
+  if ($url !== NULL) {
+    $link_url = $url->isEmpty() ? $link_url : $url->getUrl()->toString();
+  }
+  $variables['site_logo_href'] = $link_url;
+}
