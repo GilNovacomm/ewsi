@@ -14,6 +14,11 @@ targetEntityType: node
 bundle: investeu_stories
 mode: search_index
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_investeu_sector:
     weight: 103
     label: hidden
