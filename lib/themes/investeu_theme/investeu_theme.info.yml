@@ -18,3 +18,6 @@ regions:
 
 libraries-override:
   facets/drupal.facets.checkbox-widget: investeu_theme/investeu.facets.checkbox-widget
+
+libraries:
+  - investeu_theme/investeu.style
