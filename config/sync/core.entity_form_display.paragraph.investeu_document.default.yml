@@ -3,8 +3,11 @@ langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.documents
     - field.field.paragraph.investeu_document.field_investeu_document
     - paragraphs.paragraphs_type.investeu_document
+  module:
+    - entity_browser
 id: paragraph.investeu_document.default
 targetEntityType: paragraph
 bundle: investeu_document
@@ -13,12 +16,17 @@ content:
   field_investeu_document:
     weight: 0
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      entity_browser: documents
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
 hidden:
   created: true

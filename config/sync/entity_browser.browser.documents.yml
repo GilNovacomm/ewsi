@@ -1,0 +1,42 @@
+uuid: 61390831-b55d-4233-99c8-a64ee4f20797
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.investeu_entity_browsers
+  module:
+    - entity_browser_entity_form
+    - views
+name: documents
+label: Documents
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  d9bf5dd7-76db-4aec-9ef0-36389b717d21:
+    settings:
+      view: investeu_entity_browsers
+      view_display: documents
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: d9bf5dd7-76db-4aec-9ef0-36389b717d21
+    weight: 1
+    label: 'All local media'
+    id: view
+  034bd348-ad36-432b-b186-b9aeb2c39062:
+    settings:
+      entity_type: media
+      bundle: document
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: 034bd348-ad36-432b-b186-b9aeb2c39062
+    weight: 3
+    label: 'Upload document'
+    id: entity_form
