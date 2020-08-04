@@ -19,6 +19,7 @@ module:
   datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   editor: 0
   embed: 0
   entity_browser: 0
@@ -145,6 +146,7 @@ module:
   tmgmt_local: 0
   token: 0
   toolbar: 0
+  translatable_menu_link_uri: 0
   twig_tweak: 0
   typed_link: 0
   ui_patterns: 0

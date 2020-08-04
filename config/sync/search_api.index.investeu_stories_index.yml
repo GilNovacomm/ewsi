@@ -9,6 +9,7 @@ dependencies:
   config:
     - field.storage.node.field_investeu_initiative
     - field.storage.node.field_investeu_member_states
+    - field.storage.node.field_investeu_date
     - field.storage.node.field_investeu_sector
     - field.storage.node.field_investeu_teaser
     - search_api.server.investeu_database_server
@@ -34,6 +35,14 @@ field_settings:
     dependencies:
       module:
         - node
+  field_investeu_date:
+    label: 'Publication date'
+    datasource_id: 'entity:node'
+    property_path: field_investeu_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_investeu_date
   field_investeu_initiative:
     label: Initiative
     datasource_id: 'entity:node'
