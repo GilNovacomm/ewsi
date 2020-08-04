@@ -1,0 +1,15 @@
+uuid: be27310c-37e8-46bc-aa10-ee4331b45fee
+langcode: en
+status: true
+dependencies: {  }
+name: investeu_medium_2x_no_crop
+label: 'InvestEU Medium 2x (no crop)'
+effects:
+  50f8d32d-fa90-465e-a8e9-91306e88cef2:
+    uuid: 50f8d32d-fa90-465e-a8e9-91306e88cef2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1422
+      height: null
+      upscale: false
