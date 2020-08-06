@@ -1,0 +1,15 @@
+uuid: f228b579-f066-4fb4-b2b4-dbcb5f27aef9
+langcode: en
+status: true
+dependencies: {  }
+name: investeu_medium_no_crop
+label: 'InvestEU Medium (no crop)'
+effects:
+  4cf3fa9f-f212-4cb7-ab8d-976cabb255cc:
+    uuid: 4cf3fa9f-f212-4cb7-ab8d-976cabb255cc
+    id: image_scale
+    weight: 1
+    data:
+      width: 711
+      height: null
+      upscale: false

@@ -1,46 +1,38 @@
-uuid: 4e6f82e2-5ae3-4b59-a2ee-13e864b6e563
+uuid: ee5598d6-4fd9-42ae-8831-a4e91dc414cb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.browse
     - field.field.media.av_portal_photo.oe_media_avportal_photo
+    - image.style.medium
     - media.type.av_portal_photo
-    - responsive_image.styles.oe_theme_main_content
   module:
     - image
-    - media_avportal
     - oe_media_embed
 third_party_settings:
   oe_media_embed:
-    embeddable: true
+    embeddable: false
 _core:
   default_config_hash: G2xm8kky8GSjaAiv9EgTaLZGPCLINqV2M_uRt19xm80
-id: media.av_portal_photo.default
+id: media.av_portal_photo.browse
 targetEntityType: media
 bundle: av_portal_photo
-mode: default
+mode: browse
 content:
-  oe_media_avportal_photo:
-    weight: 6
-    label: hidden
-    settings:
-      responsive_image_style: oe_theme_main_content
-    third_party_settings: {  }
-    type: avportal_photo_responsive
-    region: content
   thumbnail:
     type: image
-    weight: 5
+    weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
-    third_party_settings: {  }
     region: content
+    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
   name: true
+  oe_media_avportal_photo: true
   search_api_excerpt: true
-  thumbnail: true
   uid: true

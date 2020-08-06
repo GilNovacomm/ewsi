@@ -1,0 +1,29 @@
+uuid: 2294deff-2d4f-4828-a193-bf5b0fcd6847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_investeu_webform
+    - paragraphs.paragraphs_type.investeu_webform
+  module:
+    - tmgmt_content
+    - webform
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.investeu_webform.field_investeu_webform
+field_name: field_investeu_webform
+entity_type: paragraph
+bundle: investeu_webform
+label: Webform
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

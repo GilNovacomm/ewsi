@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.paragraph.oe_banner_image_shade
+    - entity_browser.browser.images
     - field.field.paragraph.oe_banner.field_oe_banner_full_width
     - field.field.paragraph.oe_banner.field_oe_banner_type
     - field.field.paragraph.oe_banner.field_oe_link
@@ -12,6 +13,7 @@ dependencies:
     - field.field.paragraph.oe_banner.field_oe_title
     - paragraphs.paragraphs_type.oe_banner
   module:
+    - entity_browser
     - link
 _core:
   default_config_hash: 3Vav8IrCcd8warvtpYitZTZn5xKggpfcAJ55b-Oi8Hk
@@ -42,14 +44,19 @@ content:
     type: link_default
     region: content
   field_oe_media:
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     weight: 5
     region: content
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
+      entity_browser: images
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: browse
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
     third_party_settings: {  }
   field_oe_text:
     weight: 3
@@ -69,9 +76,9 @@ content:
     region: content
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   status: true

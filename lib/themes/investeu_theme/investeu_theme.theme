@@ -17,6 +17,7 @@ use Drupal\link\LinkItemInterface;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\file\FileInterface;
 use Drupal\oe_theme\ValueObject\FileValueObject;
+use Drupal\Core\Menu\MenuLinkTreeElement;
 
 /**
  * Implements hook_preprocess_HOOK().
@@ -190,5 +191,29 @@ function investeu_theme_preprocess_page(array &$variables): void {
         ]
       );
     }
+  }
+}
+
+/**
+ * Implements template_preprocess_block__system_branding_block().
+ *
+ * Add required variables to follow ECL guidelines.
+ */
+function investeu_theme_preprocess_block__system_branding_block(&$variables) {
+  $parameters = \Drupal::menuTree()->getCurrentRouteMenuTreeParameters('menu-breadcrumb-menu');
+  $tree = \Drupal::menuTree()->load('menu-breadcrumb-menu', $parameters);
+  $home = array_shift($tree);
+  if ($home instanceof MenuLinkTreeElement) {
+    $link_entity = \Drupal::service('entity.repository')
+      ->loadEntityByUuid('menu_link_content', $home->link->getDerivativeId());
+    $translated_entity = \Drupal::service('entity.repository')->getTranslationFromContext($link_entity);
+    $url = $translated_entity->link_override->first();
+    $link_url = $home->link->getUrlObject();
+    if ($url !== NULL) {
+      $link_url = $url->isEmpty() ? $link_url : $url->getUrl();
+    }
+    $variables['site_logo_href'] = $link_url->toString();
+    $variables['site_name'] = $home->link->getTitle();
+    $variables['site_logo_alt'] = $home->link->getTitle();
   }
 }

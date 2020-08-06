@@ -3,3 +3,8 @@ investeu.facets.checkbox-widget:
     js/checkbox-widget.js: {}
   dependencies:
     - facets/widget
+
+investeu.style:
+  css:
+    theme:
+      css/style.css: {}

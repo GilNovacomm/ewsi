@@ -53,6 +53,7 @@ content:
       trim_options: {  }
     third_party_settings: {  }
 hidden:
+  field_investeu_components: true
   field_investeu_date: true
   field_investeu_initiative: true
   field_investeu_member_states: true
