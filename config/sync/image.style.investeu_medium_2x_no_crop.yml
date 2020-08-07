@@ -7,9 +7,10 @@ label: 'InvestEU Medium 2x (no crop)'
 effects:
   50f8d32d-fa90-465e-a8e9-91306e88cef2:
     uuid: 50f8d32d-fa90-465e-a8e9-91306e88cef2
-    id: image_scale
+    id: retina_image_scale
     weight: 1
     data:
       width: 1422
       height: null
       upscale: false
+      multiplier: 2
