@@ -16,6 +16,14 @@ drupal:
       'namespace' => 'Drupal\\Driver\\Database\\sparql',
       'driver' => 'sparql',
     ];
+    $config['cas.settings']['server']['hostname'] = getenv('DRUPAL_CAS_HOSTNAME');
+    $config['cas.settings']['server']['port'] = getenv('DRUPAL_CAS_PORT');
+    $settings['file_private_path'] = getenv('DRUPAL_PRIVATE_FILE_SYSTEM');
+    if (intval(getenv('DRUPAL_PROXY_ENABLE')) === 1) {
+      $settings['http_client_config']['proxy']['http'] = getenv('DRUPAL_PROXY_HTTP');
+      $settings['http_client_config']['proxy']['https'] = getenv('DRUPAL_PROXY_HTTPS');
+      $settings['http_client_config']['proxy']['no'] = array_map('trim', explode(',', getenv('DRUPAL_PROXY_NO')));
+    }
 
 behat:
   tags: "~@wip"
