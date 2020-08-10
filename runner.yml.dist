@@ -16,6 +16,11 @@ drupal:
       'namespace' => 'Drupal\\Driver\\Database\\sparql',
       'driver' => 'sparql',
     ];
+    if (intval(getenv('DRUPAL_PROXY_ENABLE')) === 1) {
+      $settings['http_client_config']['proxy']['http'] = getenv('DRUPAL_PROXY_HTTP');
+      $settings['http_client_config']['proxy']['https'] = getenv('DRUPAL_PROXY_HTTPS');
+      $settings['http_client_config']['proxy']['no'] = array_map('trim', explode(',', getenv('DRUPAL_PROXY_NO')));
+    }
 
 behat:
   tags: "~@wip"
