@@ -3,16 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.investeu_landing_page.field_investeu_components
-    - node.type.investeu_landing_page
+    - field.field.node.ewsi_landing_page.field_ewsi_components
+    - node.type.ewsi_landing_page
   module:
     - link
     - paragraphs
     - path
     - rdf_skos
-id: node.investeu_landing_page.default
+id: node.ewsi_landing_page.default
 targetEntityType: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 mode: default
 content:
   created:
@@ -21,7 +21,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_investeu_components:
+  field_ewsi_components:
     type: entity_reference_paragraphs
     weight: 121
     settings:

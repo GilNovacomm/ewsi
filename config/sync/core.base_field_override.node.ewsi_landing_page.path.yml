@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
+    - node.type.ewsi_landing_page
   module:
     - path
-id: node.investeu_landing_page.path
+id: node.ewsi_landing_page.path
 field_name: path
 entity_type: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 label: 'URL alias'
 description: ''
 required: false

@@ -3,12 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - user.role.investeu_admin
+    - user.role.ewsi_admin
   module:
     - user
-id: user_remove_role_action.investeu_admin
-label: 'Remove the InvestEU admin role from the selected user(s)'
+id: user_remove_role_action.ewsi_admin
+label: 'Remove the ewsi admin role from the selected user(s)'
 type: user
 plugin: user_remove_role_action
 configuration:
-  rid: investeu_admin
+  rid: ewsi_admin

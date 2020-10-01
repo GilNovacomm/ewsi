@@ -1,7 +1,0 @@
-name: InvestEU Core
-type: module
-description: 'InvestEU Core module.'
-package: InvestEU
-core: 8.x
-core_version_requirement: ^8 || ^9
-php: 7.1

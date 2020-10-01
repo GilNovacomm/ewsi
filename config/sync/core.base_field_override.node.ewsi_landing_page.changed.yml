@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
-id: node.investeu_landing_page.changed
+    - node.type.ewsi_landing_page
+id: node.ewsi_landing_page.changed
 field_name: changed
 entity_type: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 label: Changed
 description: 'The time that the node was last edited.'
 required: false

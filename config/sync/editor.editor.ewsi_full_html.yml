@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.investeu_full_html
+    - filter.format.ewsi_full_html
   module:
     - ckeditor
-format: investeu_full_html
+format: ewsi_full_html
 editor: ckeditor
 settings:
   toolbar:

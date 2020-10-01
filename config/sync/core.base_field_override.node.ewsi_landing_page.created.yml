@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
-id: node.investeu_landing_page.created
+    - node.type.ewsi_landing_page
+id: node.ewsi_landing_page.created
 field_name: created
 entity_type: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 label: 'Authored on'
 description: 'The time that the node was created.'
 required: false

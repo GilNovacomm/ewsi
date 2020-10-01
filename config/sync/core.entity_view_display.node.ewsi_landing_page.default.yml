@@ -3,17 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.investeu_landing_page.field_investeu_components
-    - node.type.investeu_landing_page
+    - field.field.node.ewsi_landing_page.field_ewsi_components
+    - node.type.ewsi_landing_page
   module:
     - entity_reference_revisions
     - user
-id: node.investeu_landing_page.default
+id: node.ewsi_landing_page.default
 targetEntityType: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 mode: default
 content:
-  field_investeu_components:
+  field_ewsi_components:
     type: entity_reference_revisions_entity_view
     weight: 101
     label: above

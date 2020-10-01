@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
-id: node.investeu_landing_page.uid
+    - node.type.ewsi_landing_page
+id: node.ewsi_landing_page.uid
 field_name: uid
 entity_type: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 label: 'Authored by'
 description: 'The username of the content author.'
 required: false

@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - node
-id: investeu_publications
-label: 'InvestEU Publications'
+id: ewsi_publications
+label: 'ewsi Publications'
 type: 'canonical_entities:node'
 pattern: 'publications/[node:source:title]'
 selection_criteria:

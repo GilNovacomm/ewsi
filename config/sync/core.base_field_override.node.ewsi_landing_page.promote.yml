@@ -1,20 +1,20 @@
-uuid: 5f55ebe6-db52-4ee1-9902-55a8ac372d6f
+uuid: 1d86cbca-bc76-4f16-88aa-f021169bace0
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
-id: node.investeu_landing_page.status
-field_name: status
+    - node.type.ewsi_landing_page
+id: node.ewsi_landing_page.promote
+field_name: promote
 entity_type: node
-bundle: investeu_landing_page
-label: Published
+bundle: ewsi_landing_page
+label: 'Promoted to front page'
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 1
+    value: 0
 default_value_callback: ''
 settings:
   on_label: 'On'

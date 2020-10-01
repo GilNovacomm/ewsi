@@ -2,8 +2,8 @@ uuid: 1c9e2ce2-8890-41af-a7b8-1b748c32ff6a
 langcode: en
 status: true
 dependencies: {  }
-name: 'InvestEU Landing page'
-type: investeu_landing_page
+name: 'ewsi Landing page'
+type: ewsi_landing_page
 description: ''
 help: ''
 new_revision: true

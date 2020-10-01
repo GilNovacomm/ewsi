@@ -1,20 +1,20 @@
-uuid: ffe45489-39ca-493b-aa71-c2b9a6d5d382
+uuid: 5f55ebe6-db52-4ee1-9902-55a8ac372d6f
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
-id: node.investeu_landing_page.sticky
-field_name: sticky
+    - node.type.ewsi_landing_page
+id: node.ewsi_landing_page.status
+field_name: status
 entity_type: node
-bundle: investeu_landing_page
-label: 'Sticky at top of lists'
+bundle: ewsi_landing_page
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'On'

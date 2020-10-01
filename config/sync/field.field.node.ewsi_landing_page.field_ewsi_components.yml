@@ -3,18 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_investeu_components
-    - node.type.investeu_landing_page
+    - field.storage.node.field_ewsi_components
+    - node.type.ewsi_landing_page
   module:
     - entity_reference_revisions
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.investeu_landing_page.field_investeu_components
-field_name: field_investeu_components
+id: node.ewsi_landing_page.field_ewsi_components
+field_name: field_ewsi_components
 entity_type: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 label: Components
 description: ''
 required: false

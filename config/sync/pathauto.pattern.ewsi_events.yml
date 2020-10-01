@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - node
-id: investeu_events
-label: 'InvestEU Events'
+id: ewsi_events
+label: 'ewsi Events'
 type: 'canonical_entities:node'
 pattern: 'events/[node:source:title]'
 selection_criteria:

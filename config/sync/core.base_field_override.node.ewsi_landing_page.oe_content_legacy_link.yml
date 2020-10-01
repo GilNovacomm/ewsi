@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
+    - node.type.ewsi_landing_page
   module:
     - link
-id: node.investeu_landing_page.oe_content_legacy_link
+id: node.ewsi_landing_page.oe_content_legacy_link
 field_name: oe_content_legacy_link
 entity_type: node
-bundle: investeu_landing_page
+bundle: ewsi_landing_page
 label: 'Redirect link'
 description: 'Add a link to this field to automatically redirect the user to a different page. Use this to prevent duplication of content.'
 required: false

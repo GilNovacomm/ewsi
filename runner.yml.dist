@@ -3,7 +3,7 @@ drupal:
   base_url: ${env.DRUPAL_BASE_URL}
   site:
     profile: "oe_profile"
-    name: "InvestEU"
+    name: "EWSI"
     generate_db_url: false
   account:
     name: ${env.DRUPAL_ACCOUNT_USERNAME}
@@ -26,7 +26,7 @@ selenium:
   browser: "chrome"
 
 toolkit:
-  project_id: "ecfin-investeu"
+  project_id: "ewsi"
   build:
     dist:
       commands:

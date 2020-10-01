@@ -8,7 +8,7 @@ dependencies:
     - oe_content_persistent
     - oe_media_embed
 name: 'Full HTML'
-format: investeu_full_html
+format: ewsi_full_html
 weight: 0
 filters:
   editor_file_reference:

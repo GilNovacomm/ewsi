@@ -3,12 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - user.role.investeu_admin
+    - user.role.ewsi_admin
   module:
     - user
-id: user_add_role_action.investeu_admin
-label: 'Add the InvestEU admin role to the selected user(s)'
+id: user_add_role_action.ewsi_admin
+label: 'Add the ewsi admin role to the selected user(s)'
 type: user
 plugin: user_add_role_action
 configuration:
-  rid: investeu_admin
+  rid: ewsi_admin

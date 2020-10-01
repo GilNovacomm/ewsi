@@ -1,14 +1,14 @@
-uuid: 1d86cbca-bc76-4f16-88aa-f021169bace0
+uuid: ffe45489-39ca-493b-aa71-c2b9a6d5d382
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
-id: node.investeu_landing_page.promote
-field_name: promote
+    - node.type.ewsi_landing_page
+id: node.ewsi_landing_page.sticky
+field_name: sticky
 entity_type: node
-bundle: investeu_landing_page
-label: 'Promoted to front page'
+bundle: ewsi_landing_page
+label: 'Sticky at top of lists'
 description: ''
 required: false
 translatable: false

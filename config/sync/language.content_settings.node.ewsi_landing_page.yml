@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.investeu_landing_page
+    - node.type.ewsi_landing_page
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.investeu_landing_page
+id: node.ewsi_landing_page
 target_entity_type_id: node
-target_bundle: investeu_landing_page
+target_bundle: ewsi_landing_page
 default_langcode: en
 language_alterable: true

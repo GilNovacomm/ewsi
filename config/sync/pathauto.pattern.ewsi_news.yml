@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - node
-id: investeu_news
-label: 'InvestEU News'
+id: ewsi_news
+label: 'ewsi News'
 type: 'canonical_entities:node'
 pattern: 'news/[node:source:title]'
 selection_criteria:
